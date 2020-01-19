@@ -12,7 +12,9 @@ public class AI extends Player{
 	
 	
 	public String selectCategory(){
+		
 		Card handCard = this.getHand();
+		
 			return handCard.findBiggestCategory();
 			
 	}

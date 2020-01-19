@@ -2,6 +2,7 @@ package commandline;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Card {
@@ -36,10 +37,11 @@ public class Card {
 	}
 	// we need to use reflection to get the attribute and its value from each instance 
 	// return a map
-	public Map<String, Integer> getClassAttribute() {
+	public LinkedHashMap<String, Integer> getClassAttribute() {
 		Field[] fields = this.getClass().getDeclaredFields(); // this array will store the instance's attribute in each field.
 		
-		Map<String, Integer> attributeMap = new HashMap<String, Integer>();
+		LinkedHashMap<String, Integer> attributeMap = new LinkedHashMap<String, Integer>();
+		//LinkedHashMap can be added by "put" order.
 		
 		for (Field field : fields) {
 			field.setAccessible(true);

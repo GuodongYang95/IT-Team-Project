@@ -20,7 +20,16 @@ public class Player {
     private int score; // this attribute will record the times that each player win at the game.
     private boolean isOut = false; 
     
-    public Player(String name) {
+    
+    public int getScore() {
+		return score;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+
+	public Player(String name) {
         
         this.name = name;
 //        this.active = true;

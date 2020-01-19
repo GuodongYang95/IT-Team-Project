@@ -1,4 +1,4 @@
-# 01/19/2020   --Junhao Huang
+# 01/19/2020 4:00AM   --Junhao Huang
   1. merge all the staff of the version end of today.
   2. Create User Class
   3. Create AI Class
@@ -12,3 +12,10 @@
   11. Card Class: There are some method used to find max value in the category (important)
   12. Written getSelectedCategoryValue(), findBiggestCategory() method in Card Class.
   13. Finish judge draw method, activePlayerSelector() function.
+
+# 01/19/2020 10:30 AM  --Junhao Huang 
+1. Updated User Selected method: User should selected the number of the category, but not the category name.
+2. Finish roundStart() function
+3. Doing in showRoundResultFunction 
+   1. add selectWinner function
+   2. add distribute card method

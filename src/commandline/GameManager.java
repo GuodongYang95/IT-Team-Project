@@ -18,6 +18,8 @@ public class GameManager {
 	private Player[] players; //this is player array, store the user object and AI objects. The number of AI is decided by user.
 	private ArrayList<Card> commonCardPile; //this attribute will store card while a draw round.
 	private int numOfGames = 0;
+	private Player roundWinPlayer; // this attribute will record the winner for each round
+	
 	
 	public void startGame(DBConnected db) {
 		/*
@@ -56,6 +58,9 @@ public class GameManager {
 			
 			//Distribute the card to each Player(User and AI)
 			cardDistribute(db);
+			
+			//Active one player
+			activePlayerSelector();
 		}
 		
 	}
@@ -103,11 +108,21 @@ public class GameManager {
 		}
 		
 	}
+	
+	public void activePlayerSelector() {
+		//if it is first time, the system will randomly select a player to be active
+		if(roundCount==1) {
+			players[new Random().nextInt(players.length)].setActive(true);
+		}
+	}
+		
 	//-----------------------these function will be used in each round----------------------------------
+	//-------------------------------when a round start---------------------draw card, select catogory--------
 	public void roundStart() {
 		//increase the roundcount
 		this.roundCount++;
 		System.out.println("Round "+roundCount);
+		
 		//each user should randomly picked a card;
 		for (Player player : players) {
 			player.takeCard();
@@ -119,15 +134,22 @@ public class GameManager {
 	
 		//	This part can decide who have right to choose the category
 		//----------------------------
+			//when the user is active
 		if(players[0].isActive()) {
+			
 			System.out.println("It is your turn to select a category, the categories are:");
 				
-			System.out.println("Enter the number for your attribute: ");
+			  //System.out.println("Enter the number for your attribute: "); this should put in the selectCategory() function.
+			
 			//should display the card here!!!!!!!!!!! method needed!!!
+			
 			String string = new User("user").selectCategory(); 
+			
+			players[0].setActive(false); //if player have chance to select, set false after selecting
 			
 			players[0].getHand().setSelectedAttributeString(string);
 			
+			// Other Player should select the category automatically
 			for(int i =0; i<players.length; i++) {
 					players[i].selectCategory(string);
 				}
@@ -135,11 +157,15 @@ public class GameManager {
 			
 		}
 		else {
+			//when the user is not active
+			
 			String aISelectedAttribute = "";
 			//find the active AI and let it select category
 			for (Player player : players) {
 				if(player.isActive()) {
 					aISelectedAttribute = new AI("ai").selectCategory();//AI will choose the biggest value
+					
+					player.setActive(false); // set false after selecting
 				}
 			}
 			// set it to all player
@@ -149,38 +175,66 @@ public class GameManager {
 			}
 			
 		}
-		//---------------------------------
-		//continue................
+		//--------------------------------- round start -------------
 		
 	}
 	
-	
-	
-	public void activePlayerSelector() {
-		//if it is first time, the system will randomly select a player to be active
-		if(roundCount==1) {
-			players[new Random().nextInt(players.length)].setActive(true);;
-		}
+	//-------------------------------when a round got to end---------------------
+	//--------------------------------- find winner or it is draw, distribute card -------------
+	public void showRoundResult() {
+		//find the winner:
 		int maxValue = findMaxCatagoryValue();
-		ArrayList<Player> maxValueAIList = hasMaxValueList(maxValue);
-		if(maxValueAIList.size() >1) {
+		
+		ArrayList<Player> maxValuePlayerList = hasMaxValuePlayerList(maxValue);
+		
+		selectWinner(maxValuePlayerList);
+		
+		// active the player for next round
+		
+		activePlayerSelector(maxValuePlayerList);
+		
+		
+		// distribute the card
+		distributeCardToWinner(maxValuePlayerList);
+		
+		//Judge a layer should be out  or the game should over
+		
+		
+	}
+	
+
+	
+	public void activePlayerSelector(ArrayList<Player> maxValuePlayerList) {
+		
+		if(isDraw(maxValuePlayerList)) {
 			//it is draw
-			if(maxValueAIList.contains(players[0])) {
+			if(maxValuePlayerList.contains(players[0])) {
 				// if user is included
 				players[0].setActive(true);
 			}else {
 				//randomly select an ai in the maxlist
-				int randomNumber = new Random().nextInt(maxValueAIList.size());
-				maxValueAIList.get(randomNumber).setActive(true);
+				int randomNumber = new Random().nextInt(maxValuePlayerList.size());
+				maxValuePlayerList.get(randomNumber).setActive(true);
 			}
 		}
-		else { // it is not draw, so there is only one player in the list
-			maxValueAIList.get(0).setActive(true);
+		else { 
+			// it is not draw, so set the winner active
+				roundWinPlayer.setActive(true);
 		}
-		
-		
-		
+				
 	}
+	
+	 public boolean isDraw(ArrayList<Player> playerList) {
+		 
+		 	if(playerList.size() >1) {
+				//it is draw
+			 	return true;
+			 	
+			}
+			else { // it is not draw, so there is only one player in the list
+				return false;
+			}
+	 }
 	/***
 	 * This method will return a list of the player who has max value
 	 * if maxValueAIList.size() >1, it is draw
@@ -188,34 +242,91 @@ public class GameManager {
 	 * @return maxValueAIList
 	 */
 	
-	public ArrayList<Player> hasMaxValueList(int maxValue) {
-		ArrayList<Player> maxValueAIList = new ArrayList<Player>();
-//		int count = 0;
-		for (Player player : players) {
-			int tempvalue = player.getHand().getSelectedCategoryValue();
-			if(maxValue == tempvalue) { //find how many max value,min is 1
-//				count++;
-				maxValueAIList.add(player);
-			}
-		}
-//		if(count>1) {
-//			return true;
-//		}
-		return maxValueAIList;
-	}
+
 	
 	
 	public int findMaxCatagoryValue() {
+		//default user has the max value
 		int maxValue = players[0].getHand().getSelectedCategoryValue();
+		
 			for (Player player : players) {
 				int tempvalue = player.getHand().getSelectedCategoryValue();
 				if(tempvalue > maxValue)
 					maxValue = tempvalue;
 			}
+			
 		return maxValue;
+	}
+	public ArrayList<Player> hasMaxValuePlayerList(int maxValue) {
+		
+		ArrayList<Player> maxValuePlayerList = new ArrayList<Player>();
+		
+		for (Player player : players) {
+			int tempvalue = player.getHand().getSelectedCategoryValue();
+			if(maxValue == tempvalue) { //find how many max value,min is 1
+
+				maxValuePlayerList.add(player);
+				
+				
+			}
+		}
+		return maxValuePlayerList;
 	}
 	
 	
+	// this method is going to find winner for each round
+	public void selectWinner(ArrayList<Player> maxValuePlayerList) {
+		System.out.print("Round "+roundCount+":");
+		if(isDraw(maxValuePlayerList)) {
+			System.out.println("This round was a Draw, common pile now has "+ commonCardPile.size()+" cards");
+			roundWinPlayer = null;
+		}else {
+			//if it is not draw, means that there are only one Player in the list
+			roundWinPlayer = maxValuePlayerList.get(0);
+			System.out.println("Player "+ roundWinPlayer.getName() +" won this round");
+			
+			// add a score to the winner
+			int winnerscore = roundWinPlayer.getNumberOfCard();
+			winnerscore++;
+			roundWinPlayer.setScore(winnerscore);
+		}
+		
+	}
+	
+	public void distributeCardToWinner(ArrayList<Player> maxValuePlayerList) {
+		
+		// declare a distributedCardList
+		ArrayList<Card> distributedCardList = new ArrayList<Card>();
+		
+		// add the commonCardPile to the distributedCardLis at first
+			if(commonCardPile.size() != 0) {
+				for (Card card : commonCardPile) {
+					distributedCardList.add(card);
+				}
+			}
+			
+		//then add all the player card to the distributedCardList
+			for (Player player : players) {
+				Card playerHold = player.getHand();
+				distributedCardList.add(playerHold);
+			}
+		//then judge it is draw or not
+			
+		if(isDraw(maxValuePlayerList)) {
+
+			for (Card card : distributedCardList) {
+				commonCardPile.add(card);
+			}
+		}else {
+		// if it is not draw
+			for (Card card : distributedCardList) {
+				roundWinPlayer.getCardPile().add(card);
+				
+			}
+			
+		}
+	}
+	//-------------------------ending Game-------------------------
 	
 	public void infoRecord(DBConnected db) {
 		/*
