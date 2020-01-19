@@ -8,7 +8,14 @@ public class DBConnected {
 	private ArrayList<Card> cards = new ArrayList<Card>();
 	
 	private ArrayList<Integer> gameRecord = new ArrayList<Integer>();
-
+	
+	private int numOfHumanWins;
+	
+	private int numOfAIWins;
+	
+	private int avgNumOfDraws;
+	
+	
 	public ArrayList<Integer> getGameRecord() {
 		return gameRecord;
 	}
@@ -25,6 +32,21 @@ public class DBConnected {
 		this.cards = cards;
 	}
 	
+	
+	
+	
+	public int getNumOfHumanWins() {
+		return numOfHumanWins;
+	}
+
+	public int getNumOfAIWins() {
+		return numOfAIWins;
+	}
+
+	public int getAvgNumOfDraws() {
+		return avgNumOfDraws;
+	}
+
 	public Card randomCard() {
 		int randomNumCard = new Random().nextInt(cards.size());
 		Card pickCard = cards.get(randomNumCard);

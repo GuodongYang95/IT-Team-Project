@@ -1,10 +1,12 @@
 package commandline;
 
+import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
 import com.sun.crypto.provider.RC2Parameters;
+import com.sun.media.sound.AiffFileReader;
 import com.sun.org.apache.bcel.internal.generic.NEW;
 
 
@@ -28,12 +30,16 @@ public class GameManager {
 		
 		int choice = gameOrStatistics(); 
 		if (choice == 1) {
-			statistics();
+			statistics(db);
 		}
 		if (choice == 2) {
 			System.out.println("How many AI do you want to play with?");
 			Scanner s = new Scanner(System.in);
 			int numOfAI = s.nextInt();
+			s.close();
+			
+			
+			// Create the Player Group:
 			players = new Player[numOfAI+1];
 			players[0] = new User("YOU");
 			
@@ -41,9 +47,14 @@ public class GameManager {
 				String aIName = "AI" + i;
 				players[i] = new AI(aIName);
 			}
+			
+			//initialize the gameData at the start of the game
+			
 			roundCount = 1;
 			drawTimes = 0;
 			userWin = false;
+			
+			//Distribute the card to each Player(User and AI)
 			cardDistribute(db);
 		}
 		
@@ -56,14 +67,16 @@ public class GameManager {
 		Scanner s = new Scanner(System.in);
 		int userChoice = s.nextInt();
 		System.out.println("Enter the number for your selection:" + userChoice);
+		s.close();// it should be closed at the end
 		return userChoice;
 	}
 	
+	// Get history record method
 	public void statistics(DBConnected db) {
 		System.out.println("Number of Games: " + numOfGames);
-		System.out.println("Number of Human Wins: " + db.numOfHumanWins);
-		System.out.println("Number of AI Wins: " + db.numOfAIWins);
-		System.out.println("Average number of Draws: " + avgNumOfDraws);
+		System.out.println("Number of Human Wins: " + db.getNumOfHumanWins());
+		System.out.println("Number of AI Wins: " + db.getNumOfAIWins());
+		System.out.println("Average number of Draws: " + db.getAvgNumOfDraws());
 		System.out.println("Longest Game: " + roundCount);
 		
 	}
@@ -81,7 +94,7 @@ public class GameManager {
 			 * then draw a card randomly to the communal pile before the round 1.
 			 * It will be taken by the winner of this round.
 			 */
-			commonCardPile.add(	db.randomCard());
+			commonCardPile.add(	db.randomCard());// this randomCard() method is going to draw a card and remove it from the Whole pile.
 			}
 		for (int i = 0; i < players.length; i++) {
 			for (int j = 0; j < numOfCard; j++) {
@@ -90,6 +103,119 @@ public class GameManager {
 		}
 		
 	}
+	//-----------------------these function will be used in each round----------------------------------
+	public void roundStart() {
+		//increase the roundcount
+		this.roundCount++;
+		System.out.println("Round "+roundCount);
+		//each user should randomly picked a card;
+		for (Player player : players) {
+			player.takeCard();
+		}
+		
+		System.out.println("You drew "+"\""+players[0].getHandCardDescription()+"\"");
+		System.out.println(players[0].getHand());
+		System.out.println("There are '"+players[0].getNumberOfCard()+" in your deck");
+	
+		//	This part can decide who have right to choose the category
+		//----------------------------
+		if(players[0].isActive()) {
+			System.out.println("It is your turn to select a category, the categories are:");
+				
+			System.out.println("Enter the number for your attribute: ");
+			//should display the card here!!!!!!!!!!! method needed!!!
+			String string = new User("user").selectCategory(); 
+			
+			players[0].getHand().setSelectedAttributeString(string);
+			
+			for(int i =0; i<players.length; i++) {
+					players[i].selectCategory(string);
+				}
+			
+			
+		}
+		else {
+			String aISelectedAttribute = "";
+			//find the active AI and let it select category
+			for (Player player : players) {
+				if(player.isActive()) {
+					aISelectedAttribute = new AI("ai").selectCategory();//AI will choose the biggest value
+				}
+			}
+			// set it to all player
+			for (Player player : players) {
+				player.getHand().setSelectedAttributeString(aISelectedAttribute);
+				
+			}
+			
+		}
+		//---------------------------------
+		//continue................
+		
+	}
+	
+	
+	
+	public void activePlayerSelector() {
+		//if it is first time, the system will randomly select a player to be active
+		if(roundCount==1) {
+			players[new Random().nextInt(players.length)].setActive(true);;
+		}
+		int maxValue = findMaxCatagoryValue();
+		ArrayList<Player> maxValueAIList = hasMaxValueList(maxValue);
+		if(maxValueAIList.size() >1) {
+			//it is draw
+			if(maxValueAIList.contains(players[0])) {
+				// if user is included
+				players[0].setActive(true);
+			}else {
+				//randomly select an ai in the maxlist
+				int randomNumber = new Random().nextInt(maxValueAIList.size());
+				maxValueAIList.get(randomNumber).setActive(true);
+			}
+		}
+		else { // it is not draw, so there is only one player in the list
+			maxValueAIList.get(0).setActive(true);
+		}
+		
+		
+		
+	}
+	/***
+	 * This method will return a list of the player who has max value
+	 * if maxValueAIList.size() >1, it is draw
+	 * else: it is not draw
+	 * @return maxValueAIList
+	 */
+	
+	public ArrayList<Player> hasMaxValueList(int maxValue) {
+		ArrayList<Player> maxValueAIList = new ArrayList<Player>();
+//		int count = 0;
+		for (Player player : players) {
+			int tempvalue = player.getHand().getSelectedCategoryValue();
+			if(maxValue == tempvalue) { //find how many max value,min is 1
+//				count++;
+				maxValueAIList.add(player);
+			}
+		}
+//		if(count>1) {
+//			return true;
+//		}
+		return maxValueAIList;
+	}
+	
+	
+	public int findMaxCatagoryValue() {
+		int maxValue = players[0].getHand().getSelectedCategoryValue();
+			for (Player player : players) {
+				int tempvalue = player.getHand().getSelectedCategoryValue();
+				if(tempvalue > maxValue)
+					maxValue = tempvalue;
+			}
+		return maxValue;
+	}
+	
+	
 	
 	public void infoRecord(DBConnected db) {
 		/*
@@ -97,7 +223,7 @@ public class GameManager {
 		 * drawTimes and userWin to the DBConnected instance.
 		 */
 		for (int i = 0; i < players.length; i++) {
-			System.out.println(players[i].GetName() + " : " + players[i].GetScore());
+			System.out.println(players[i].getName() + " : " + players[i].getScore());
 		}
 		
 	}
@@ -110,7 +236,7 @@ public class GameManager {
 		 */
 		for (int i = 0; i < players.length; i++) {
 			if (players[i].getCardPile().size() == 0) {
-				players[i].isOut() = true;
+				players[i].setOut(true); 
 			}
 			if (i == 0 && players[i].getCardPile().size() == 40) {
 				userWin = true;
