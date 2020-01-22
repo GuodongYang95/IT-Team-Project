@@ -1,4 +1,4 @@
-package commandline;
+package Model;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

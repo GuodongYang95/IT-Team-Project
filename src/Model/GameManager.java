@@ -1,4 +1,4 @@
-package commandline;
+package Model;
 
 import java.security.PublicKey;
 import java.util.ArrayList;
