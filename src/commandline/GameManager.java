@@ -369,7 +369,7 @@ public class GameManager {
 		infoRecord(db);
 		int choice = gameOrStatistics();
 		if (choice == 1) {
-			statistics();
+			statistics(db);
 		}
 		if (choice == 2) {
 			startGame(db);
