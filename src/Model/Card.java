@@ -35,18 +35,15 @@ public class Card {
 	public void setSelectedAttributeString(String selectedAttributeString) {
 		this.selectedAttributeString = selectedAttributeString;
 	}
+	
+	
 	// we need to use reflection to get the attribute and its value from each instance 
 	// return a map
 	public LinkedHashMap<String, Integer> getClassAttribute() {
 		Field[] fields = this.getClass().getDeclaredFields(); // this array will store the instance's attribute in each field.
 		
 		LinkedHashMap<String, Integer> attributeMap = new LinkedHashMap<String, Integer>();
-		//LinkedHashMap can be added by "put" order,
-		//attributeMap.put("String", "Integer");
-		//Get all values in map instance，return type:Collection
-		//Collection values = map.values();
-		//Output values
-		//System.out.println("map instance(value)"+values);
+		//LinkedHashMap can be added by "put" order.
 		
 		for (Field field : fields) {
 			field.setAccessible(true);
@@ -117,3 +114,6 @@ public class Card {
     }
 }
     
+
+	
+
