@@ -59,7 +59,7 @@ public class GameManager {
 			//Distribute the card to each Player(User and AI)
 			cardDistribute(db);
 			
-			//Active one player
+			//Active one player at first round
 			activePlayerSelector();
 		}
 		
@@ -117,7 +117,7 @@ public class GameManager {
 	}
 		
 	//-----------------------these function will be used in each round----------------------------------
-	//-------------------------------when a round start---------------------draw card, select catogory--------
+	//-------------------------------when a round start---------------------draw card, select category--------
 	public void roundStart() {
 		//increase the roundcount
 		this.roundCount++;
@@ -129,7 +129,10 @@ public class GameManager {
 		}
 		
 		System.out.println("You drew "+"\""+players[0].getHandCardDescription()+"\"");
+		
+		// this will display the card property by using toString method in Card class
 		System.out.println(players[0].getHand());
+		
 		System.out.println("There are '"+players[0].getNumberOfCard()+" in your deck");
 	
 		//	This part can decide who have right to choose the category
@@ -141,7 +144,7 @@ public class GameManager {
 				
 			  //System.out.println("Enter the number for your attribute: "); this should put in the selectCategory() function.
 			
-			//should display the card here!!!!!!!!!!! method needed!!!
+			//should display the card here!!!!!!!!!!! method needed!!!---------------
 			
 			String string = new User("user").selectCategory(); 
 			

@@ -35,6 +35,8 @@ public class Card {
 	public void setSelectedAttributeString(String selectedAttributeString) {
 		this.selectedAttributeString = selectedAttributeString;
 	}
+	
+	
 	// we need to use reflection to get the attribute and its value from each instance 
 	// return a map
 	public LinkedHashMap<String, Integer> getClassAttribute() {

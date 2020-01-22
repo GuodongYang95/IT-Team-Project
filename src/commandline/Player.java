@@ -173,6 +173,8 @@ public class Player {
     	return isOut;
     }
     
+    // This method will let Player selected the Category which is decided by active Player.
+    
 	public void selectCategory(String selectedCategory){
 		
 		Card handCard = this.getHand();

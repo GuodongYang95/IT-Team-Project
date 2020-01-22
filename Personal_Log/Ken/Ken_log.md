@@ -19,3 +19,12 @@
 3. Doing in showRoundResultFunction 
    1. add selectWinner function
    2. add distribute card method
+
+# 01/20/2020 13:00 PM --Junhao Huang
+## List the things might be changed.
+      1. add .gitignore file
+            need to ignore the .classpath and .project
+            because this two file is related to the personal jdk in the PC, if not, it will cause jdk missing when pull the branch.
+      2. might not connect to DataBase, when drag the card.
+      3. change to MVC structure. 
+    
