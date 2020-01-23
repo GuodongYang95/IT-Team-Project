@@ -3,14 +3,14 @@ import org.omg.CORBA.PRIVATE_MEMBER;
 public class GameInformation {
 	private int GameCount;
 	private int MaxRound;
-	private int AverageDraw;
+	private int NumOfDraw;
 	private int NumberOfAIWin;
 	private int NumberOfHumanWin;
 		
 		public GameInformation() {
 			GameCount=0;
 			MaxRound=0;
-			AverageDraw=0;
+			NumOfDraw=0;
 			NumberOfAIWin=0;
 			NumberOfHumanWin=0;
 		}
@@ -20,7 +20,7 @@ public class GameInformation {
 		}
 
 		public void setGameCount(int gameCount) {
-			GameCount = gameCount;
+			GameCount++;
 		}
 
 		public int getMaxRound() {
@@ -31,12 +31,12 @@ public class GameInformation {
 			MaxRound = maxRound;
 		}
 
-		public int getAverageDraw() {
-			return AverageDraw;
+		public int getNumOfDraw() {
+			return NumOfDraw;
 		}
 
 		public void setAverageDraw(int averageDraw) {
-			AverageDraw = averageDraw;
+			NumOfDraw = averageDraw;
 		}
 
 		public int getNumberOfAIWin() {
