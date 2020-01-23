@@ -1,11 +1,11 @@
-package Model;
+package model;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class DBConnected {
 	
-	private ArrayList<Card> cards = new ArrayList<Card>();
+	private ArrayList<Model_Card> cards = new ArrayList<Model_Card>();
 	
 	private ArrayList<Integer> gameRecord = new ArrayList<Integer>();
 	
@@ -24,11 +24,11 @@ public class DBConnected {
 		this.gameRecord = gameRecord;
 	}
 
-	public ArrayList<Card> getCards() {
+	public ArrayList<Model_Card> getCards() {
 		return cards;
 	}
 
-	public void setCards(ArrayList<Card> cards) {
+	public void setCards(ArrayList<Model_Card> cards) {
 		this.cards = cards;
 	}
 	
@@ -47,9 +47,9 @@ public class DBConnected {
 		return avgNumOfDraws;
 	}
 
-	public Card randomCard() {
+	public Model_Card randomCard() {
 		int randomNumCard = new Random().nextInt(cards.size());
-		Card pickCard = cards.get(randomNumCard);
+		Model_Card pickCard = cards.get(randomNumCard);
 		cards.remove(randomNumCard);
 		return pickCard;
 	}

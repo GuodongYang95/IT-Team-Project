@@ -27,4 +27,15 @@
             because this two file is related to the personal jdk in the PC, if not, it will cause jdk missing when pull the branch.
       2. might not connect to DataBase, when drag the card.
       3. change to MVC structure. 
+
+# 01/23/2020 01:05 AM --Junhao Huang
+1. Separated the Model class
+2. Add initializeCard() function which can gain the card from the file "./StarCitizenDeck.txt"
+      Test successfully!
+      and it can acquire 40 cards in total from the file, and print the card in a right way!
+3. Modified several function, such as selectCategory() in AI and User.
+
+4. Important change:  the card information which is gained from database is now changed, see (1).
+5. Warning: write Log function needed. 
+      
     

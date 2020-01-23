@@ -1,4 +1,4 @@
-package Model;
+package model;
 
 import java.security.PublicKey;
 import java.util.ArrayList;
@@ -10,16 +10,16 @@ import com.sun.media.sound.AiffFileReader;
 import com.sun.org.apache.bcel.internal.generic.NEW;
 
 
-public class GameManager {
+public class Model_GameManager {
 	private int totalcard = 40; //this should be 40 cards totally
 	private int roundCount; //record the round
 	private int drawTimes; //record how many times of draw happened during a game.
 	private boolean userWin; //true/false attribute.if it is true, it means user wins at a game; false means AI wins the game.
-	private Player[] players; //this is player array, store the user object and AI objects. The number of AI is decided by user.
-	private ArrayList<Card> commonCardPile; //this attribute will store card while a draw round.
+	private Model_Player[] players; //this is player array, store the user object and AI objects. The number of AI is decided by user.
+	private ArrayList<Model_Card> commonCardPile; //this attribute will store card while a draw round.
 	private int numOfGames = 0;
-	private Player roundWinPlayer; // this attribute will record the winner for each round
-	
+	private Model_Player roundWinPlayer; // this attribute will record the winner for each round
+	private Model_Player winner;
 	
 	public void startGame(DBConnected db) {
 		/*
@@ -42,12 +42,12 @@ public class GameManager {
 			
 			
 			// Create the Player Group:
-			players = new Player[numOfAI+1];
-			players[0] = new User("YOU");
+			players = new Model_Player[numOfAI+1];
+			players[0] = new Model_User("YOU");
 			
 			for (int i = 1; i <= numOfAI; i++) {
 				String aIName = "AI" + i;
-				players[i] = new AI(aIName);
+				players[i] = new Model_AI(aIName);
 			}
 			
 			//initialize the gameData at the start of the game
@@ -124,7 +124,7 @@ public class GameManager {
 		System.out.println("Round "+roundCount);
 		
 		//each user should randomly picked a card;
-		for (Player player : players) {
+		for (Model_Player player : players) {
 			player.takeCard();
 		}
 		
@@ -146,7 +146,7 @@ public class GameManager {
 			
 			//should display the card here!!!!!!!!!!! method needed!!!---------------
 			
-			String string = new User("user").selectCategory(); 
+			String string = new Model_User("user").selectCategory(); 
 			
 			players[0].setActive(false); //if player have chance to select, set false after selecting
 			
@@ -164,15 +164,15 @@ public class GameManager {
 			
 			String aISelectedAttribute = "";
 			//find the active AI and let it select category
-			for (Player player : players) {
+			for (Model_Player player : players) {
 				if(player.isActive()) {
-					aISelectedAttribute = new AI("ai").selectCategory();//AI will choose the biggest value
+					aISelectedAttribute = new Model_AI("ai").selectCategory();//AI will choose the biggest value
 					
 					player.setActive(false); // set false after selecting
 				}
 			}
 			// set it to all player
-			for (Player player : players) {
+			for (Model_Player player : players) {
 				player.getHand().setSelectedAttributeString(aISelectedAttribute);
 				
 			}
@@ -188,7 +188,7 @@ public class GameManager {
 		//find the winner:
 		int maxValue = findMaxCatagoryValue();
 		
-		ArrayList<Player> maxValuePlayerList = hasMaxValuePlayerList(maxValue);
+		ArrayList<Model_Player> maxValuePlayerList = hasMaxValuePlayerList(maxValue);
 		
 		selectWinner(maxValuePlayerList);
 		
@@ -207,7 +207,7 @@ public class GameManager {
 	
 
 	
-	public void activePlayerSelector(ArrayList<Player> maxValuePlayerList) {
+	public void activePlayerSelector(ArrayList<Model_Player> maxValuePlayerList) {
 		
 		if(isDraw(maxValuePlayerList)) {
 			//it is draw
@@ -227,7 +227,7 @@ public class GameManager {
 				
 	}
 	
-	 public boolean isDraw(ArrayList<Player> playerList) {
+	 public boolean isDraw(ArrayList<Model_Player> playerList) {
 		 
 		 	if(playerList.size() >1) {
 				//it is draw
@@ -252,7 +252,7 @@ public class GameManager {
 		//default user has the max value
 		int maxValue = players[0].getHand().getSelectedCategoryValue();
 		
-			for (Player player : players) {
+			for (Model_Player player : players) {
 				int tempvalue = player.getHand().getSelectedCategoryValue();
 				if(tempvalue > maxValue)
 					maxValue = tempvalue;
@@ -260,11 +260,11 @@ public class GameManager {
 			
 		return maxValue;
 	}
-	public ArrayList<Player> hasMaxValuePlayerList(int maxValue) {
+	public ArrayList<Model_Player> hasMaxValuePlayerList(int maxValue) {
 		
-		ArrayList<Player> maxValuePlayerList = new ArrayList<Player>();
+		ArrayList<Model_Player> maxValuePlayerList = new ArrayList<Model_Player>();
 		
-		for (Player player : players) {
+		for (Model_Player player : players) {
 			int tempvalue = player.getHand().getSelectedCategoryValue();
 			if(maxValue == tempvalue) { //find how many max value,min is 1
 
@@ -278,7 +278,7 @@ public class GameManager {
 	
 	
 	// this method is going to find winner for each round
-	public void selectWinner(ArrayList<Player> maxValuePlayerList) {
+	public void selectWinner(ArrayList<Model_Player> maxValuePlayerList) {
 		System.out.print("Round "+roundCount+":");
 		if(isDraw(maxValuePlayerList)) {
 			System.out.println("This round was a Draw, common pile now has "+ commonCardPile.size()+" cards");
@@ -296,33 +296,33 @@ public class GameManager {
 		
 	}
 	
-	public void distributeCardToWinner(ArrayList<Player> maxValuePlayerList) {
+	public void distributeCardToWinner(ArrayList<Model_Player> maxValuePlayerList) {
 		
 		// declare a distributedCardList
-		ArrayList<Card> distributedCardList = new ArrayList<Card>();
+		ArrayList<Model_Card> distributedCardList = new ArrayList<Model_Card>();
 		
 		// add the commonCardPile to the distributedCardLis at first
 			if(commonCardPile.size() != 0) {
-				for (Card card : commonCardPile) {
+				for (Model_Card card : commonCardPile) {
 					distributedCardList.add(card);
 				}
 			}
 			
 		//then add all the player card to the distributedCardList
-			for (Player player : players) {
-				Card playerHold = player.getHand();
+			for (Model_Player player : players) {
+				Model_Card playerHold = player.getHand();
 				distributedCardList.add(playerHold);
 			}
 		//then judge it is draw or not
 			
 		if(isDraw(maxValuePlayerList)) {
 
-			for (Card card : distributedCardList) {
+			for (Model_Card card : distributedCardList) {
 				commonCardPile.add(card);
 			}
 		}else {
 		// if it is not draw
-			for (Card card : distributedCardList) {
+			for (Model_Card card : distributedCardList) {
 				roundWinPlayer.getCardPile().add(card);
 				
 			}
@@ -363,7 +363,7 @@ public class GameManager {
 		
 	}
 	
-	public void endGame(Player p, DBConnected db) {
+	public void endGame(Model_Player p, DBConnected db) {
 		numOfGames++;
 		System.out.println("Game Over");
 		System.out.println("The overall winnder was " + p);

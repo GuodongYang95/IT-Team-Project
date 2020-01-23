@@ -1,24 +1,30 @@
-package Model;
+package model;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import org.omg.PortableInterceptor.ACTIVE;
 
-public class Player {
+public class Model_Player {
     
-	// Player class instance will present User or AI
+	// Player class is the parent of User and AI Class
+	
+	//Attributes
 	
 	
-    private Card hand; // the Card shown at each round
+    private Model_Card ownedCard; // the Card shown at each round
+    
     private String name;
     
     private boolean active; // if a player is active, it means that he has chance to select a compared attribute
     
-    private ArrayList<Card> cardPile; // the card pile each player has.
+    private ArrayList<Model_Card> cardPile; // the card pile each player has.
     
     private int score; // this attribute will record the times that each player win at the game.
+    
     private boolean isOut = false; 
+    
+    
+    //Getter and Setter
     
     
     public int getScore() {
@@ -29,11 +35,14 @@ public class Player {
 		this.score = score;
 	}
 
-	public Player(String name) {
+	public Model_Player(String name) {
         
         this.name = name;
-//        this.active = true;
     }
+	
+	
+	//Method
+	
 
     /**
      * get the card array list
@@ -41,12 +50,12 @@ public class Player {
      * @return cardPile
      */
 
-    public ArrayList<Card> getCardPile() {
+    public ArrayList<Model_Card> getCardPile() {
     	return cardPile;
     }
     
-    public Card getHand() {
-    	return hand;
+    public Model_Card getOwnedCard() {
+    	return ownedCard;
     }
 
 	/**
@@ -68,8 +77,8 @@ public class Player {
     /**
      * This method will tell user which Card is picked
      */
-    public String getHandCardDescription() {
-    	return this.hand.getDescribution();
+    public String getOwnedCardDescription() {
+    	return this.ownedCard.getDescription();
     }
     /**
      * Return the player whether is active or not
@@ -126,30 +135,14 @@ public class Player {
      * 
      * @return Card, takenCard
      */
-    public Card takeCard() {
-        
-//        Card takenCard = this.hand[0];        
-//        Card[] newHand = new Card[this.hand.length-1];
-//        
-//        for (int i = 0; i < newHand.length; i++) {
-//            
-//            newHand[i] = this.hand[i+1];
-//            
-//        }
-//        this.hand = newHand;
-//        
-//        if (this.getHandSize() == 0) {
-//            
-//            this.active = false;
-//        }      
-//        return takenCard;
+    public Model_Card pickCard() {
     	
     	int randomCard = new Random().nextInt(cardPile.size());
     	//Get the random card
-    	Card pickedCard = cardPile.get(randomCard);
+    	Model_Card pickedCard = cardPile.get(randomCard);
     	
 	    	//the card showing.
-	    	this.hand = pickedCard;
+	    	this.ownedCard = pickedCard;
     	//remove the card if it is picked
     	cardPile.remove(randomCard);
     	return pickedCard;  //The reason why return this card is to show it when in online mode.
@@ -177,7 +170,7 @@ public class Player {
     
 	public void selectCategory(String selectedCategory){
 		
-		Card handCard = this.getHand();
+		Model_Card handCard = this.pickCard();
 		handCard.setSelectedAttributeString(selectedCategory);
 	
 	}
