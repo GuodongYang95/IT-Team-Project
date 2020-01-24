@@ -1,16 +1,18 @@
 import org.omg.CORBA.PRIVATE_MEMBER;
 
+import com.sun.media.jfxmedia.events.PlayerEvent;
+
 public class GameInformation {
 	private int GameCount;
 	private int MaxRound;
-	private int NumOfDraw;
+	private int AverageDraw;
 	private int NumberOfAIWin;
 	private int NumberOfHumanWin;
 		
 		public GameInformation() {
 			GameCount=0;
 			MaxRound=0;
-			NumOfDraw=0;
+			AverageDraw=0;
 			NumberOfAIWin=0;
 			NumberOfHumanWin=0;
 		}
@@ -31,12 +33,12 @@ public class GameInformation {
 			MaxRound = maxRound;
 		}
 
-		public int getNumOfDraw() {
-			return NumOfDraw;
+		public int getAverageDraw() {
+			return AverageDraw;
 		}
 
 		public void setAverageDraw(int averageDraw) {
-			NumOfDraw = averageDraw;
+			AverageDraw = averageDraw;
 		}
 
 		public int getNumberOfAIWin() {
