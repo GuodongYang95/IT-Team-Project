@@ -38,4 +38,11 @@
 4. Important change:  the card information which is gained from database is now changed, see (1).
 5. Warning: write Log function needed. 
       
-    
+# 01/24/2020 01:00 AM --Junhao Huang
+
+1. Finish overall model (will modify if needed)
+   There might some point:
+      how to generate each model; (Contributor needed)
+
+2. Try to add Controller and Listener
+   Chanllenges: how to actually use it to wait user's input, and then call method.

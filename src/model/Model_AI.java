@@ -30,6 +30,7 @@ public class Model_AI extends Model_Player{
     				maxValue = ownedCardCategores.get(key);
     				
     				selectedCategory = key;
+    				
     			}
     		}
     	// After for loop, the category name of Max Value has been found

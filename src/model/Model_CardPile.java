@@ -5,17 +5,26 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 
-public class Modle_CardPile {
+public class Model_CardPile {
+	
+	
+	
 	// This class will generate the card from the "StarCitizenDeck.txt"
 	
 	private List<Model_Card> cards; 
 	
+	
+	
+	
 	//Constructor
-	public Modle_CardPile() {
+	public Model_CardPile() {
 		cards = new ArrayList<Model_Card>();
 	}
+	
+	
 	
 	//Getter and Getter
 	public List<Model_Card> getCards() {
@@ -23,7 +32,11 @@ public class Modle_CardPile {
 	}
 
 
+	
+	
+	//This method will get the card from file
 	//After testing, this cards will generate 40 cards, and all category will be stored correctly. 
+	
 	public void initializeCard(String fileName) {
 		File src = new File(fileName);
 		//  "./StarCitizenDeck.txt"
@@ -73,5 +86,14 @@ public class Modle_CardPile {
 			
 		}
 		
+	}
+	
+	
+
+	public Model_Card extractCard() {
+		int randomNumCard = new Random().nextInt(cards.size());
+		Model_Card pickCard = cards.get(randomNumCard);
+		cards.remove(randomNumCard);
+		return pickCard;
 	}
 }

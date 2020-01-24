@@ -2,10 +2,28 @@ package view;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
+
+import javax.swing.JButton;
+
+import model.*;
+import listener.*;
+import controller.*;
 
 import com.sun.javafx.collections.MappingChange.Map;
 
 public class CommandLineView {
+	
+	private View_UserCategoryChoice categoryChoice;
+	private View_UserMenuChoice menuInput;
+	
+	
+	CMLController cmlController;
+	public CommandLineView( CMLController cmlController) {
+		this.cmlController = cmlController;
+
+	}
+	
 	
 	//The view of asking user whether playing a game or showing the past game statistics
 	public void gameOrStatistics() { 
@@ -27,30 +45,32 @@ public class CommandLineView {
 		System.out.println("Game Statistics:");
 		System.out.println("Number of Games: " + db.getNumOfTotalGames());
 		System.out.println("Number of Human Wins: " + db.getNumOfHumanWins());
-		System.out.println("Number of AI Wins: " + db.getNumOfAiWins());
+		System.out.println("Number of AI Wins: " + db.getNumOfAIWins());
 		System.out.println("Average number of Draws: " +db.getAverageNumOfDraws());
 		System.out.println("Longest Game: " +db.getLongetGame());
 	}
 	
 	//The view of the round started
-	public void roundStart(Model_GameManager r, Model_Player p) {
+	public void roundStart(Model_RoundManager r, Model_PlayerManager p) {
 		System.out.println("\n" + "\n");
-		if (mr.getRoundCount() == 1) {
+		if (r.getRoundCount() == 1) {
 			System.out.println("Game Start");
 		}else {
 			System.out.println("Round " + r.getRoundCount());
 			System.out.println("Round " + r.getRoundCount() + ": " + "Players have drawn their cards");
-			System.out.println("You drew " + "'" + p.getCardDescription() + "'" + " :");
-			p.getCardDisplay(); 
-			System.out.println("There are '" + p.getNumOfCardsLeft() + " cards in your deck");
+			System.out.println("You drew " + "'" + p.getPlayers()[0].getOwnedCard().getDescription() + "'" + " :");
+			System.out.println(p.getPlayers()[0].getOwnedCard()); 
+			System.out.println("There are '" + p.getPlayers()[0].getNumberOfCard() + " cards in your deck");
 		}
 	}
 	
 	//The view of game results 
-	public void selectCategory(MOdel_GameManager r, Model_Player p) {
-		HashMap<String, Integer> hm = p.getCategories();
+	
+	//User selectCategory
+	public void selectCategory(Model_RoundManager r, Model_PlayerManager p) {
+		LinkedHashMap<String, Integer> hm = p.getPlayers()[0].getOwnedCard().getCategores();
 		Iterator hmIterator = hm.entrySet().iterator();
-		if (p.whoCanSelectCategory() == p.players[0]) {
+		if (r.getActivePlayer() == p.getPlayers()[0]) {
 			System.out.println("It is your turn to select a category, the categories are:");
 			while(hmIterator.hasNext()) {
 				int number = 1;
@@ -59,26 +79,49 @@ public class CommandLineView {
 				number++;
 			}
 			System.out.println("Enter the number for your attribute: ");
-			System.out.println("Round " + r.getRoundCount() + ": " + "Player " + r.getWinnerName() + " won this round");
-			System.out.println("The winner card was '" + p.getCardDescription() + "':");
-			p.getWinnerCardDisplay();
-			
-		}else {
-			System.out.println("Round " + r.getRoundCount() + ": " + "Player " + r.getWinnerName() + " won this round");
-			p.getWinnerCardDisplay();
 		}
 	}
+	 public void showResult(Model_RoundManager r){
+		 System.out.println("Round " + r.getRoundCount() + ": " + "Player " + r.getRoundWinPlayer().getName() + " won this round");
+		 System.out.println("The winner card was '" + r.getRoundWinPlayer().getOwnedCard().getDescription() + "':");
+		 
+		 displayWinnerCard(r.getRoundWinPlayer().getOwnedCard());
+	 }	
+//		 System.out.println("Round " + r.getRoundCount() + ": " + "Player " + r.getWinnerName() + " won this round");
+//		 p.getWinnerCardDisplay();
+	 
+		 
+	 
 	//The view of display players' final score
-	public void endGame(Model_GameManager r) {
+	public void endGame(Model_PlayerManager pm,Model_GameManager gm) {
 		System.out.println("\n" + "\n");
 		System.out.println("Game Over");
 		System.out.println("\n");
-		System.out.println("The overall winner was " + r.getWinner());
+		System.out.println("The overall winner was " + gm.getWinner());
 		System.out.println("Scores:");
-		for (int i = 0; i < r.getPlayers.length; i++) {
-			System.out.println(r.getPlayers[i] + ": " + r.getPlayers[i].getScore());
+		for (int i = 0; i < pm.getPlayers().length; i++) {
+			
+			System.out.println(pm.getPlayers()[i].getName() + ": " + pm.getPlayers()[i].getScore());
 		}
 	}
 	
+	public void displayWinnerCard(Model_Card winnercard) {
+		LinkedHashMap<String, Integer> winnerCardCategories = winnercard.getCategores();
+		String output = "";
+   	 	for (String key : winnerCardCategories.keySet()) {
+		 
+         int value = winnerCardCategories.get(key);
+         
+         output += "> "+ key + ": " + value; 
+         if(winnercard.getSelectedCategoryName() == key) {
+        	 output += "<--\n";
+         }else {
+        	 output += "\n";
+         }
+         System.out.println(output);
+     }
+	}
+
+
 	
 }

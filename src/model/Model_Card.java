@@ -15,6 +15,9 @@ public class Model_Card {
 	private String selectedCategoryName; //this will be changed when selected a category
 	
 	
+	
+	
+	
 	//getter and setter________________________
 	
 	public String getDescription() {
@@ -24,27 +27,35 @@ public class Model_Card {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
-	//Method_______________________
-	
+
+	public String getSelectedCategoryName() {
+		return selectedCategoryName;
+	}
+
 	// This method set the selected category at each turn.
 	public void setSelectedCategoryName(String selectedAttributeString) {
 		this.selectedCategoryName = selectedAttributeString;
 	}
 	
-
+	
 	public LinkedHashMap<String, Integer> getCategores() {
 		return categores;
 	}
 	
 	// This method will set the categories for each card
 	public void giveCategory(String key, int value) {
-
-			this.categores.put(key, value);
+		
+		this.categores.put(key, value);
 		
 	}
-
-    
+	
+	
+	
+	
+	
+	
+	
+	//Method_______________________
     public int getSelectedCategoryValue() {
     	
     	//find the target value of the category 

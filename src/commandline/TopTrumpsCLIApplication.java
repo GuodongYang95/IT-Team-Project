@@ -1,5 +1,8 @@
 package commandline;
 
+import controller.CMLController;
+import view.CommandLineView;
+
 /**
  * Top Trumps command line application
  */
@@ -24,7 +27,10 @@ public class TopTrumpsCLIApplication {
 			// ----------------------------------------------------
 			// Add your game logic here based on the requirements
 			// ----------------------------------------------------
+			CMLController cmlController = new CMLController(); 
+			CommandLineView view = new CommandLineView(cmlController);
 			
+			view.gameOrStatistics();
 			userWantsToQuit=true; // use this when the user wants to exit the game
 			
 		}

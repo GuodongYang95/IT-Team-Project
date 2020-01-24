@@ -15,13 +15,12 @@ public class Model_Player {
     
     private String name;
     
-    private boolean active; // if a player is active, it means that he has chance to select a compared attribute
-    
     private ArrayList<Model_Card> cardPile; // the card pile each player has.
     
     private int score; // this attribute will record the times that each player win at the game.
     
     private boolean isOut = false; 
+    
     
     
     //Getter and Setter
@@ -40,16 +39,6 @@ public class Model_Player {
         this.name = name;
     }
 	
-	
-	//Method
-	
-
-    /**
-     * get the card array list
-     * 
-     * @return cardPile
-     */
-
     public ArrayList<Model_Card> getCardPile() {
     	return cardPile;
     }
@@ -57,44 +46,26 @@ public class Model_Player {
     public Model_Card getOwnedCard() {
     	return ownedCard;
     }
-
-	/**
-     * The name of the Player.
-     */
+	
     public String getName() {
 
         return name;
     }
     
-    /**
-     * The number of Cards the Player has.
-     */
     public int getNumberOfCard() {
         
         return this.cardPile.size();
     }
-    
-    /**
-     * This method will tell user which Card is picked
-     */
+	
     public String getOwnedCardDescription() {
     	return this.ownedCard.getDescription();
     }
-    /**
-     * Return the player whether is active or not
-   	 */
-    public boolean isActive() {
+    
+    
+	//Method
 
-        return active;
-    }
 
-    /**
-     * Sets whether the Player is still in a game.
-     */
-    public void setActive(boolean active) {
 
-        this.active = active;
-    }
     
 //    /**
 //     * Returns the Card a Player has at a given index in their array of Cards.
@@ -136,6 +107,7 @@ public class Model_Player {
      * @return Card, takenCard
      */
     public Model_Card pickCard() {
+    	if(isOut == false) {
     	
     	int randomCard = new Random().nextInt(cardPile.size());
     	//Get the random card
@@ -146,7 +118,10 @@ public class Model_Player {
     	//remove the card if it is picked
     	cardPile.remove(randomCard);
     	return pickedCard;  //The reason why return this card is to show it when in online mode.
-    	
+    	}
+    	else {
+    		return null;
+    	}
     }
     
     /**
@@ -170,8 +145,8 @@ public class Model_Player {
     
 	public void selectCategory(String selectedCategory){
 		
-		Model_Card handCard = this.pickCard();
-		handCard.setSelectedAttributeString(selectedCategory);
+		Model_Card ownedCard = this.pickCard();
+		ownedCard.setSelectedCategoryName(selectedCategory);
 	
 	}
     
