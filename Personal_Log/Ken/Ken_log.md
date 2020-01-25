@@ -46,3 +46,41 @@
 
 2. Try to add Controller and Listener
    Chanllenges: how to actually use it to wait user's input, and then call method.
+
+# 01/25/2020 04:00 AM --Junhao HUang
+1. fixed some bug in Model Part.
+       can select the category correctly
+2. gennerate the controller.
+3. the CML mode is now can run, but still some bugs:
+            the card cannot show correctly at each round
+4. log function need to be added
+5. database connection to be added.
+
+# 01/25/2020 2:33 PM --Junhao Huang
+
+## fixed bug:
+      1. accidently select and reset active player at the same time:    Model_RoundManager line:128
+     
+          fixed: it is commented. (deleted)
+
+      2. accidently pick the card again when select category: Class:    Model_Player line:149 
+   
+          fixed: it is commented (deleted)
+
+      3. did't reset winPlayerList after active player select the category  
+   
+            fixed at : Model_RoundManager line:90
+      
+      4. the game will throw error when user is out
+   
+            fixed at: Model_RoundManager line:190~203
+## Add function
+      Player now can end game at each time
+      Add at :   Model_GameManager line 40~65
+
+## needed:
+      1. log function need to be added
+      2. database connection to be added.
+
+
+

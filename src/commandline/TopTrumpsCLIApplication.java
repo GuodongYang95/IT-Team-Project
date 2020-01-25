@@ -1,7 +1,5 @@
 package commandline;
 
-import controller.CMLController;
-import view.CommandLineView;
 
 /**
  * Top Trumps command line application
@@ -21,17 +19,32 @@ public class TopTrumpsCLIApplication {
 		// State
 		boolean userWantsToQuit = false; // flag to check whether the user wants to quit the application
 		
+		
+		View_CommandLine view = new View_CommandLine();
+		
+		
+		Model_GameManager gm = new Model_GameManager();
+
+		CMLController controller = new CMLController(gm,view);
+		
+		if(controller.getMenuChoice()) {
+			userWantsToQuit = false;
+		}else {
+			userWantsToQuit = true;
+		}
+		
 		// Loop until the user wants to exit the game
 		while (!userWantsToQuit) {
 
 			// ----------------------------------------------------
 			// Add your game logic here based on the requirements
 			// ----------------------------------------------------
-			CMLController cmlController = new CMLController(); 
-			CommandLineView view = new CommandLineView(cmlController);
+			if(controller.startRound() ==false) {
+				
+				userWantsToQuit=true; // use this when the user wants to exit the game
+				
+			}
 			
-			view.gameOrStatistics();
-			userWantsToQuit=true; // use this when the user wants to exit the game
 			
 		}
 

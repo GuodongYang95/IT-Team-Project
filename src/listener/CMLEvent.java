@@ -2,15 +2,16 @@ package listener;
 
 public class CMLEvent {
 	
-	public int getUserChoiceOfMenu(UserChoiceOfMenuListener menuchoice) {
-		
-		return menuchoice.userChoiceOfMenu();
-	}
 	
-	public int getUserChoiceOfSelectingCategory(UserChoiceofSelectingListener categoryChoice) {
-		
-		return categoryChoice.userChoiceofSelectingCategoryListener();
-		
-	}
+//	public int getUserChoiceOfMenu(UserChoiceOfMenuListener menuchoice) {
+//		
+//		return menuchoice.userChoiceOfMenu(cmlController, e);
+//	}
+//	
+//	public boolean getUserChoiceOfSelectingCategory(UserChoiceofSelectingListener categoryChoice) {
+//		
+//		return true;
+//		
+//	}
 
 }
