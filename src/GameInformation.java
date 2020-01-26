@@ -1,6 +1,4 @@
-import org.omg.CORBA.PRIVATE_MEMBER;
 
-import com.sun.media.jfxmedia.events.PlayerEvent;
 
 public class GameInformation {
 	private int GameCount;

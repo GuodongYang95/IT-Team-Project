@@ -21,8 +21,8 @@
 			System.out.println("PostgreSQL JDBC Driver found!");
 			// proceed with a database connection
 			try {
-				connection = DriverManager.getConnection("jdbc:postgresql://yacata.dcs.gla.ac.uk:5432/", "m_19_2431374h",
-						"2431374h");
+				connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/ITproject", "postgres",
+						"postgres123");
 				System.out.println("Connection Successed!");
 			} catch (SQLException e) {
 				System.out.println("Connection Failed!");
