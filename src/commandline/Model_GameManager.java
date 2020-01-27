@@ -16,6 +16,7 @@ public class Model_GameManager {
 	
 	private Model_PlayerManager pm;
 	private Model_RoundManager rm;
+	private boolean flag = false;
 
 	
 	public void whenstart(int numberOfAI) {
@@ -35,25 +36,40 @@ public class Model_GameManager {
 		Scanner scanner = new Scanner(System.in);
 		String userInput = scanner.nextLine();
 		if(userInput.equals("Exit")) {
-			// end game, looking for the winner who has the most cards
-			int maxSize = pm.getPlayers()[0].getCardPile().size(); //assume the first Player has the most cards
-			winner = pm.getPlayers()[0]; //assume the first Player win the game
-			//check other player
-				for (Model_Player player : pm.getPlayers()) { 
-					if(player.getCardPile().size() > maxSize) {
-						
-						maxSize = player.getCardPile().size();
-						winner = player;
-						
-					}
-					
-				}
-			// game over menu!!!!!
+//			// end game, looking for the winner who has the most cards
+//			int maxSize = pm.getPlayers()[0].getCardPile().size(); //assume the first Player has the most cards
+//			winner = pm.getPlayers()[0]; //assume the first Player win the game
+//			//check other player
+//				for (Model_Player player : pm.getPlayers()) { 
+//					if(player.getCardPile().size() > maxSize) {
+//						
+//						maxSize = player.getCardPile().size();
+//						winner = player;
+//						
+//					}
+//					
+//				}
+//			// game over menu!!!!!
 				
 				return true;
 		}else {
 			return false;
 		}
+	}
+	
+	public boolean userHaveLast(Model_RoundManager mr, Model_PlayerManager mp) {
+		if (mr.oneCardLeftAndLose(mp) == true) {
+			flag = true;
+			return false;
+		}
+		if (flag == true) {
+			if(mr.oneCardLeftAndLoseAgain(mp) == true) {
+				flag = false;
+				return true;
+			}
+		}
+		flag = false;
+		return false;
 	}
 	
 	
@@ -106,6 +122,17 @@ public class Model_GameManager {
 	public Model_RoundManager getRm() {
 		return rm;
 	}
+
+
+	public boolean isFlag() {
+		return flag;
+	}
+
+
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+	
 	
 	
 	// ::::::::::::::::::::: the codes below has been deleted........

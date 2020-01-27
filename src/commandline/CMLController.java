@@ -1,11 +1,8 @@
 package commandline;
 
-import model.*;
 
 import java.util.Scanner;
 
-import listener.*;
-import view.*;
 
 
 
@@ -61,7 +58,11 @@ public class CMLController {
 		 
 		// each player will draw the cards
 		gm.getPm().playersDrawCard();
-		view.showUsercard(gm.getRm(), gm.getPm());
+		
+		if (gm.getRm().userOut(gm.getPm()) == false) {
+			view.showUsercard(gm.getRm(), gm.getPm());
+		}
+	
 		
 	
 		 //active player will select category
@@ -71,7 +72,7 @@ public class CMLController {
 		 
 		 // compare the value and select winner
 		 
-		 gm.getRm().resetMaxValuePlayerList(gm.getPm());
+		 gm.getRm().resetMaxValuePlayerList(gm.getPm());//find the maxvalue player again
 		 gm.getRm().selectWinner();
 		 gm.getPm().distributeCardToWinner(gm.getRm());
 		 
@@ -84,9 +85,12 @@ public class CMLController {
 		 
 		 if(gm.getRm().winOrOut(gm.getPm(), gm) == false) { 
 			 	// winOrOut(gm.getPm(), gm) == false means no player win the game (no one has 40 cards)
+			 if (gm.userHaveLast(gm.getRm(), gm.getPm()) == true) {
+				 view.youHaveLast();
+			 }
 			 return true; //return true means the game will continue
 		 }else {
-			 
+			 view.endGame(gm.getPm(), gm);
 			 return false;
 		 }
 		 
