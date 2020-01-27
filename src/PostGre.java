@@ -5,7 +5,7 @@
 	import java.sql.Statement;
 
 
-	public class PostDBcon {
+	public class PostGre {
 		public static void main(String args[]) {
 			// load the JDBC driver
 			Connection connection = null;
@@ -51,4 +51,3 @@
 			}
 		}
 	}
-
