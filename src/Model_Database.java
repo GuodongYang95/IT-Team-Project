@@ -4,8 +4,12 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import commandline.Model_AI;
+import commandline.Model_Player;
+import commandline.Model_User;
  
-public class JDBCOperation {
+public class Model_Database {
 	private Connection conn = null;
 	private Statement stmt = null;
 	/**
@@ -81,9 +85,9 @@ public class JDBCOperation {
 	 *              has completed.
 	 */
 
-	public void inputGameStat(GameStat gstats) {
-		Player[] players = gstats.getPlayerArray();
-		Player winner = gstats.getWinner();
+	public void inputGameStat(Model_GameStat gstats) {
+		Model_Player[] players = gstats.getPlayerArray();
+		Model_Player winner = gstats.getWinner();
 		
 		// gamestats will be added to database per game, and the first gameID is 1 in database 
 		int gameID = getGameCount() + 1; 
@@ -96,9 +100,9 @@ public class JDBCOperation {
 		int p3RW = players[2].getScore();
 		int p4RW = players[3].getScore();
 		int p5RW = players[4].getScore();
-		if (winner instanceof User) {
+		if (winner instanceof Model_User) {
 			gWinner = 1;
-		} else if (winner instanceof AIPlayer) {
+		} else if (winner instanceof Model_AI) {
 			if (winner == players[1]) {
 				gWinner = 2;
 			} else if (winner == players[2]) {
@@ -260,8 +264,8 @@ public class JDBCOperation {
 	 *
 	 * @return contains overall statistics over all the games played.
 	 */
-	public GameInformation getDatabaseInfo() {
-		GameInformation ginfo = new GameInformation();
+	public Model_DbResponce getDatabaseInfo() {
+		Model_DbResponce ginfo = new Model_DbResponce();
 		
 		int totalGameCount = 0;
 		int totalAIWins = 0;
