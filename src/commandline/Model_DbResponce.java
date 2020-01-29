@@ -1,4 +1,4 @@
-
+package commandline;
 
 public class Model_DbResponce {
 	private int GameCount;
