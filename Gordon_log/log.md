@@ -27,3 +27,12 @@
 
 
         6. endGame() //The view of displaying players' final score
+
+# 27/01/2020 LOG
+## GuodongYang
+    1. Improve the game process that if user is out, then this game will be over.
+        Solution: rewrite winOrOut() in RoundManager Class. If the user is out, this game will be continued until one of AI player wins the game.
+
+    2. Add a method that outputing "You have lost!" when the user is out.
+        Thought: When user has only one card on his card pile, the next round should not display the number of his card pile. Meanwhile, if user lose the next round again, the user will be out the game with no more card information.
+        Solution: create oneCardLeft() and oneCardLeftLose() in RoundManager class which were called by userHaveLost() in GameManager class.
