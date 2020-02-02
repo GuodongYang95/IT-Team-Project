@@ -1,14 +1,8 @@
 package commandline;
 
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
 
-import javax.swing.JButton;
 
-import listener.*;
-
-import com.sun.javafx.collections.MappingChange.Map;
 
 public class View_CommandLine {
 	
@@ -49,14 +43,14 @@ public class View_CommandLine {
 	}
 	
 	//The view of past game statistics
-	public void statistics(Model_Database db) {
+	public void statistics(Model_DbResponce db) {
 		System.out.println("\n" + "\n");
 		System.out.println("Game Statistics:");
-		System.out.println("Number of Games: " + db.getNumOfTotalGames());
-		System.out.println("Number of Human Wins: " + db.getNumOfHumanWins());
-		System.out.println("Number of AI Wins: " + db.getNumOfAIWins());
-		System.out.println("Average number of Draws: " +db.getAverageNumOfDraws());
-		System.out.println("Longest Game: " +db.getLongetGame());
+		System.out.println("Number of Games: " + db.getGameCount());
+		System.out.println("Number of Human Wins: " + db.getNumberOfHumanWin());
+		System.out.println("Number of AI Wins: " + db.getNumberOfAIWin());
+		System.out.println("Average number of Draws: " +db.getAverageDraw());
+		System.out.println("Longest Game: " +db.getMaxRound());
 	}
 	
 	//The view of the round started
