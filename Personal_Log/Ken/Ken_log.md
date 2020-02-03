@@ -81,6 +81,12 @@
 ## needed:
       1. log function need to be added
       2. database connection to be added.
+   
+# 01/29  Meeting details:
+      1.commandLine mode will be completede after finishing log function and database connection.
+      2. Understand the working step of online mode
+      3. Confirm that the knowledges of online mode needed: Jax,  Html , JavaScripts, CSS
+      4. Spend one week to master these language.
 
 # 02/03/2020 1:13 AM --Junhao Huang
 ## Complete log function
