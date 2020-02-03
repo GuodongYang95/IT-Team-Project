@@ -230,6 +230,9 @@ public class Model_RoundManager {
 			
 		}
 		
+		// These three methods below are used to judge the user will be lose game or not
+		// They will be actually used in Model_GameManager
+		
 		public boolean userOut(Model_PlayerManager mp) {
 			if (mp.getPlayers()[0].isOut()) {
 				return true;
@@ -253,5 +256,20 @@ public class Model_RoundManager {
 				return false;
 			}
 		}
+		
+		
+		//This method will be used to write log
+		public String commonPileDetails() {
+			String output = "";
+			
+			for (Model_Card card : commonCardPile) {
+				
+				output += card.cardDetail()+"\n";
+			}
+			
+			return output;
+		}
+		
+		
 
 }

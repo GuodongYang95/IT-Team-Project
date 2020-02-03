@@ -9,14 +9,15 @@ public class CMLController {
 	
 	private Model_GameManager gm;
 	private View_CommandLine view;
-	private View_UserMenuChoice menuChoice;
-	private View_UserCategoryChoice categoryChoice;
+	private LogManager logger;
+	private boolean logOrNot;
 	
-	public CMLController(Model_GameManager gm, View_CommandLine view) {
+	public CMLController(Model_GameManager gm, View_CommandLine view, LogManager logger, boolean logOrNot) {
+		
 		this.gm = gm;
 		this.view = view;
-		menuChoice = new View_UserMenuChoice();
-		categoryChoice = new View_UserCategoryChoice();
+		this.logger = logger;
+		this.logOrNot = logOrNot;
 		
 	}
 	
@@ -42,7 +43,17 @@ public class CMLController {
 		int numberOfAI = new Scanner(System.in).nextInt();
 		
 		 gm.whenstart(numberOfAI);
-
+		 
+		 if(logOrNot) {
+		 
+			 logger.startGame(gm.getPm().getCardPile(), gm.getPm());
+			 
+			 logger.deckReadConstructed(gm.getPm().getCardPile());
+		 }
+		 
+		 // distrubted the card
+		  gm.getPm().cardDistribute(gm.getRm());
+		  
 		 return true;
 		 
 		}
@@ -52,9 +63,16 @@ public class CMLController {
 		//tell model and view what to do
 		view.roundStart(gm.getRm(), gm.getPm());
 		
+		//logger
+		if(logOrNot) {
+			
+			logger.roundStart(gm.getRm());
+			logger.communalPile(gm.getRm());
+		}
 		// select active player
 		gm.getRm().activePlayerSelector(gm.getPm());
 		 
+		
 		// each player will draw the cards
 		gm.getPm().playersDrawCard();
 		
@@ -67,6 +85,12 @@ public class CMLController {
 		 //active player will select category
 		view.selectCategory(gm.getRm(), gm.getPm());
 		 gm.getPm().playersSelectCategory(gm.getRm());
+		 if(logOrNot) {
+			 
+			 logger.cardInPlay(gm.getPm());
+			 
+			 logger.selectedCategory(gm.getPm());
+		 }
 //		 view.selectCategory(gm.getRm(), gm.getPm());
 		 
 		 // compare the value and select winner
@@ -76,6 +100,11 @@ public class CMLController {
 		 gm.getPm().distributeCardToWinner(gm.getRm());
 		 
 		 view.showResult(gm.getRm());
+		 if(logOrNot) {
+			 
+			 logger.logRoundWinner(gm.getRm());
+			 logger.playerDeck(gm.getPm());
+		 }
 		 
 		 if(gm.ifWantEndGame()){
 			 
@@ -90,6 +119,11 @@ public class CMLController {
 			 return true; //return true means the game will continue
 		 }else {
 			 view.endGame(gm.getPm(), gm);
+			 if(logOrNot) {
+				 
+				 logger.logWinner(gm);
+				 logger.closeWriter();
+			 }
 			 return false;
 		 }
 		 

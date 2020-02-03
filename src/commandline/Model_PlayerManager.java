@@ -24,7 +24,7 @@ public class Model_PlayerManager {
 			
 		}
 		
-		cardPile = new Model_CardPile();
+		this.cardPile = new Model_CardPile();
 		
 	}
 	
@@ -37,6 +37,10 @@ public class Model_PlayerManager {
 
 	public void setPlayers(Model_Player[] players) {
 		this.players = players;
+	}
+	
+	public Model_CardPile getCardPile() {
+		return cardPile;
 	}
 	
 	
@@ -52,7 +56,8 @@ public class Model_PlayerManager {
 	 * it will also get the property of each card from DBConnected instance.
 	 * And put them into player's cardPile.
 	 */
-	
+
+
 	public void cardDistribute(Model_RoundManager rm) { 
 		// numOfCard present the number of card that each player should have at first round.
 		int numOfCard = cardPile.getCards().size() / players.length;
@@ -155,6 +160,29 @@ public class Model_PlayerManager {
 		Scanner scanner = new Scanner(System.in);
 		int playerinput = scanner.nextInt();
 		return playerinput;
+	}
+	
+	public String playersCardPileDetails() {
+		String output = "";
+		
+		for (Model_Player player : players) {
+			
+			if(player.isOut() == false)
+			output +=player.playerCardPileDetails();
+			output += "\n";
+		}
+		
+		return output;
+	}
+	
+	//this method is used to return the selectedCardDetail of each player
+	public String selectedCategoryDetails() {
+		String output = "";
+		for (Model_Player player : players) {
+			if(player.isOut()==false)
+			output += player.getName() + " : " + player.getOwnedCard().selectedCategoryDetail() + "\n";
+		}
+		return output;
 	}
 	
 	

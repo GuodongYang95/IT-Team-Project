@@ -82,5 +82,10 @@
       1. log function need to be added
       2. database connection to be added.
 
+# 02/03/2020 1:13 AM --Junhao Huang
+## Complete log function
+      1. the log function can be controlled by argument which is -t
+      2. the log function will be covered when a new game start
+      3. it recored the total cardpile, each player cardpile at each round, the owned card of each player at each round, the selected category, the round winner, the overall winner. 
 
 

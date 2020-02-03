@@ -110,14 +110,14 @@ public class Model_Player {
     public Model_Card pickCard() {
     	if(isOut == false) {
     	
-    	int randomCard = new Random().nextInt(cardPile.size());
+//    	int randomCard = new Random().nextInt(cardPile.size());
     	//Get the random card
-    	Model_Card pickedCard = cardPile.get(randomCard);
+    	Model_Card pickedCard = cardPile.get(0);
     	
 	    	//the card showing.
 	    	this.ownedCard = pickedCard;
     	//remove the card if it is picked
-    	cardPile.remove(randomCard);
+    	cardPile.remove(0);
     	return pickedCard;  //The reason why return this card is to show it when in online mode.
     	}
     	else {
@@ -136,7 +136,9 @@ public class Model_Player {
 //        return this.hand[0];
 //    }
     public void setOut(boolean outOrNot) {
+    	
     	isOut = outOrNot;
+    	
     }
     public boolean isOut() {
     	return isOut;
@@ -147,10 +149,33 @@ public class Model_Player {
 	public void selectCategory(String selectedCategory){
 		if(this.isOut == false) {
 //		Model_Card ownedCard = this.pickCard(); ::: fixed
+		
 			
 		ownedCard.setSelectedCategoryName(selectedCategory);
+		
+		
 		}
 	
+	}
+	
+	public String playerCardPileDetails() {
+		String output = "";
+		output += this.name + "\n" +"---------------------" + "\n";
+		for (Model_Card card : cardPile) {
+			output += card.cardDetail() + "\n";
+		}
+		
+		return output;
+	}
+	
+	public String topCardDetail() {
+		
+		return cardPile.get(0).cardDetail();
+		
+	}
+	
+	public String ownedCardDetail() {
+		return this.ownedCard.cardDetail();
 	}
     
 }

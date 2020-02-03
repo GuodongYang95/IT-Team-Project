@@ -70,6 +70,12 @@ public class Model_Card {
 		return 0;	 
     }
     
+    public String selectedCategoryDetail() {
+    	String output = "";
+    	output += selectedCategoryName + " : " + getSelectedCategoryValue();
+    	return output;
+    }
+    
     @Override
     public String toString() {
     	 String outcome = "";
@@ -84,6 +90,21 @@ public class Model_Card {
     	 
     	 return outcome;	
     	
+    }
+    
+    public String cardDetail() {
+    	String output = "";
+    	
+    	output += this.description;
+    	
+    	for (String key : categores.keySet()) {
+   		 
+            int value = categores.get(key);
+            
+           output += ","+value ;
+           
+        }
+    	return output;
     }
 }
     

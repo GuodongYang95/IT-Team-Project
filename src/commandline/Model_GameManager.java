@@ -24,7 +24,6 @@ public class Model_GameManager {
 		pm = new Model_PlayerManager(numberOfAI);
 		rm = new Model_RoundManager();
 		
-		pm.cardDistribute(rm);
 		
 	}
 	

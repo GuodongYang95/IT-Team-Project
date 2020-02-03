@@ -26,8 +26,11 @@ public class TopTrumpsCLIApplication {
 		
 		
 		Model_GameManager gm = new Model_GameManager();
+		
+		LogManager logger = new LogManager("toptrumps");
+		
 
-		CMLController controller = new CMLController(gm,view);
+		CMLController controller = new CMLController(gm,view,logger,writeGameLogsToFile);
 		
 		if(controller.getMenuChoice()) {
 			userWantsToQuit = false;
