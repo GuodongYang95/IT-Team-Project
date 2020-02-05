@@ -19,7 +19,7 @@ public class LogManager {
 		this.filePathName = filePathName;
 		try {
 			
-			file = new File("./"+filePathName + ".txt");
+			file = new File("./"+filePathName + ".log");
 			// create the file if it does not exist
 			if(!file.exists()) {
 				file.createNewFile();
@@ -45,6 +45,7 @@ public class LogManager {
 			writer.append("--------------------"+ "\n");
 			writer.append("--- Top Trumps   ---" + "\n");
 			writer.append("--------------------"+ "\n");
+			writer.flush();
 			
 			// true means this file can be appended
 		} catch (IOException e) {
@@ -59,6 +60,7 @@ public class LogManager {
 		
 		try {
 			writer.append("==========================Round " + rm.getRoundCount() + "==================== \n");
+			writer.flush();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -73,6 +75,7 @@ public class LogManager {
 			writer.append("The Whole cardPile readed" + "\n");
 			writer.append(cardPile.detailOfCardPile() + "\n");
 			writer.append(separatedLine);
+			writer.flush();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -85,6 +88,7 @@ public class LogManager {
 				writer.append("The Player cardPile: \n");
 				writer.append(pm.playersCardPileDetails());
 				writer.append(separatedLine);
+				writer.flush();
 			} catch (IOException e) {
 				
 				e.printStackTrace();
@@ -100,6 +104,7 @@ public class LogManager {
 				writer.append("Common Card Pile : "+ "\n\n");
 				writer.append(rm.commonPileDetails() + "\n");
 				writer.append(separatedLine);
+				writer.flush();
 			}
 		} catch (IOException e) {
 			
@@ -119,6 +124,7 @@ public class LogManager {
 					}
 				}
 			writer.append(separatedLine);
+			writer.flush();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -133,6 +139,7 @@ public class LogManager {
 			writer.append("The category of each player selected"+separatedLine);
 			writer.append(pm.selectedCategoryDetails());
 			writer.append(separatedLine);	
+			writer.flush();
 			} 
 		catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -146,9 +153,11 @@ public class LogManager {
 			writer.append("The winner of this round" + separatedLine);
 			writer.append(rm.getRoundWinPlayer().getName()+"\n");
 			writer.append(separatedLine);
+			writer.flush();
 			}
 			else {
 				writer.append("this round is draw" + "\n");
+				writer.flush();
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -160,6 +169,7 @@ public class LogManager {
 		try {
 			writer.append("The winner: "+separatedLine);
 			writer.append(gm.getWinner().getName());
+			writer.flush();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -168,6 +178,7 @@ public class LogManager {
 	
 	public void closeWriter() {
 		try {
+			writer.flush();
 			this.writer.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

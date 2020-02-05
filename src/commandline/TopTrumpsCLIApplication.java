@@ -32,23 +32,24 @@ public class TopTrumpsCLIApplication {
 
 		CMLController controller = new CMLController(gm,view,logger,writeGameLogsToFile);
 		
-		if(controller.getMenuChoice()) {
-			userWantsToQuit = false;
-		}else {
-			userWantsToQuit = true;
-		}
 		
 		// Loop until the user wants to exit the game
 		while (!userWantsToQuit) {
-
+			
+			
+			if(controller.getMenuChoice()) {
+				userWantsToQuit = true;
+			}else {
+				userWantsToQuit = false;
+			}
+			
 			// ----------------------------------------------------
 			// Add your game logic here based on the requirements
 			// ----------------------------------------------------
-			if(controller.startRound() ==false) {
+			controller.startRound();
 				
-				userWantsToQuit=true; // use this when the user wants to exit the game
 				
-			}
+			
 			
 			
 		}

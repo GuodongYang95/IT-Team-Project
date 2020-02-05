@@ -95,3 +95,14 @@
       3. it recored the total cardpile, each player cardpile at each round, the owned card of each player at each round, the selected category, the round winner, the overall winner. 
 
 
+# 02/05   Meeting details:
+      1. divide the task of online mode into three parts: JS, Html, Jax
+      2. start to write Story card
+      3. Goes into Sprint 2 --- Online Version
+
+# 02/05/2020 3.21 P.M. -- Junhao Huang
+      1.Log function improvement:
+            the log now can be written following the game is contining.
+               add write.flush()
+      2.Game improvement. The game will not end until user input 3 from the Game menu;
+            the number: 3 in GameMenu is Exit Game.

@@ -39,6 +39,7 @@ public class GameStat {
 		public int getNumOfRounds() {
 			return numOfRounds;
 		}
+		
 		public void incremRoundCounter() {
 			numOfRounds++;
 		}
