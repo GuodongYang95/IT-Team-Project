@@ -21,6 +21,7 @@ public class Model_Database {
 		String url = "jdbc:postgresql://localhost:5432/ITPproject";
 		String username = "postgres";
 		String password = "postgres123";
+		//
 
 		try {
 			Class.forName(driver); // classLoader

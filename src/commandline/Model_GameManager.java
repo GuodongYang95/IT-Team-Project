@@ -16,15 +16,17 @@ public class Model_GameManager {
 	
 	private Model_PlayerManager pm;
 	private Model_RoundManager rm;
-
+	private Model_Database db;
+	
 	
 	public void whenstart(int numberOfAI) {
 		
 		pm = new Model_PlayerManager(numberOfAI);
 		rm = new Model_RoundManager();
+		db= new Model_Database();
 		
 		pm.cardDistribute(rm);
-		
+		db.getConn();
 	}
 	
 	
