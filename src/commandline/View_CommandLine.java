@@ -44,7 +44,7 @@ public class View_CommandLine {
 	}
 	
 	//The view of past game statistics
-	public void statistics(Model_DbResponce db) {
+	public void statistics(DB_Model_DbResponce db) {
 		System.out.println("\n" + "\n");
 		System.out.println("Game Statistics:");
 		System.out.println("Number of Games: " + db.getGameCount());

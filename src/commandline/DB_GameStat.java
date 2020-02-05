@@ -2,14 +2,14 @@ package commandline;
 
 import commandline.Model_Player;
 
-public class GameStat {
+public class DB_GameStat {
 
 		private int numOfDraws;
 		private Model_Player winner;
 		private int numOfRounds;
 		private Model_Player[] players;
 		
-		public GameStat(Model_Player[] players) {
+		public DB_GameStat(Model_Player[] players) {
 			numOfDraws = 0;
 			winner = null;
 			numOfRounds = 0;

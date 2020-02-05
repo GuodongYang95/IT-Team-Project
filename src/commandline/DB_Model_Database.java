@@ -9,7 +9,7 @@ import commandline.Model_AI;
 import commandline.Model_Player;
 import commandline.Model_User;
  
-public class Model_Database {
+public class DB_Model_Database {
 	private Connection conn = null;
 	private Statement stmt = null;
 	/**
@@ -264,8 +264,8 @@ public class Model_Database {
 	 *
 	 * @return contains overall statistics over all the games played.
 	 */
-	public Model_DbResponce getDatabaseInfo() {
-		Model_DbResponce ginfo = new Model_DbResponce();
+	public DB_Model_DbResponce getDatabaseInfo() {
+		DB_Model_DbResponce ginfo = new DB_Model_DbResponce();
 		
 		int totalGameCount = 0;
 		int totalAIWins = 0;
