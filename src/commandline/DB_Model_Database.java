@@ -1,6 +1,8 @@
 package commandline;
+import java.awt.Insets;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -9,7 +11,7 @@ import commandline.Model_AI;
 import commandline.Model_Player;
 import commandline.Model_User;
  
-public class Model_Database {
+public class DB_Model_Database {
 	private Connection conn = null;
 	private Statement stmt = null;
 	/**
@@ -18,14 +20,13 @@ public class Model_Database {
 	 */
 	public Connection getConn() {
 		String driver = "org.postgresql.Driver";
-		String url = "jdbc:postgresql://localhost:5432/ITPproject";
+		String url = "jdbc:postgresql://localhost:5432/ITproject";
 		String username = "postgres";
 		String password = "postgres123";
-		//
 
 		try {
 			Class.forName(driver); // classLoader
-			conn = (Connection) DriverManager.getConnection(url, username, password);
+			conn = DriverManager.getConnection(url, username, password);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
@@ -86,14 +87,73 @@ public class Model_Database {
 	 *              has completed.
 	 */
 
-	public void inputGameStat(Model_GameStat gstats) {
-		Model_Player[] players = gstats.getPlayerArray();
-		Model_Player winner = gstats.getWinner();
+//	public void inputGameStat(DB_GameStat gstats) {
+//		Model_Player[] players = gstats.getPlayerArray();
+//		Model_Player winner = gstats.getWinner();
+//		
+//		// gamestats will be added to database per game, and the first gameID is 1 in database 
+//		int gameID = getGameCount() + 1; 
+//		int nDraws = gstats.getNumOfDraws(); // number of draws in the game
+//		int nRounds = gstats.getNumOfRounds();// number of rounds in the game
+//		int gWinner = 0; // gWinner This parameter is responsible for indicating which player win. 
+//						// if gWinner equal 1 means the human win, other number means AI win
+//		int p1RW = players[0].getScore(); // rounds won per player
+//		int p2RW = players[1].getScore();
+//		int p3RW = players[2].getScore();
+//		int p4RW = players[3].getScore();
+//		int p5RW = players[4].getScore();
+//		if (winner instanceof Model_User) {
+//			gWinner = 1;
+//		} else if (winner instanceof Model_AI) {
+//			if (winner == players[1]) {
+//				gWinner = 2;
+//			} else if (winner == players[2]) {
+//				gWinner = 3;
+//			} else if (winner == players[3]) {
+//				gWinner = 4;
+//			} else if (winner== players[4]) {
+//				gWinner = 5;
+//			}
+//		}
+//		String gameStats = "INSERT INTO GameInfo VALUES (" + gameID + ", " + nRounds+ ", " + gWinner + ", " + nDraws + ", "
+//				+ p1RW + ", " + p2RW + ", " + p3RW + ", " + p4RW + ", " + p5RW + ");";
+//
+//		insertInfo(gameStats);
+//	}
+//	
+//	/**
+//	 * take game information from the method writeGameStatistics() and uses
+//	 * the methods of string to insert game info into the database
+//	 * @param info
+//	 */
+//	public void insertInfo(String info) {
+//		Statement stmt = null;
+//		if (conn != null) {
+//			try {
+//				stmt = conn.createStatement();
+//				stmt.executeUpdate(info);
+//				stmt.close();
+//			} catch (SQLException e) {
+//				e.printStackTrace();
+//			}
+//
+//		}
+//	}
+	
+	public int insertInDB(DB_GameStat gstat) {
+	    Connection conn = getConn();
+	    int insert = 0;
+	    String sql = "insert into gameinfo (gameid,numberofround,gamewinner,numberofdraw,p1rounds,p2rounds,p3rounds,p4rounds,p5rounds) "
+	    		+ "values(?,?,?,?,?,?,?,?,?)";
+	    PreparedStatement pstmt;
+	    
+	  
+	    Model_Player[] players = gstat.getPlayerArray();
+		Model_Player winner = gstat.getWinner();
 		
-		// gamestats will be added to database per game, and the first gameID is 1 in database 
-		int gameID = getGameCount() + 1; 
-		int nDraws = gstats.getNumOfDraws(); // number of draws in the game
-		int nRounds = gstats.getNumOfRounds(); // number of rounds in the game
+		int gameid=getGameCount()+1;
+		int nDraws = gstat.getNumOfDraws(); // number of draws in the game
+		int nRounds = gstat.getNumOfRounds();// number of rounds in the game
 		int gWinner = 0; // gWinner This parameter is responsible for indicating which player win. 
 						// if gWinner equal 1 means the human win, other number means AI win
 		int p1RW = players[0].getScore(); // rounds won per player
@@ -110,35 +170,31 @@ public class Model_Database {
 				gWinner = 3;
 			} else if (winner == players[3]) {
 				gWinner = 4;
-			} else if (winner == players[4]) {
+			} else if (winner== players[4]) {
 				gWinner = 5;
 			}
 		}
-		String gameStats = "INSERT INTO GameInfo VALUES (" + gameID + ", " + nDraws + ", " + nRounds + ", " + gWinner + ", "
-				+ p1RW + ", " + p2RW + ", " + p3RW + ", " + p4RW + ", " + p5RW + ");";
-
-		insertInfo(gameStats);
+		
+	    try {
+	        pstmt = (PreparedStatement) conn.prepareStatement(sql);
+	        pstmt.setInt(1, gameid);
+	        pstmt.setInt(2, nDraws);
+	        pstmt.setInt(3, gWinner);
+	        pstmt.setInt(4, nRounds);
+	        pstmt.setInt(5, p1RW);
+	        pstmt.setInt(6, p2RW);
+	        pstmt.setInt(7, p3RW);
+	        pstmt.setInt(8, p4RW);
+	        pstmt.setInt(9, p5RW);
+	        
+	        insert = pstmt.executeUpdate();
+	        pstmt.close();
+	        conn.close();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	    return insert;
 	}
-	
-	/**
-	 * take game information from the method writeGameStatistics() and uses
-	 * the methods of string to insert game info into the database
-	 * @param info
-	 */
-	public void insertInfo(String info) {
-
-		if (conn != null) {
-			try {
-				stmt = conn.createStatement();
-				stmt.executeUpdate(info);
-				stmt.close();
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-
-		}
-	}
-
 	/**
 	 * Postsql: Queries database to count the number of games played.
 	 * 
@@ -147,19 +203,19 @@ public class Model_Database {
 	public int getGameCount() {
 		Statement stmt = null;
 		String sql = "Select Count(GameID) as totalCount From GameInfo";
-		int totalGamesPlayed = 0;
+		int totalGamesCount = 0;
 
 		try {
 			stmt = conn.createStatement();
 			ResultSet results = stmt.executeQuery(sql);
 			while (results.next()) {
-				totalGamesPlayed = results.getInt("totalCount");
+				totalGamesCount = results.getInt("totalCount");
 			}
 
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return totalGamesPlayed;
+		return totalGamesCount;
 
 	}
 

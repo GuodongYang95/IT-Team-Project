@@ -70,12 +70,16 @@ public class Model_RoundManager {
 	public int findMaxCatagoryValue(Model_PlayerManager pm) {
 		
 		//default user has the max value
-		int maxValue = pm.getPlayers()[0].getOwnedCard().getSelectedCategoryValue();
+		int maxValue = 0;
 		
 			for (Model_Player player : pm.getPlayers()) {
-				int tempvalue = player.getOwnedCard().getSelectedCategoryValue();
-				if(tempvalue > maxValue)
-					maxValue = tempvalue;
+				if(player.isOut() == false) {
+
+					int tempvalue = player.getOwnedCard().getSelectedCategoryValue();
+					if(tempvalue > maxValue)
+						maxValue = tempvalue;
+					
+				}
 			}
 			
 		return maxValue;
@@ -92,13 +96,17 @@ public class Model_RoundManager {
 		int maxValue = findMaxCatagoryValue(pm);
 		
 		for (Model_Player player : pm.getPlayers()) {
-			
-			int tempvalue = player.getOwnedCard().getSelectedCategoryValue();
-			
-			if(maxValue == tempvalue) { //find how many max value,min is 1
+			if(player.isOut() == false) {
 				
-				maxValuePlayerList.add(player);
+				int tempvalue = player.getOwnedCard().getSelectedCategoryValue();
+				
+				if(maxValue == tempvalue) { //find how many max value,min is 1
+					
+					maxValuePlayerList.add(player);
+				}
+				
 			}
+			
 		}
 	}
 	
@@ -161,7 +169,8 @@ public class Model_RoundManager {
 			}else {
 				
 				//if it is not draw, means that winner Player is only one in the list
-				roundWinPlayer = maxValuePlayerList.get(0);
+			
+					roundWinPlayer = maxValuePlayerList.get(0);
 				
 				// add one score to the winner
 				//get the score first
@@ -187,20 +196,21 @@ public class Model_RoundManager {
 			for (int i = 0; i < pm.getPlayers().length; i++) {
 				if (pm.getPlayers()[i].getCardPile().size() == 0) {
 					pm.getPlayers()[i].setOut(true);
-					if(i == 0) {
-						//this means User lose the game, then set AI who has the most card win the game
-						int maxSize = pm.getPlayers()[1].getCardPile().size(); //assume the first AI has the most cards
-						gm.setWinner(pm.getPlayers()[1]); //assume the first AI win the game
-						//check other AI player
-							for (Model_Player player : pm.getPlayers()) { 
-								if(player.getCardPile().size() > maxSize) {
-									
-									maxSize = player.getCardPile().size();
-									gm.setWinner(player);
-								}
-								
-							}
-					}
+				
+//					if(i == 0) {
+//						//this means User lose the game, then set AI who has the most card win the game
+//						int maxSize = pm.getPlayers()[1].getCardPile().size(); //assume the first AI has the most cards
+//						gm.setWinner(pm.getPlayers()[1]); //assume the first AI win the game
+//						//check other AI player
+//							for (Model_Player player : pm.getPlayers()) { 
+//								if(player.getCardPile().size() > maxSize) {
+//									
+//									maxSize = player.getCardPile().size();
+//									gm.setWinner(player);
+//								}
+//								
+//							}
+//					}
 				}
 				if (pm.getPlayers()[i].getCardPile().size() == 40) {
 					
@@ -219,5 +229,47 @@ public class Model_RoundManager {
 			return false;
 			
 		}
+		
+		// These three methods below are used to judge the user will be lose game or not
+		// They will be actually used in Model_GameManager
+		
+		public boolean userOut(Model_PlayerManager mp) {
+			if (mp.getPlayers()[0].isOut()) {
+				return true;
+			}else {
+				return false;
+			}
+		}
+		
+		public boolean oneCardLeftAndLose(Model_PlayerManager mp) {
+			if (mp.getPlayers()[0].getCardPile().size() == 1 && mp.getPlayers()[0] != roundWinPlayer) {
+				return true;
+			}else {
+				return false;
+			}
+		}
+		
+		public boolean oneCardLeftAndLoseAgain(Model_PlayerManager mp) {
+			if (mp.getPlayers()[0].getCardPile().size() == 0 && mp.getPlayers()[0] != roundWinPlayer) {
+				return true;
+			}else {
+				return false;
+			}
+		}
+		
+		
+		//This method will be used to write log
+		public String commonPileDetails() {
+			String output = "";
+			
+			for (Model_Card card : commonCardPile) {
+				
+				output += card.cardDetail()+"\n";
+			}
+			
+			return output;
+		}
+		
+		
 
 }

@@ -81,6 +81,28 @@
 ## needed:
       1. log function need to be added
       2. database connection to be added.
+   
+# 01/29  Meeting details:
+      1.commandLine mode will be completede after finishing log function and database connection.
+      2. Understand the working step of online mode
+      3. Confirm that the knowledges of online mode needed: Jax,  Html , JavaScripts, CSS
+      4. Spend one week to master these language.
+
+# 02/03/2020 1:13 AM --Junhao Huang
+## Complete log function
+      1. the log function can be controlled by argument which is -t
+      2. the log function will be covered when a new game start
+      3. it recored the total cardpile, each player cardpile at each round, the owned card of each player at each round, the selected category, the round winner, the overall winner. 
 
 
+# 02/05   Meeting details:
+      1. divide the task of online mode into three parts: JS, Html, Jax
+      2. start to write Story card
+      3. Goes into Sprint 2 --- Online Version
 
+# 02/05/2020 3.21 P.M. -- Junhao Huang
+      1.Log function improvement:
+            the log now can be written following the game is contining.
+               add write.flush()
+      2.Game improvement. The game will not end until user input 3 from the Game menu;
+            the number: 3 in GameMenu is Exit Game.

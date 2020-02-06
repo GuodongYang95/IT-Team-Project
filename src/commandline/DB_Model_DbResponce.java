@@ -1,13 +1,13 @@
 package commandline;
 
-public class Model_DbResponce {
+public class DB_Model_DbResponce {
 	private int GameCount;
 	private int MaxRound;
 	private int AverageDraw;
 	private int NumberOfAIWin;
 	private int NumberOfHumanWin;
 		
-		public Model_DbResponce() {
+		public DB_Model_DbResponce() {
 			GameCount=0;
 			MaxRound=0;
 			AverageDraw=0;

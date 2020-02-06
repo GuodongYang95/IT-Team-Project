@@ -35,9 +35,6 @@ public class Model_CardPile {
 		return cards;
 	}
 
-
-	
-	
 	//This method will get the card from file
 	//After testing, this cards will generate 40 cards, and all category will be stored correctly. 
 	
@@ -86,13 +83,12 @@ public class Model_CardPile {
 		} catch (Exception e) {
 			
 			System.out.println("file not found");
-			
-			
+
 		}
 		
 	}
 	
-	
+	// this method is called when a card is piked from the whole cardPail
 
 	public Model_Card extractCard() {
 		int randomNumCard = new Random().nextInt(cards.size());
@@ -100,4 +96,15 @@ public class Model_CardPile {
 		cards.remove(randomNumCard);
 		return pickCard;
 	}
+	
+	
+	public String detailOfCardPile() {
+		String output = "";
+		for (Model_Card card : cards) {
+			output += card.cardDetail() + "\n";
+		}
+		output+= "\n";
+		return output;
+	}
+	
 }

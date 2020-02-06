@@ -1,16 +1,8 @@
 package commandline;
 
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
 
-import javax.swing.JButton;
 
-
-import listener.*;
-
-
-import com.sun.javafx.collections.MappingChange.Map;
 
 public class View_CommandLine {
 	
@@ -41,6 +33,7 @@ public class View_CommandLine {
 		System.out.println("Do you want to see past results of play a game?");
 		System.out.println("1. Print Game Statistics");
 		System.out.println("2. Play game");
+		System.out.println("3. Exit game");
 		System.out.print("Enter the number for your selection: ");
 	}
 	
@@ -51,7 +44,10 @@ public class View_CommandLine {
 	}
 	
 	//The view of past game statistics
-	public void statistics(Model_Database db) {
+
+
+	public void statistics(DB_Model_DbResponce db) {
+
 		System.out.println("\n" + "\n");
 		System.out.println("Game Statistics:");
 		System.out.println("Number of Games: " + db.getGameCount());
@@ -73,10 +69,12 @@ public class View_CommandLine {
 	}
 	public void showUsercard(Model_RoundManager r, Model_PlayerManager p) {
 		
-	
+			
 			System.out.println("You drew " + "'" + p.getPlayers()[0].getOwnedCard().getDescription() + "'" + " :");
 			System.out.println(p.getPlayers()[0].getOwnedCard()); 
-			System.out.println("There are '" + p.getPlayers()[0].getNumberOfCard() + " cards in your deck");
+			if (p.getPlayers()[0].getCardPile().size() != 0) {
+				System.out.println("There are '" + p.getPlayers()[0].getNumberOfCard() + " cards in your deck");
+			}
 //		}
 	}
 	
@@ -135,7 +133,7 @@ public class View_CommandLine {
 		System.out.println("\n" + "\n");
 		System.out.println("Game Over");
 		System.out.println("\n");
-		System.out.println("The overall winner was " + gm.getWinner());
+		System.out.println("The overall winner was " + gm.getWinner().getName());
 		System.out.println("Scores:");
 		for (int i = 0; i < pm.getPlayers().length; i++) {
 			
@@ -158,6 +156,10 @@ public class View_CommandLine {
          }
      }
    	 	System.out.println(output);
+	}
+	
+	public void youHaveLost() {
+		System.out.println("You have lost!");
 	}
 
 
