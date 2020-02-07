@@ -4,25 +4,28 @@ import commandline.Model_Player;
 
 public class DB_GameStat {
 
-		private int numOfDraws;
+		private int drawTimes;
 		private Model_Player winner;
-		private int numOfRounds;
+		private int roundCount;  
 		private Model_Player[] players;
+		private Model_GameManager gm;
+		private Model_RoundManager rm;
 		
-		public DB_GameStat(Model_Player[] players) {
-			numOfDraws = 0;
-			winner = null;
-			numOfRounds = 0;
-			this.players = players;
+		public DB_GameStat(Model_PlayerManager pm,Model_RoundManager rm, Model_GameManager gm) {
+			winner = gm.getWinner();
+			this.players=pm.getPlayers();
+			drawTimes=gm.getDrawTimes();
+			roundCount = rm.getRoundCount();
+			this.gm = gm;
+			this.rm = rm;
+			
+			
 		}
 		
 		public int getNumOfDraws() {
-			return numOfDraws;
+			this.drawTimes=gm.getDrawTimes();
+			return drawTimes;
 		}
-		public void increDrawCounter() {
-			numOfDraws++;
-		}
-		
 
 		public Model_Player[] getPlayerArray() {
 			return players;
@@ -30,18 +33,19 @@ public class DB_GameStat {
 		
 
 		public Model_Player getWinner() {
-			return winner;
-		}
-		public void setWinner(Model_Player winner) {
-			this.winner = winner;
-		}
-		
-		public int getNumOfRounds() {
-			return numOfRounds;
-		}
-		
-		public void incremRoundCounter() {
-			numOfRounds++;
+			return winner=gm.getWinner();
 		}
 
-	}
+		public void setWinner() {
+			this.winner =gm.getWinner();
+		}
+		
+		
+		public int getNumOfRounds() {
+			this.roundCount=rm.getRoundCount();
+			return roundCount;
+		}
+
+		
+		}
+
