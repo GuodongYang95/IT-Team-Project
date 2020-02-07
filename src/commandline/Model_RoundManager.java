@@ -141,7 +141,7 @@ public class Model_RoundManager {
 		 
 		 if(isDraw()) {
 			 //it is draw
-			 if(maxValuePlayerList.contains(pm.getPlayers()[0])) {
+			 if(maxValuePlayerList.contains(pm.getPlayers()[0]) && (pm.getPlayers()[0].isOut() == false)) {
 				 // if user is included
 				 activePlayer = pm.getPlayers()[0];
 			 }else {
@@ -163,9 +163,14 @@ public class Model_RoundManager {
 	 
 	 
 		// this method is going to find winner for each round
-		public void selectWinner() {
+		public void selectWinner(Model_GameManager gm) {
 			if(isDraw()) {
 				roundWinPlayer = null;
+				
+				//increase the draw times here, if we cannot find winner
+				int drawtimes = gm.getDrawTimes();
+				gm.setDrawTimes(++drawtimes);
+				
 			}else {
 				
 				//if it is not draw, means that winner Player is only one in the list

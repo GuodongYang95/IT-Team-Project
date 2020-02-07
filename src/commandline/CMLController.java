@@ -37,34 +37,35 @@ public class CMLController {
 				if(menuChoice == 1) {
 				
 				//connect to database
+					gm.viewStatistics();
 				
-				return getMenuChoice();
+					return getMenuChoice();
 				
 				
 				}else if(menuChoice == 2){
 				
-				// if user input 2, start game
-				gm.setGame(true);
-				
-				view.numOfAi();
-				
-				int numberOfAI = new Scanner(System.in).nextInt();
-				
-				gm.whenstart(numberOfAI);
-				
-				// Log the game or not?
-				
-				if(logOrNot) {
+					// if user input 2, start game
+					gm.setGame(true);
 					
-					logger.startGame(gm.getPm().getCardPile(), gm.getPm());
+					view.numOfAi();
 					
-					logger.deckReadConstructed(gm.getPm().getCardPile());
-				}
+					int numberOfAI = new Scanner(System.in).nextInt();
+					
+					gm.whenstart(numberOfAI);
+					
+					// Log the game or not?
+					
+					if(logOrNot) {
+						
+						logger.startGame(gm.getPm().getCardPile(), gm.getPm());
+						
+						logger.deckReadConstructed(gm.getPm().getCardPile());
+					}
 				
-				// distrubted the card
-				gm.getPm().cardDistribute(gm.getRm());
+					// distrubted the card
+					gm.getPm().cardDistribute(gm.getRm());
 				
-				return false;
+					return false;
 				
 			}else {
 				
@@ -121,7 +122,7 @@ public class CMLController {
 				// compare the value and select winner
 				
 				gm.getRm().resetMaxValuePlayerList(gm.getPm());//find the maxvalue player again
-				gm.getRm().selectWinner();
+				gm.getRm().selectWinner(gm);
 				gm.getPm().distributeCardToWinner(gm.getRm());
 				
 				view.showResult(gm.getRm());
@@ -147,6 +148,9 @@ public class CMLController {
 				}
 				else {
 						view.endGame(gm.getPm(), gm);
+						
+						gm.writeDBAfterGame();
+						
 						if(logOrNot) {
 							
 							logger.logWinner(gm);
