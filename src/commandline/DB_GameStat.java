@@ -19,7 +19,8 @@ public class DB_GameStat {
 		}
 		
 		public int getNumOfDraws() {
-			return this.drawTimes=gm.getDrawTimes();
+			this.drawTimes=gm.getDrawTimes();
+			return drawTimes;
 		}
 
 		public Model_Player[] getPlayerArray() {
@@ -28,15 +29,17 @@ public class DB_GameStat {
 		
 
 		public Model_Player getWinner() {
-			return this.winners=gm.getWinner();
+			return winners=gm.getWinner();
 		}
-//		public void setWinner() {
-//			this.winners = winner;
-//		}
+
+		public void setWinner(Model_Player winner) {
+			this.winners =winner;
+		}
 		
 		
 		public int getNumOfRounds() {
-			return this.roundCount=rm.getRoundCount();
+			this.roundCount=rm.getRoundCount();
+			return roundCount;
 		}
 
 		

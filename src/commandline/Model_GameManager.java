@@ -3,6 +3,8 @@ package commandline;
 
 import java.util.Scanner;
 
+import com.sun.org.glassfish.gmbal.GmbalException;
+
 
 public class Model_GameManager {
 	
@@ -14,7 +16,8 @@ public class Model_GameManager {
 	private Model_PlayerManager pm;
 	private Model_RoundManager rm;
 	private DB_Model_Database db;
-	private DB_GameStat stats;
+//	private DB_GameStat stats;
+	private Model_Player[] players;
 
 	
 	private boolean flag = false; // this will be used to judge whether the user lose the game, and display user lose the game.
@@ -61,14 +64,35 @@ public class Model_GameManager {
 			return false;
 		}
 	}
+	
+	public void viewStatistics() {
+
+			DB_Model_Database database=new DB_Model_Database();
+			System.out.println("\n" + "\n");
+			System.out.println("Game Statistics:");
+			System.out.println("Number of Games: " + database.getGameCount());
+			System.out.println("Total games users won: " + database.getNumberOfHumanWin());
+			System.out.println("Total games computers won: " + database.getNumberOfAIWin());
+			System.out.println("Average draws per game: " + database.getAverageDraw());
+			System.out.println("Largest Number of rounds in a game: " + database.getMaxRound());
+			System.out.println("\n\n");
+//		db.getConn();
+//		DB_Model_DbResponce response = db.getDatabaseInfo();
+//		view.statistics(response);
+//		db.disconnectDB();
+//		}catch (Exception e) {
+//		System.out.println("Unable to show statistics from database");
+//		}
+	}
+	
 	public void writeDBAfterGame() {
 		// Game is over
-//		stats.getWinner();
-
+		
+//		stats.setWinner(getWinner());
+			DB_GameStat stats=new DB_GameStat(players);
 		try {
 			db.insertInDB(stats);
 			System.out.println("Successful to write to database.");
-			db.disconnectDB();	
 		} catch(Exception e) {
 			System.out.println("Unable to write to database.");
 		}

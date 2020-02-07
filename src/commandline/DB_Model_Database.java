@@ -14,6 +14,7 @@ import commandline.Model_User;
 public class DB_Model_Database {
 	private Connection conn = null;
 	private Statement stmt = null;
+
 	/**
 	 * @method getConn() 
 	 * @return Connection
@@ -202,16 +203,17 @@ public class DB_Model_Database {
 	 */
 	public int getGameCount() {
 		Statement stmt = null;
-		String sql = "Select Count(GameID) as totalCount From GameInfo";
+		String sql = "Select Count(gameid) as totalCount From gameinfo";
 		int totalGamesCount = 0;
-
+		Connection conn = getConn();
 		try {
 			stmt = conn.createStatement();
 			ResultSet results = stmt.executeQuery(sql);
 			while (results.next()) {
 				totalGamesCount = results.getInt("totalCount");
 			}
-
+			stmt.close();
+			 conn.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -228,14 +230,15 @@ public class DB_Model_Database {
 		Statement stmt = null;
 		String sql = "Select Count(GameWinner) as AIWins From GameInfo Where GameWinner > 1 ";
 		int getNumberOfAIWin = 0;
-
+		Connection conn = getConn();
 		try {
 			stmt = conn.createStatement();
 			ResultSet results = stmt.executeQuery(sql);
 			while (results.next()) {
 				getNumberOfAIWin = results.getInt("AIWins");
 			}
-
+			stmt.close();
+			 conn.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -252,14 +255,15 @@ public class DB_Model_Database {
 		Statement stmt = null;
 		String sql = "SELECT COUNT(GameWinner) as humanWins FROM GameInfo WHERE GameWinner = 1 ";
 		int NumberOfHumanWin = 0;
-
+		Connection conn = getConn();
 		try {
 			stmt = conn.createStatement();
 			ResultSet results = stmt.executeQuery(sql);
 			while (results.next()) {
 				NumberOfHumanWin = results.getInt("humanWins");
 			}
-
+			stmt.close();
+			 conn.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -276,14 +280,15 @@ public class DB_Model_Database {
 		Statement stmt = null;
 		String sql = "SELECT AVG(NumberOfDraw) as avgDraws FROM GameInfo ";
 		int averageDraws = 0;
-
+		Connection conn = getConn();
 		try {
 			stmt = conn.createStatement();
 			ResultSet results = stmt.executeQuery(sql);
 			while (results.next()) {
 				averageDraws = results.getInt("avgDraws");
 			}
-
+			stmt.close();
+			 conn.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -300,14 +305,15 @@ public class DB_Model_Database {
 		Statement stmt = null;
 		String sql = "SELECT MAX(NumberOfRound) as maxRounds FROM Gameinfo ";
 		int getMaxRound = 0;
-
+		Connection conn = getConn();
 		try {
 			stmt = conn.createStatement();
 			ResultSet results = stmt.executeQuery(sql);
 			while (results.next()) {
-				getMaxRound = results.getInt("maxTotalRounds");
+				getMaxRound = results.getInt("maxRounds");
 			}
-
+			stmt.close();
+			 conn.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -321,33 +327,33 @@ public class DB_Model_Database {
 	 *
 	 * @return contains overall statistics over all the games played.
 	 */
-	public DB_Model_DbResponce getDatabaseInfo() {
-		DB_Model_DbResponce ginfo = new DB_Model_DbResponce();
-		
-		int totalGameCount = 0;
-		int totalAIWins = 0;
-		int totalHumanWins = 0;
-		int averageDraws= 0;
-		int maxRound = 0;
-		
-		try {
-		totalGameCount = getGameCount();
-		totalAIWins = getNumberOfAIWin();
-		totalHumanWins = getNumberOfHumanWin();
-		averageDraws= getAverageDraw();
-		maxRound = getMaxRound();
-		} catch(Exception e) {
-			System.out.println("Unable to get statistics from Database, default 0 values returned.\n\n");
-		}
-		ginfo.setGameCount(totalGameCount);;
-		ginfo.setNumberOfAIWin(totalAIWins);
-		ginfo.setNumberOfHumanWin(totalHumanWins);
-		ginfo.setAverageDraw(averageDraws);
-		ginfo.setMaxRound(maxRound);
-
-		return ginfo;
-
-	}
+//	public DB_Model_DbResponce getDatabaseInfo() {
+//		DB_Model_DbResponce ginfo = new DB_Model_DbResponce();
+//		
+//		int totalGameCount = 0;
+//		int totalAIWins = 0;
+//		int totalHumanWins = 0;
+//		int averageDraws= 0;
+//		int maxRound = 0;
+//		
+//		try {
+//		totalGameCount = getGameCount();
+//		totalAIWins = getNumberOfAIWin();
+//		totalHumanWins = getNumberOfHumanWin();
+//		averageDraws= getAverageDraw();
+//		maxRound = getMaxRound();
+//		} catch(Exception e) {
+//			System.out.println("Unable to get statistics from Database, default 0 values returned.\n\n");
+//		}
+//		ginfo.setGameCount(totalGameCount);;
+//		ginfo.setNumberOfAIWin(totalAIWins);
+//		ginfo.setNumberOfHumanWin(totalHumanWins);
+//		ginfo.setAverageDraw(averageDraws);
+//		ginfo.setMaxRound(maxRound);
+//
+//		return ginfo;
+//
+//	}
 
 	}
 

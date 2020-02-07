@@ -92,6 +92,7 @@ public class Model_CardPile {
 
 	public Model_Card extractCard() {
 		int randomNumCard = new Random().nextInt(cards.size());
+		System.out.println(randomNumCard);
 		Model_Card pickCard = cards.get(randomNumCard);
 		cards.remove(randomNumCard);
 		return pickCard;
