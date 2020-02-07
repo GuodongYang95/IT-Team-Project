@@ -13,6 +13,8 @@ public class Model_GameManager {
 	private Model_Player winner; // this is the overall game winner
 	private Model_PlayerManager pm;
 	private Model_RoundManager rm;
+	private DB_Model_Database db;
+
 	private boolean flag = false; // this will be used to judge whether the user lose the game, and display user lose the game.
 	private boolean gameStarting = false; // judge whether the game should be continuing
 	
@@ -20,6 +22,7 @@ public class Model_GameManager {
 		
 		pm = new Model_PlayerManager(numberOfAI);
 		rm = new Model_RoundManager();
+		db = new DB_Model_Database();
 		
 		
 	}
@@ -51,6 +54,35 @@ public class Model_GameManager {
 		}else {
 			gameStarting = true;
 			return false;
+		}
+	}
+	
+	public void viewStatistics() {
+
+		DB_Model_Database database=new DB_Model_Database();
+		System.out.println("\n" + "\n");
+		System.out.println("Game Statistics:");
+		System.out.println("Number of Games: " + database.getGameCount());
+		System.out.println("Total games users won: " + database.getNumberOfHumanWin());
+		System.out.println("Total games computers won: " + database.getNumberOfAIWin());
+		System.out.println("Average draws per game: " + database.getAverageDraw());
+		System.out.println("Largest Number of rounds in a game: " + database.getMaxRound());
+		System.out.println("\n\n");
+
+	}
+	
+	
+	public void writeDBAfterGame() {
+		// Game is over
+		
+//		stats.setWinner(getWinner());
+			DB_GameStat stats= new DB_GameStat(pm, rm, this);
+		try {
+			db.CreateTable();
+			db.insertInDB(stats);
+//			System.out.println("Successful to write to database.");
+		} catch(Exception e) {
+			System.out.println("Unable to write to database.");
 		}
 	}
 	

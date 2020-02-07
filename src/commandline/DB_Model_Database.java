@@ -23,7 +23,11 @@ public class DB_Model_Database {
 		String driver = "org.postgresql.Driver";
 		String url = "jdbc:postgresql://localhost:5432/ITproject";
 		String username = "postgres";
-		String password = "postgres123";
+		String password = "aa199595";
+		
+//		final String username = "m_19_2431374h";
+//		final String password = "2431374h";
+//		final String dbName = "jdbc:postgresql://yacata.dcs.gla.ac.uk:5432/";
 
 		try {
 			Class.forName(driver); // classLoader
@@ -71,7 +75,7 @@ public class DB_Model_Database {
 	        stmt.executeUpdate(sql); 
 //	        System.out.println("Table created successfully");
 			stmt.close();
-		} catch (SQLException e) {		
+		} catch (SQLException e) {	
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 			System.exit(0);
 		}
@@ -195,6 +199,8 @@ public class DB_Model_Database {
 	        insert = pstmt.executeUpdate();
 	        pstmt.close();
 	        conn.close();
+//	        System.out.println("insert successfully");
+	        
 	    } catch (SQLException e) {
 	        e.printStackTrace();
 	    }

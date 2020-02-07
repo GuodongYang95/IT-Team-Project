@@ -37,6 +37,7 @@ public class CMLController {
 				if(menuChoice == 1) {
 				
 				//connect to database
+					gm.viewStatistics();
 				
 					return getMenuChoice();
 				
@@ -147,6 +148,9 @@ public class CMLController {
 				}
 				else {
 						view.endGame(gm.getPm(), gm);
+						
+						gm.writeDBAfterGame();
+						
 						if(logOrNot) {
 							
 							logger.logWinner(gm);
