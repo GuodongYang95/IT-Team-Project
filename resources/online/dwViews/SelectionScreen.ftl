@@ -19,13 +19,33 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	</head>
+		<script  type="text/javascript">
+			function startGame(){
+				var xhr = new XMLHttpRequest();
+				xhr.open("get","/toptrumps/gamestart");
+				xhr.send(null);
+				var jsonStr = 0;
+				xhr.onreadystatechange = function(){
+					if(xhr.readyState==4){
+					jsonStr = xhr.responseText;
+					testObject = JSON.parse(jsonStr);
+					testObject2 = JSON.parse(testObject.ownedCardCategory)
+					alert(testObject2.Size);
+					}
+				}
+				
+			}
+
+
+		</script>
 
     <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
     	
     	<div class="container">
 
 			<!-- Add your HTML Here -->
-		
+			<button id = "test" onclick = "startGame()"> testButton </button>
+
 		</div>
 		
 		<script type="text/javascript">

@@ -26,6 +26,9 @@
 
 			<!-- Add your HTML Here -->
 		
+
+			</div>
+		
 		</div>
 		
 		<script type="text/javascript">

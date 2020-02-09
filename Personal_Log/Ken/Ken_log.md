@@ -106,3 +106,16 @@
                add write.flush()
       2.Game improvement. The game will not end until user input 3 from the Game menu;
             the number: 3 in GameMenu is Exit Game.
+
+# 02/09/2020 3.03 A.M. -- Junhao Huang
+      1. our website can get information from backend right now;
+            the type between client and server is json String type.
+            Js will have method to convert it into Json object.
+      2. the game bankend part connection is nearly finished,
+            need Js to show details to the User.
+            here is the response url:
+            /toptrumps/gamestart
+            /toptrumps/gamestart/categoryselect
+            /toptrumps/gamestart/userCategoryselect
+            /toptrumps/gamestart/showresult
+            /toptrumps/gamestart/newround
