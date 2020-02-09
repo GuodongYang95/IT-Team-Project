@@ -24,6 +24,9 @@ public class DB_Model_Database {
 		String url = "jdbc:postgresql://localhost:5432/ITproject";
 		String username = "postgres";
 		String password = "postgres123";
+//		final String username = "m_19_2431374h";
+//		final String password = "2431374h";
+//		final String url = "jdbc:postgresql://yacata.dcs.gla.ac.uk:5432/";
 
 		try {
 			Class.forName(driver); // classLoader
@@ -35,11 +38,11 @@ public class DB_Model_Database {
 		}
 		
 		
-		if (conn != null) {
-			System.out.println("Successfully connected to database.");
-		} else {
-			System.out.println("Failed to connect to database.");
-		}
+//		if (conn != null) {
+//			System.out.println("Successfully connected to database.");
+//		} else {
+//			System.out.println("Failed to connect to database.");
+//		}
 		return conn;
 	}
 
@@ -63,16 +66,13 @@ public class DB_Model_Database {
 		Connection connection=getConn();
 		try {
 			stmt = connection.createStatement();
-	        String sql = "CREATE TABLE GameInfo " + 
+	        String sql = "CREATE TABLE if not exists GameStat" + 
 	                     "(GameID       INT PRIMARY KEY     NOT NULL ," + 
 	                     " NumberOfRound  INT    , " + 
 	                     " GameWinner     INT    , " + 
-	                     " NumberOfDraw   INT    , " +
-	                     " p1Rounds int, " + " p2Rounds int, " +
-	                     " p3Rounds int, " + " p4Rounds int, " +
-	                     " p5Rounds int)"; 
+	                     " NumberOfDraw   INT    )"; 
 	        stmt.executeUpdate(sql); 
-	        System.out.println("Table created successfully");
+//	        System.out.println("Table created successfully");
 			stmt.close();
 		} catch (SQLException e) {		
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
@@ -144,8 +144,8 @@ public class DB_Model_Database {
 	public int insertInDB(DB_GameStat gstat) {
 	    Connection conn = getConn();
 	    int insert = 0;
-	    String sql = "insert into gameinfo (gameid,numberofround,gamewinner,numberofdraw,p1rounds,p2rounds,p3rounds,p4rounds,p5rounds) "
-	    		+ "values(?,?,?,?,?,?,?,?,?)";
+	    String sql = "insert into gamestat (gameid,numberofround,gamewinner,numberofdraw) "
+	    		+ "values(?,?,?,?)";
 	    PreparedStatement pstmt;
 	    
 	  
@@ -155,38 +155,45 @@ public class DB_Model_Database {
 		int gameid=getGameCount()+1;
 		int nDraws = gstat.getNumOfDraws(); // number of draws in the game
 		int nRounds = gstat.getNumOfRounds();// number of rounds in the game
-		int gWinner = 0; // gWinner This parameter is responsible for indicating which player win. 
-						// if gWinner equal 1 means the human win, other number means AI win
-		int p1RW = players[0].getScore(); // rounds won per player
-		int p2RW = players[1].getScore();
-		int p3RW = players[2].getScore();
-		int p4RW = players[3].getScore();
-		int p5RW = players[4].getScore();
-		if (winner instanceof Model_User) {
-			gWinner = 1;
-		} else if (winner instanceof Model_AI) {
-			if (winner == players[1]) {
-				gWinner = 2;
-			} else if (winner == players[2]) {
-				gWinner = 3;
-			} else if (winner == players[3]) {
-				gWinner = 4;
-			} else if (winner== players[4]) {
-				gWinner = 5;
-			}
+		int gWinner;
+		if (winner == players[0]) {
+			gWinner=1;
+		}else {
+			gWinner=0;
 		}
+		
+		// gWinner This parameter is responsible for indicating which player win. 
+						// if gWinner equal 1 means the human win, other number means AI win
+//		int p1RW = players[0].getScore(); // rounds won per player
+//		int p2RW = players[1].getScore();
+//		int p3RW = players[2].getScore();
+//		int p4RW = players[3].getScore();
+//		int p5RW = players[4].getScore();
+//		if (winner instanceof Model_User) {
+//			gWinner = 1;
+//		} else if (winner instanceof Model_AI) {
+//			if (winner == players[1]) {
+//				gWinner = 2;
+//			} else if (winner == players[2]) {
+//				gWinner = 3;
+//			} else if (winner == players[3]) {
+//				gWinner = 4;
+//			} else if (winner== players[4]) {
+//				gWinner = 5;
+//			}
+//		}
 		
 	    try {
 	        pstmt = (PreparedStatement) conn.prepareStatement(sql);
 	        pstmt.setInt(1, gameid);
-	        pstmt.setInt(2, nDraws);
+	        pstmt.setInt(2, nRounds);
 	        pstmt.setInt(3, gWinner);
-	        pstmt.setInt(4, nRounds);
-	        pstmt.setInt(5, p1RW);
-	        pstmt.setInt(6, p2RW);
-	        pstmt.setInt(7, p3RW);
-	        pstmt.setInt(8, p4RW);
-	        pstmt.setInt(9, p5RW);
+	        pstmt.setInt(4, nDraws);
+//	        pstmt.setInt(5, p1RW);
+//	        pstmt.setInt(6, p2RW);
+//	        pstmt.setInt(7, p3RW);
+//	        pstmt.setInt(8, p4RW);
+//	        pstmt.setInt(9, p5RW);
 	        
 	        insert = pstmt.executeUpdate();
 	        pstmt.close();
@@ -203,7 +210,7 @@ public class DB_Model_Database {
 	 */
 	public int getGameCount() {
 		Statement stmt = null;
-		String sql = "Select Count(gameid) as totalCount From gameinfo";
+		String sql = "Select Count(gameid) as totalCount From gamestat";
 		int totalGamesCount = 0;
 		Connection conn = getConn();
 		try {
@@ -228,7 +235,7 @@ public class DB_Model_Database {
 	 */
 	public int getNumberOfAIWin() {
 		Statement stmt = null;
-		String sql = "Select Count(GameWinner) as AIWins From GameInfo Where GameWinner > 1 ";
+		String sql = "Select Count(GameWinner) as AIWins From gamestat Where GameWinner = 0 ";
 		int getNumberOfAIWin = 0;
 		Connection conn = getConn();
 		try {
@@ -253,7 +260,7 @@ public class DB_Model_Database {
 	 */
 	public int getNumberOfHumanWin() {
 		Statement stmt = null;
-		String sql = "SELECT COUNT(GameWinner) as humanWins FROM GameInfo WHERE GameWinner = 1 ";
+		String sql = "SELECT COUNT(GameWinner) as humanWins FROM gamestat WHERE GameWinner = 1 ";
 		int NumberOfHumanWin = 0;
 		Connection conn = getConn();
 		try {
@@ -278,7 +285,7 @@ public class DB_Model_Database {
 	 */
 	public int getAverageDraw() {
 		Statement stmt = null;
-		String sql = "SELECT AVG(NumberOfDraw) as avgDraws FROM GameInfo ";
+		String sql = "SELECT AVG(NumberOfDraw) as avgDraws FROM gamestat ";
 		int averageDraws = 0;
 		Connection conn = getConn();
 		try {
@@ -303,7 +310,7 @@ public class DB_Model_Database {
 	 */
 	public int getMaxRound() {
 		Statement stmt = null;
-		String sql = "SELECT MAX(NumberOfRound) as maxRounds FROM Gameinfo ";
+		String sql = "SELECT MAX(NumberOfRound) as maxRounds FROM gamestat ";
 		int getMaxRound = 0;
 		Connection conn = getConn();
 		try {

@@ -5,17 +5,21 @@ import commandline.Model_Player;
 public class DB_GameStat {
 
 		private int drawTimes;
-		private Model_Player winners;
+		private Model_Player winner;
 		private int roundCount;  
 		private Model_Player[] players;
 		private Model_GameManager gm;
 		private Model_RoundManager rm;
 		
-		public DB_GameStat(Model_Player[] players) {
-			winners = null;
-			this.players=players;
-			drawTimes=0;
-			roundCount=0;
+		public DB_GameStat(Model_PlayerManager pm,Model_RoundManager rm, Model_GameManager gm) {
+			winner = gm.getWinner();
+			this.players=pm.getPlayers();
+			drawTimes=gm.getDrawTimes();
+			roundCount = rm.getRoundCount();
+			this.gm = gm;
+			this.rm = rm;
+			
+			
 		}
 		
 		public int getNumOfDraws() {
@@ -29,11 +33,11 @@ public class DB_GameStat {
 		
 
 		public Model_Player getWinner() {
-			return winners=gm.getWinner();
+			return winner=gm.getWinner();
 		}
 
-		public void setWinner(Model_Player winner) {
-			this.winners =winner;
+		public void setWinner() {
+			this.winner =gm.getWinner();
 		}
 		
 		

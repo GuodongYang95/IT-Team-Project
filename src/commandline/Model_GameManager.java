@@ -3,7 +3,6 @@ package commandline;
 
 import java.util.Scanner;
 
-import com.sun.org.glassfish.gmbal.GmbalException;
 
 
 public class Model_GameManager {
@@ -15,9 +14,10 @@ public class Model_GameManager {
 	private Model_Player winner; // this is the overall game winner
 	private Model_PlayerManager pm;
 	private Model_RoundManager rm;
+	
 	private DB_Model_Database db;
 //	private DB_GameStat stats;
-	private Model_Player[] players;
+//	private Model_Player[] players;
 
 	
 	private boolean flag = false; // this will be used to judge whether the user lose the game, and display user lose the game.
@@ -89,8 +89,9 @@ public class Model_GameManager {
 		// Game is over
 		
 //		stats.setWinner(getWinner());
-			DB_GameStat stats=new DB_GameStat(players);
+			DB_GameStat stats= new DB_GameStat(pm, rm, this);
 		try {
+			db.CreateTable();
 			db.insertInDB(stats);
 			System.out.println("Successful to write to database.");
 		} catch(Exception e) {

@@ -133,7 +133,7 @@ public class CMLController {
 				// compare the value and select winner
 				
 				gm.getRm().resetMaxValuePlayerList(gm.getPm());//find the maxvalue player again
-				gm.getRm().selectWinner();
+				gm.getRm().selectWinner(gm);
 				gm.getPm().distributeCardToWinner(gm.getRm());
 				
 				view.showResult(gm.getRm());
