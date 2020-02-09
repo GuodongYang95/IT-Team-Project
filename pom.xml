@@ -144,7 +144,7 @@
     
     <!-- Plugins, these do things like compiling the java sources and packaging into a jar -->
     <plugins>
-    
+
       <!-- Compiles your java sources -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
