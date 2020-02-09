@@ -119,3 +119,10 @@
             /toptrumps/gamestart/userCategoryselect
             /toptrumps/gamestart/showresult
             /toptrumps/gamestart/newround
+
+# 02/09/2020 2:18 P.M  --Junhao Huang
+      1.in SelectionScreen.ftl   line: 22~172
+            Add the Js function which can get data from backend
+      2.each will be called when load the page or click the button
+            see comment
+      
