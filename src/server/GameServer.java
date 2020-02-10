@@ -292,4 +292,32 @@ public class GameServer {
 		return JSON.toJSONString(map);
 	}
 	
+	public String getStatistics() {
+		DB_Model_Database database=new DB_Model_Database();
+		Map<String, String> dbMap = new LinkedHashMap<String, String>();
+		String numberKey = "numberOfGame";
+		String numberValue = "" + database.getGameCount();
+		dbMap.put(numberKey, numberValue);
+		
+		String numberOfHuKey = "numberOfHumanWin";
+		String numberOfHuVal = "" + database.getNumberOfHumanWin();
+		dbMap.put(numberOfHuKey, numberOfHuVal);
+		
+		String numberOfAIKey = "numberOfAIWin";
+		String numberOfAIVal = "" + database.getNumberOfAIWin();
+		dbMap.put(numberOfAIKey, numberOfAIVal);
+		
+		String avergeDrawKey = "averageDraws";
+		String avergeDrawVal = "" + database.getAverageDraw();
+		dbMap.put(avergeDrawKey, avergeDrawVal);
+		
+		String longestTimesKey = "longestRimes";
+		String longestTimesVal = "" + database.getMaxRound();
+		dbMap.put(longestTimesKey, longestTimesVal);
+		
+		return JSON.toJSONString(dbMap);
+		
+		
+	}
+
 }

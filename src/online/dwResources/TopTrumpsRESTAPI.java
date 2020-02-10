@@ -146,7 +146,12 @@ public class TopTrumpsRESTAPI {
 		return gameServer.newRound();
 	}
 	
+	@GET
+	@Path("/stat")
 	
-	
+	public String getStat() throws IOException{
+			
+			return gameServer.getStatistics();
+	}
 
 }
