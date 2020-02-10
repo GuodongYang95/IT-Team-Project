@@ -21,11 +21,151 @@
 	</head>
 
     <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
-    	
+		<style>
+			body {
+			display: flex;
+			flex-direction: column;
+			justify-content: baseline;
+			align-items: center;
+			color: #666;
+			font-size: 1.3em;
+			font-family: sans-serif;
+			background-color: #d6dadf;
+			}
+			.header{ 
+			width:100%;
+			text-align:center;
+			margin-top:20px;
+			}
+			.container { 
+			padding 2px 16px;
+			text-align: left;
+			font-family: Times;
+			}
+			.button {
+			width: 170px;
+			height: 35px;
+			display: block;
+			color: #000;
+			border-radius: 25px; 
+			rgba(0,0,0,0.3);
+			white-space: nowrap;
+			cursor: pointer;
+			}
+			.nextButton{
+			background: #D3D3D3;
+			color:#696969;
+			position: absolute;
+				right: 0;
+				bottom: 100;
+				left: 200;
+			width: 200px;
+			height: 40px;
+			display: block;
+			font: Times;
+			border-radius: 25px; 
+			text-align: center;
+			cursor: pointer;
+			} 
+			.card { 
+			background-color:#d6dadf;
+			box-shadow: 1px 1px 8px #454545;
+			border-radius: 25px; 
+			rgba(0,0,0,0.2);
+			width: 16%;
+			height:50%;
+			display:inline-block;
+			margin: 8px;
+			margin-top:30px;
+			}
+			img {
+			border-radius: 8px;
+			}
+       </style>
     	<div class="container">
 
 			<!-- Add your HTML Here -->
-		
+		<div class="header"> 
+        <div> 
+        <h2 class="header" style="text-align:center";> The Game Start Now! The active user is YOU </h2>
+        </div> 
+        <button type="button" style="margin-top:30px";id="nextButton" onclick="updateGame();" class="btn btn-primary btn-lg;">Next</button>
+        <div class="buttons"> 
+             <button class="buttons" style="margin-top:30px";> Choose Category</button>
+          </div>
+       <div class="buttons" style="margin-top:30px";> 
+             <button class="buttons">Size</button>
+             <button class="buttons">Speed</button>
+             <button class="buttons">Range </button>
+             <button class="buttons">Firepower</button>
+             <button class="buttons">Cargo</button>
+          </div>
+        <div class="card" style="width: 11rem;"style="margin-top:30px";>
+  <div class="card-body">
+    <h5 class="card-title">You(User)</h5>
+        <p class="card-text">Atrributes</p>
+    	         <ul>
+    	           <li id="attribute1"></li>
+    	           <li id="attribute2"></li>
+    	           <li id="attribute3"></li>
+    	           <li id="attribute4"></li>
+    	           <li id="attribute5"></li>
+    	        </ul>
+    	   </div>
+    	</div>
+    	
+    <div class="card" style="width: 10rem;">
+  <div class="card-body">
+    <h5 class="card-title">AI Player 1</h5>
+        <p class="card-text">Atrributes</p>
+    	         <ul>
+    	           <li id="attribute1"></li>
+    	           <li id="attribute2"></li>
+    	           <li id="attribute3"></li>
+    	           <li id="attribute4"></li>
+    	           <li id="attribute5"></li>
+    	        </ul>
+    	   </div>
+    	</div>
+    <div class="card" style="width: 10rem;">
+   <div class="card-body">
+      <h5 class="card-title">AI Player 2</h5>
+        <p class="card-text">Atrributes</p>
+    	         <ul>
+    	           <li id="attribute1"></li>
+    	           <li id="attribute2"></li>
+    	           <li id="attribute3"></li>
+    	           <li id="attribute4"></li>
+    	           <li id="attribute5"></li>
+    	        </ul>
+    	   </div>
+    	</div>
+     <div class="card" style="width: 10rem;">
+   <div class="card-body">
+      <h5 class="card-title">AI Player 3</h5>
+        <p class="card-text">Atrributes</p>
+    	         <ul>
+    	           <li id="attribute1"></li>
+    	           <li id="attribute2"></li>
+    	           <li id="attribute3"></li>
+    	           <li id="attribute4"></li>
+    	           <li id="attribute5"></li>
+    	        </ul>
+    	   </div>
+    	</div>
+    <div class="card" style="width: 10rem;">
+   <div class="card-body">
+      <h5 class="card-title">AI Player 4</h5>
+        <p class="card-text">Atrributes</p>
+    	         <ul>
+    	           <li id="attribute1"></li>
+    	           <li id="attribute2"></li>
+    	           <li id="attribute3"></li>
+    	           <li id="attribute4"></li>
+    	           <li id="attribute5"></li>
+    	        </ul>
+    	   </div>
+    	</div>
 		</div>
 		
 		<script type="text/javascript">
@@ -38,9 +178,15 @@
 				// --------------------------------------------------------------------------
 				
 				// For example, lets call our sample methods
-				helloJSONList();
-				helloWord("Student");
-				
+			startGame();
+			player1Card();
+             player2Card();
+             player3Card();
+             player4Card();
+             player5Card();
+             getCommunalPile();
+             getActivePlayer();
+             getRoundNumber();
 			}
 			
 			// -----------------------------------------
