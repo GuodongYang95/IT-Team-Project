@@ -17,14 +17,194 @@
     	<link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex-theme-os.css"/>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ 		<meta name="viewport" 
+        content="width+device-width,initial-scale=1"> 
+        <style>
+                body {
+                display: flex;
+                flex-direction: column;
+                justify-content: baseline;
+                align-items: center;
+                color: #666;
+                font-size: 1.3em;
+                font-family: sans-serif;
+                background:url(./images/slide04.jpg)  no-repeat center center;
+                background-size:cover;
+                background-attachment:fixed;
+                }
 
+                .header{ 
+                 width:100%;
+                 text-align:center;
+                 margin-top:20px;
+                 }
+
+                 .button {
+                 width: 170px;
+                 height: 35px;
+                 display: block;
+                 color: #000;
+                 border-radius: 25px; 
+                 position: relative;
+                 padding: 1em;
+                 }
+
+
+                .nextButton{
+                background: #D3D3D3;
+                color:#696969;
+                position: relative;
+                    right: 0;
+                    bottom: 100;
+                    left: 200;
+                  width: 200px;
+                  height: 40px;
+                  display: block;
+                  font: Times;
+                  border-radius: 25px; 
+                  text-align: center;
+                  cursor: pointer;
+                }   
+
+                .card {
+                position: relative;
+                flex: 0 0 240px;
+                width: 240px;
+                height: 320px;
+                background-color:aliceblue;
+                overflow: hidden;
+                border-radius: 10px;
+                display:inline-block;
+                margin: 8px;
+                margin-top:30px;      
+                }  
+
+                .card-info {
+                padding: 20px;
+                position: fixed;
+                bottom: 0;
+                color: #666;
+                font-size: 1em;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                transform: translateY(40%);
+                transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+
+                .pic {
+                border-radius: 100%;
+                position: -webkit-sticky;
+                margin: auto;
+                z-index: 1;
+                max-width: 100px;
+                -webkit-transition: all 0.4s;
+                        transition: all 0.4s;
+                }
+
+                .box {
+                position: relative;
+                width: 250px;
+                height: 450px;
+                overflow: hidden;
+                border-radius: 10px;
+                display:inline-block;
+                margin: 10px;
+                margin-top:30px;
+                }
+
+
+               </style>
 	</head>
 
     <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
     	
     	<div class="container">
-
-			<!-- Add your HTML Here -->
+                    <div class="header"> 
+                    <div> 
+                    <h1 style="text-align:center";> Top Trumps Game</h1>
+                    <h4 style="text-align:center";> The Game Start Now! The active player is You</h4>
+                  <div class="box">
+                    <div class="button"> 
+                    <button class="button" style="margin-top:30px" id="nextButton" onclick="updateGame()" class="btn btn-primary btn-lg">Next</button>
+                    </div>
+                    <div class="button"> 
+                         <button class="button" style="margin-top:30px";> Choose Category</button>
+                      </div>
+                     <div class="button" style="margin-top:30px";> 
+                         <button class="button">Size</button>
+                         <button class="button" style="margin-top:10px";>Speed</button>
+                         <button class="button" style="margin-top:10px";>Range </button>
+                         <button class="button" style="margin-top:10px";>Firepower</button>
+                         <button class="button" style="margin-top:10px";>Cargo</button>
+                      </div>
+                  </div>
+                     
+                    <div class="card" style="width: 11rem;"style="margin-top:30px";>
+                    <h4 class="card-info">You(User)</h4>
+                    <p class="card-text">Atrributes</p>
+                             <ul>
+                               <li id="attribute1"></li>
+                               <li id="attribute2"></li>
+                               <li id="attribute3"></li>
+                               <li id="attribute4"></li>
+                               <li id="attribute5"></li>
+                            </ul>
+                            <img class="pic" src="./images/orange.png">
+                       </div>
+                  
+                <div class="card" style="width: 10rem;">
+              <div class="card-body">
+                <h4 class="card-info">AI Player 1</h4>
+                    <p class="card-text">Atrributes</p>
+                             <ul>
+                               <li id="attribute1"></li>
+                               <li id="attribute2"></li>
+                               <li id="attribute3"></li>
+                               <li id="attribute4"></li>
+                               <li id="attribute5"></li>
+                            </ul>
+                            <img class="pic" src="./images/cyan.png">
+                       </div>
+                    </div>
+                <div class="card" style="width: 10rem;">
+               <div class="card-body">
+                  <h4 class="card-info">AI Player 2</h4>
+                    <p class="card-text">Atrributes</p>
+                             <ul>
+                               <li id="attribute1"></li>
+                               <li id="attribute2"></li>
+                               <li id="attribute3"></li>
+                               <li id="attribute4"></li>
+                               <li id="attribute5"></li>
+                            </ul>
+                            <img class="pic" src="./images/smokygray.png">
+                       </div>
+                    </div>
+                 <div class="card" style="width: 10rem;">
+               <div class="card-body">
+                  <h4 class="card-info">AI Player 3</h4>
+                    <p class="card-text">Atrributes</p>
+                             <ul>
+                               <li id="attribute1"></li>
+                               <li id="attribute2"></li>
+                               <li id="attribute3"></li>
+                               <li id="attribute4"></li>
+                               <li id="attribute5"></li>
+                            </ul>
+                            <img class="pic" src="./images/yellow.png">
+                       </div>
+                    </div>
+                <div class="card" style="width: 10rem;">
+               <div class="card-body">
+                  <h4 class="card-info">AI Player 4</h4>
+                    <p class="card-text">Atrributes</p>
+                             <ul>
+                               <li id="attribute1"></li>
+                               <li id="attribute2"></li>
+                               <li id="attribute3"></li>
+                               <li id="attribute4"></li>
+                               <li id="attribute5"></li>
+                            </ul>
+                            <img class="pic" src="./images/yellow2.png">
 		
 		</div>
 		

@@ -17,14 +17,75 @@
     	<link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex-theme-os.css"/>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		 <style>
+                 body {
+                display: flex;
+                flex-direction: column;
+                justify-content: baseline;
+                align-items: center;
+                color: #666;
+                font-size: 1.5em;
+                font-family: sans-serif;
+                background:url(./images/slide04.jpg)  no-repeat center center;
+                background-size:cover;
+                background-attachment:fixed;
+                }
 
+                .button  {
+                padding: 1em 2.5em;
+                position:absolute;
+                 right: 420;
+                 bottom: 100;
+                 left: 420;
+                color: #666;
+                font-weight: bold;
+                text-align: center;
+                text-decoration: none;
+                white-space: nowrap;
+                background-color: #fff;
+                background-image: linear-gradient(180deg, #fbfbfb, #c7c7c7);
+                border: 0.0625em solid #d7d7d7;
+                border-radius: 0.5em;
+                box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.3);
+                cursor: pointer; 
+                }
+
+                .table { 
+                font-size:20;
+                text-align:center;
+                margin-right: 20px;
+                margin-top:50px;
+                cursor: pointer; 
+                }
+                    </style>
 	</head>
 
     <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
     	
     	<div class="container">
 
-			<!-- Add your HTML Here -->
+                 <table class="table" id="table1">
+                  <thead>
+                  <tr>
+                    <th scope="col">No. of Games</th>
+                    <th scope="col">No. of User Wins</th>
+                    <th scope="col">No. of AI Wins</th>
+                    <th scope="col">Average Draws</th>
+                    <th scope="col">Longest Round</th>
+                  </tr>
+               
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td><strong id="totalGames"></strong></td>
+                        <td><strong id="userWins"></strong></td>
+                        <td><strong id="AIWins"></strong></td>
+                        <td><strong id="averageDraws"></strong></td>
+                        <td><strong id="longestRound"></strong></td>
+                    </tr>
+                  </tbody>
+                    </table>    
+                     <a class="button" href= "http://localhost:7777/toptrumps">Back To Game Selection</a>
 		
 		</div>
 		
