@@ -229,7 +229,7 @@ public class GameServer {
 		if(gm.getRm().getRoundWinPlayer()!= null) {
 			playerName = gm.getRm().getRoundWinPlayer().getName();
 		}else {
-			playerName = "null";
+			playerName = "none";
 		}
 		resultMap.put(playerKey, playerName);
 		

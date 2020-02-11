@@ -125,4 +125,13 @@
             Add the Js function which can get data from backend
       2.each will be called when load the page or click the button
             see comment
-      
+
+# 02/11/2020 11:50 P.M --Junhao Huang
+      1. the oneline version can simply run.
+      2. there are many problems need to be solved:
+            (1) Need to show the card pile of each player
+            (2) the png cannot be loaded..
+            (3) the function might need to be simplified
+            (4) the overall structure of html or css might need to be modified.
+            (5) the statistical page haven't done yet.
+            

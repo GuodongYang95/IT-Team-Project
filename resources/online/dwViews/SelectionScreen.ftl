@@ -17,170 +17,56 @@
     	<link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex-theme-os.css"/>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+	 	 <style>
+ 		.header {
+	 	 	width:100%;
+			text-align:center;
+			margin-top:20px;
+         		}
+ 		 body {
+	      display: flex;
+	      flex-direction: column;
+	      justify-content: baseline;
+	      align-items: center;
+	      color: #666;
+	      font-size: 1.5em;
+	      font-family: sans-serif;
+	      background:url(./images/slide04.jpg)  no-repeat center center;
+	      background-size:cover;
+	      background-attachment:fixed;
+	      }
+	
+	      p {
+	      font-size: 0.5em;
+	      text-align: center;
+	      }
+	      
+	      .button {
+	      padding: 1em 2.5em;
+	      margin: 4em;
+	      color: #000;
+	      font-weight: bold;
+	      text-align: center;
+	      text-decoration: none;
+	      white-space: nowrap;
+	      background-color: #fff;
+	      color: #454545;
+	      background-image: linear-gradient(180deg, #fbfbfb, #c7c7c7);
+	      border: 0.0625em solid #d7d7d7;
+	      border-radius: 0.5em;
+	      box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.3);
+	      cursor: pointer; 
+	      }
+      </style>
 	</head>
-		<script  type="text/javascript">
 
-			//This method will be called when SelectionScreen html "onload"
-			function startGame(){
-				var xhr = new XMLHttpRequest();
-				xhr.open("get","/toptrumps/gamestart");
-				xhr.send(null);
-				var jsonStr = 0;
-				xhr.onreadystatechange = function(){
-					if(xhr.readyState==4){
-					jsonStr = xhr.responseText;
-					//the attribute in userDataObject: Rountcount, userIsOut, activePlayer, ownedCardDescription
-					//									userCardPileSize
-					userDataObject = JSON.parse(jsonStr);
-
-					//the attribute in userCardObject: Size, Speed, Range, Firepower, Cargo
-					userCardObject = JSON.parse(userDataObject.ownedCardCategory);
-					//add the function that how content changed in html below
-					
-
-					}
-				}
-				
-			}
-
-			//This method will be called when need to select category
-			// But there are two cases
-			function selectCategory(){
-				var xhr = new XMLHttpRequest();
-				xhr.open("get","/toptrumps/gamestart/categoryselect");
-				xhr.send(null);
-				var jsonStr = 0;
-				xhr.onreadystatechange = function(){
-					if(xhr.readyState==4){
-					jsonStr = xhr.responseText;
-					
-					selectedCategoryObject = JSON.parse(jsonStr);
-					if(selectedCategoryObject.getSelected == "0"){
-						//This means the active player is User
-						//Then we should display the button that let User category
-						//add function here
-
-
-
-
-					}else if(selectedCategoryObject.getSelected == "1"){
-						//This means active Player is not User
-						//can use selectedCategoryObject.selectedCategory to get selectedCategory name
-
-
-						//can other user details
-						//userObject stores playerName,playerIsOut,isActive,ownedCardDescription
-						userObject = JSON.parse(selectedCategoryObject.player1);
-						//userCard stores Size, Speed, Range, Firepower, Cargo
-						userCard = JSON.parse(userObject.ownedCardCategory);
-
-						ai1Object = JSON.parse(selectedCategoryObject.player2);
-						ai1Card = JSON.parse(ai1Object.ownedCardCategory);
-
-						ai2Object = JSON.parse(selectedCategoryObject.player3);
-						ai2Card = JSON.parse(ai2Object.ownedCardCategory);
-
-						ai3Object = JSON.parse(selectedCategoryObject.player4);
-						ai3Card = JSON.parse(ai3Object.ownedCardCategory);
-
-						ai4Object = JSON.parse(selectedCategoryObject.player5);
-						ai4Card = JSON.parse(ai4Object.ownedCardCategory);
-
-						//add the update function below
-
-						}
-					}
-				}
-				
-			}
-			//This method will be called when "user" need to select category
-			function userSelectedCategory(){
-				var xhr = new XMLHttpRequest();
-				xhr.open("get","/toptrumps/gamestart/userCategoryselect");
-				xhr.send(null);
-				var jsonStr = 0;
-				xhr.onreadystatechange = function(){
-					if(xhr.readyState==4){
-					jsonStr = xhr.responseText;
-
-					selectedCategoryObject = JSON.parse(jsonStr);
-					
-					//userObject stores playerName,playerIsOut,isActive,ownedCardDescription,playerCardPileSize
-					userObject = JSON.parse(selectedCategoryObject.player1);
-					//userCard stores Size, Speed, Range, Firepower, Cargo
-					userCard = JSON.parse(userObject.ownedCardCategory);
-
-					ai1Object = JSON.parse(selectedCategoryObject.player2);
-					ai1Card = JSON.parse(ai1Object.ownedCardCategory);
-
-					ai2Object = JSON.parse(selectedCategoryObject.player3);
-					ai2Card = JSON.parse(ai2Object.ownedCardCategory);
-
-					ai3Object = JSON.parse(selectedCategoryObject.player4);
-					ai3Card = JSON.parse(ai3Object.ownedCardCategory);
-
-					ai4Object = JSON.parse(selectedCategoryObject.player5);
-					ai4Card = JSON.parse(ai4Object.ownedCardCategory);
-
-					//add the update function
-
-					}
-				}
-				
-			}
-
-			//This method will be called after user click show result button
-			function showResult(){
-				var xhr = new XMLHttpRequest();
-				xhr.open("get","/toptrumps/gamestart/showresult");
-				xhr.send(null);
-				var jsonStr = 0;
-				xhr.onreadystatechange = function(){
-					if(xhr.readyState==4){
-					jsonStr = xhr.responseText;
-					//the attribute in resultObject: winPlayer, cardPileNumber ,GameWinner
-						//cardPileNumber: this attribute shows the number of common cardPile.
-						//winPlayer: if the round is draw, then this should be null. else: player name
-						//GameWinner: this attributes is none normally, it will be player name when get game winner
-					resultObject = JSON.parse(jsonStr);
-
-					//add the update function
-
-					}
-				}
-				
-			}
-
-			function nextRound(){
-				var xhr = new XMLHttpRequest();
-				xhr.open("get","/toptrumps/gamestart/newRound");
-				xhr.send(null);
-				var jsonStr = 0;
-				xhr.onreadystatechange = function(){
-					if(xhr.readyState==4){
-					jsonStr = xhr.responseText;
-					//the attribute in userDataObject: Rountcount, userIsOut, activePlayer, ownedCardDescription
-					//								   userCardPileSize, playerCardPileSize
-						userDataObject = JSON.parse(jsonStr);
-						userCardObject = JSON.parse(userDataObject.ownedCardCategory);
-					//add the update function
-
-					}
-				}
-				
-			}
-
-		</script>
-
-    <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
+    <body onload="initalize()"> 
+    <!-- Call the initalize method when the page loads -->
     	
-    	<div class="container">
-
-			<!-- Add your HTML Here -->
-			<button id = "test" onclick = "startGame()"> testButton </button>
-
-		</div>
+			 <h1 class="header" style="text-align:center";> Top Trumps Game </h1>
+	        <a class="button" href="/toptrumps/game">New Game</a>
+	        <a class="button" href="#0">Get Statistics</a>
+	        <p>Click the button above to start a new game or getting statistics.</p>
 		
 		<script type="text/javascript">
 		
