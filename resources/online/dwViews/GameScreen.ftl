@@ -20,6 +20,12 @@
  		<meta name="viewport" 
         content="width=device-width, initial-scale=1"> 
         <style>
+               *{
+                  margin: 0 ;
+                  padding: 0 ;
+                  list-style: none;
+                  
+                }
                 body {
                 display: flex;
                 flex-direction: column;
@@ -28,7 +34,7 @@
                 color: #666;
                 font-size: 1.3em;
                 font-family: sans-serif;
-                background:url(./images/slide04.jpg)  no-repeat center center;
+                background:url(/assets/slide04.jpg)  no-repeat center center;
                 background-size:cover;
                 background-attachment:fixed;
                 }
@@ -40,13 +46,14 @@
                  }
 
                  .button {
-                 width: 170px;
+                 
                  height: 35px;
                  display: block;
                  color: #000;
                  border-radius: 25px; 
                  position: relative;
-                 padding: 1em;
+                 padding:5px;
+                 line-height:35px;
                  }
 
 
@@ -78,16 +85,23 @@
                 margin: 8px;
                 margin-top:30px;      
                 }  
-
+                <#--  .card-body{
+                  position:relative;
+                }  -->
                 .card-info {
                 padding: 20px;
                 position: fixed;
-                bottom: 0;
+                bottom: 10px;
+                
                 color: #666;
                 font-size: 1em;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 transform: translateY(40%);
                 transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+
+                .card-text{
+                  font-size:1em;
                 }
 
                 .pic {
@@ -101,15 +115,21 @@
                 }
 
                 .box {
+                display:flex;
                 position: relative;
-                width: 250px;
-                height: 450px;
+                float:left;
+                height: 300px;
                 overflow: hidden;
                 border-radius: 10px;
-                display:inline-block;
-                margin: 10px;
                 margin-top:30px;
+                justify-content: center;
                 }
+                .cardBox{
+                  position:relative;
+                  float:left;
+
+                }
+                
                 #nextRound{
                   display:none;
                 }
@@ -154,7 +174,7 @@
                 //add the function that how content changed in html below
 
                 document.getElementById('activePlayer').innerHTML="The active player of this round is " + userDataObject.activePlayer;
-                document.getElementById('numCard1').innerHTML="Cards: " +userDataObject.ownedCardDescription;
+                document.getElementById('numCard1').innerHTML= userDataObject.ownedCardDescription;
                 //document.getElementById('cardName1').innerHTML = (userObject.cardName);
                 document.getElementById('you1').innerHTML ="Size: "+ (CardObject.Size);
                 document.getElementById('you2').innerHTML ="Speed: "+ (CardObject.Speed);
@@ -273,7 +293,7 @@
           //  document.getElementById('showButton').style.visibility = "visible";
           document.getElementById('announce').innerHTML="The chosen gategory is " + selectedCategoryObject.selectedCategory;
 
-        document.getElementById('numCard1').innerHTML="Cards: " +userObject.ownedCardDescription;
+        document.getElementById('numCard1').innerHTML= userObject.ownedCardDescription;
                   //document.getElementById('cardName1').innerHTML = (userObject.cardName);
                   document.getElementById('you1').innerHTML ="Size: "+ (userCard.Size);
                   document.getElementById('you2').innerHTML ="Speed: "+ (userCard.Speed);
@@ -282,7 +302,7 @@
                   document.getElementById('you5').innerHTML ="Cargo: "+ (userCard.Cargo);
         if(ai1Object.playerIsOut == "false"){
         document.getElementsByClassName('playerAI1')[0].style.display = "inline-block";
-        document.getElementById('numCard2').innerHTML="Cards: " +(ai1Object.ownedCardDescription);
+        document.getElementById('numCard2').innerHTML= (ai1Object.ownedCardDescription);
                   //document.getElementById('cardName2').innerHTML = (ai1Object.cardName);
                   document.getElementById('ai1_1').innerHTML ="Size: "+ (ai1Card.Size);
                   document.getElementById('ai1_2').innerHTML ="Speed: "+ (ai1Card.Speed);
@@ -292,7 +312,7 @@
         }
         if(ai2Object.playerIsOut == "false"){
         document.getElementsByClassName('playerAI2')[0].style.display = "inline-block";
-        document.getElementById('numCard3').innerHTML="Cards: " +(ai2Object.ownedCardDescription);
+        document.getElementById('numCard3').innerHTML= (ai2Object.ownedCardDescription);
                   //document.getElementById('cardName3').innerHTML = (ai2Object.cardName);
                   document.getElementById('ai2_1').innerHTML ="Size: "+ (ai2Card.Size);
                   document.getElementById('ai2_2').innerHTML ="Speed: "+ (ai2Card.Speed);
@@ -303,7 +323,7 @@
 
         if(ai3Object.playerIsOut == "false"){
           document.getElementsByClassName('playerAI3')[0].style.display = "inline-block";
-        document.getElementById('numCard4').innerHTML="Cards: " +(ai3Object.ownedCardDescription);
+        document.getElementById('numCard4').innerHTML= (ai3Object.ownedCardDescription);
                   //document.getElementById('cardName4').innerHTML = (ai3Object.cardName);
                   document.getElementById('ai3_1').innerHTML ="Size: "+ (ai3Card.Size);
                   document.getElementById('ai3_2').innerHTML ="Speed: "+ (ai3Card.Speed);
@@ -313,7 +333,7 @@
         }
         if(ai4Object.playerIsOut == "false"){
           document.getElementsByClassName('playerAI4')[0].style.display = "inline-block";
-        document.getElementById('numCard5').innerHTML="Cards: " +(ai4Object.ownedCardDescription);
+        document.getElementById('numCard5').innerHTML= (ai4Object.ownedCardDescription);
                   //document.getElementById('cardName5').innerHTML = (ai4Object.cardName);
                   document.getElementById('ai4_1').innerHTML ="Size: "+ (ai4Card.Size);
                   document.getElementById('ai4_2').innerHTML ="Speed: "+ (ai4Card.Speed);
@@ -411,7 +431,7 @@
                 document.getElementById('nextSelectCategory').style.display = "block";
 
                 document.getElementById('activePlayer').innerHTML="The active player of this round is " + userDataObject.activePlayer;
-                document.getElementById('numCard1').innerHTML="Cards: " +userDataObject.ownedCardDescription;
+                document.getElementById('numCard1').innerHTML= userDataObject.ownedCardDescription;
                 //document.getElementById('cardName1').innerHTML = (userObject.cardName);
                 document.getElementById('you1').innerHTML ="Size: "+ (CardObject.Size);
                 document.getElementById('you2').innerHTML ="Speed: "+ (CardObject.Speed);
@@ -422,7 +442,7 @@
                 //Round Number
                 var roundNumber = userDataObject.Rountcount
                 document.getElementById('roundNumber').innerHTML="Round Number: " +roundNumber + " Players have Drawn their cards";
-
+              
                 resetContent();
 
           }
@@ -455,7 +475,7 @@
                     <h4 id = "announce2"></h4>
                   <div class="box">
                     <div class="button" id="nextSelectCategory" > 
-                    <button class="button" style="margin-top:30px" id="nextButton" onclick = "selectCategory()" class="btn btn-primary btn-lg">Next: Select Category</button>
+                    <button class="button"  id="nextButton" onclick = "selectCategory()" class="btn btn-primary btn-lg">Next: Select Category</button>
                     </div>
                       <div class="button" id = "userSelCategory";> 
                          <button class="button" style="margin-top:30px";> Choose Category</button>
@@ -475,7 +495,7 @@
                         <button class="button" id = "nextRound" onclick = "nextRound()"> Next Round</button>
                       </div>
                   </div>
-                     
+                     <div class = "cardBox">
                     <div class="card playerYou" style="width: 11rem;"style="margin-top:30px";>
                     <h4 class="card-info">You(User)</h4>
                     <p class="card-text" id = "numCard1">Atrributes</p>
@@ -486,11 +506,11 @@
                                <li id="you4"></li>
                                <li id="you5"></li>
                             </ul>
-                            <img class="pic" src="./images/orange.png">
+                            <img class="pic" src="assets/orange.png">
                        </div>
                   
                 <div class="card playerAI1" style="width: 10rem;">
-              <div class="card-body " >
+              
                 <h4 class="card-info" >AI Player 1</h4>
                     <p class="card-text" id = "numCard2">Atrributes</p>
                              <ul>
@@ -501,10 +521,11 @@
                                <li id="ai1_5"></li>
                             </ul>
                             <img class="pic" src="./images/cyan.png">
-                       </div>
+      
                     </div>
+
                 <div class="card playerAI2" style="width: 10rem;">
-               <div class="card-body ">
+     
                   <h4 class="card-info" >AI Player 2</h4>
                     <p class="card-text" id = "numCard3">Atrributes</p>
                              <ul>
@@ -515,10 +536,10 @@
                                <li id="ai2_5"></li>
                             </ul>
                             <img class="pic" src="./images/smokygray.png">
-                       </div>
+               
                     </div>
                  <div class="card playerAI3" style="width: 10rem;">
-               <div class="card-body ">
+
                   <h4 class="card-info" >AI Player 3</h4>
                     <p class="card-text" id = "numCard4">Atrributes</p>
                              <ul>
@@ -529,10 +550,10 @@
                                <li id="ai3_5"></li>
                             </ul>
                             <img class="pic" src="./images/yellow.png">
-                       </div>
+          
                     </div>
                 <div class="card playerAI4" style="width: 10rem;">
-               <div class="card-body">
+          
                   <h4 class="card-info" >AI Player 4</h4>
                     <p class="card-text" id = "numCard5">Atrributes</p>
                              <ul>
@@ -544,8 +565,8 @@
                             </ul>
                             <img class="pic" src="./images/yellow2.png">
 		
-		</div>
-		
+		              </div>
+                </div>
 		<script type="text/javascript">
 		
 			// Method that is called on page load

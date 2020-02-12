@@ -253,7 +253,7 @@ public class GameServer {
 	}
 	
 	public String newRound() {
-		gm.getRm().winOrOut(gm.getPm(), gm);
+//		gm.getRm().winOrOut(gm.getPm(), gm);
 		gm.getRm().activePlayerSelector(gm.getPm());
 		gm.getPm().playersDrawCard();
 		
@@ -286,7 +286,7 @@ public class GameServer {
 		
 		// round count
 		String roundKey = "Rountcount";
-		String roundValue = "" +gm.getRm().getRoundCount();
+		String roundValue = ""+ gm.getRm().getRoundCount();
 		map.put(roundKey, roundValue);
 		
 		return JSON.toJSONString(map);

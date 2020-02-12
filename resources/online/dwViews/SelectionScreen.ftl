@@ -21,7 +21,8 @@
  		.header {
 	 	 	width:100%;
 			text-align:center;
-			margin-top:20px;
+			margin-top:30px;
+			font-size:2em;
          		}
  		 body {
 	      display: flex;
@@ -31,7 +32,7 @@
 	      color: #666;
 	      font-size: 1.5em;
 	      font-family: sans-serif;
-	      background:url(./images/slide04.jpg)  no-repeat center center;
+	      background:url(assets/slide04.jpg)  no-repeat center center;
 	      background-size:cover;
 	      background-attachment:fixed;
 	      }
