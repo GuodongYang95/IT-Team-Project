@@ -10,9 +10,10 @@
 
 
         
-        Sprint:     1
-        Priority:   9 Points
-        Cost:       10 Points
+        Sprint:            1
+        Priority:          Must 
+        Estimated Cost:    20 Points
+        Actual Cost:       23 Points
 
 * **Back Side** :
 
@@ -29,9 +30,10 @@
 
 
         
-        Sprint:     1
-        Priority:   8 Points
-        Cost:       3 Points 
+        Sprint:            1
+        Priority:          Should 
+        Estimated Cost:    11 Points
+        Actual Cost:       9  Points
 
 * **Back Side** :
 
@@ -48,9 +50,10 @@
 
 
         
-        Sprint:     1
-        Priority:   7 Points
-        Cost:       4 Points 
+        Sprint:            1
+        Priority:          Should  
+        Estimated Cost:    8 Points
+        Actual Cost:       7 Points
 
 * **Back Side** :
 
@@ -67,10 +70,10 @@
         “As a player, I wish to quit the game at any time I would like to."
 
         
-        Sprint:     1
-        Priority:   9 Points
-        Cost:       4 Points 
-
+        Sprint:            1
+        Priority:          Must 
+        Estimated Cost:    7  Points
+        Actual Cost:       8  Points
 * **Back Side** :
 
         1. Specific 'quit' key should be activated at any time if user wants to terminate the game.
@@ -85,10 +88,10 @@
         “As a player, I wish to play this game on the web page."
 
         
-        Sprint:     2
-        Priority:   8 Points
-        Cost:       8 Points 
-
+        Sprint:            2
+        Priority:          Must 
+        Estimated Cost:    18  Points
+        Actual Cost:       18  Points
 * **Back Side** :
 
         1. Relevant JavaScript and Database should be linked.
@@ -103,10 +106,10 @@
         “As a player, I wish to play online version game easily by clicking the bottom."
 
         
-        Sprint:     2
-        Priority:   7 Points
-        Cost:       5 Points 
-
+        Sprint:            2
+        Priority:          Must 
+        Estimated Cost:    10 Points
+        Actual Cost:       9  Points
 * **Back Side** :
 
         1. The function of the command line version should be activated by tracking the action of the mouse.
@@ -121,10 +124,10 @@
         “As a player, I wish to see the game result of the online version."
 
         
-        Sprint:     2
-        Priority:   7 Points
-        Cost:       5 Points 
-
+        Sprint:            2
+        Priority:          Should 
+        Estimated Cost:    8  Points
+        Actual Cost:       7  Points
 * **Back Side** :
 
         1. The web page interface should be showing a window of the result of the game after finished.
@@ -139,11 +142,29 @@
         “As a player, I wish to have a unique card image."
 
         
-        Sprint:     1
-        Priority:   5
-        Cost:       4 Points 
+        Sprint:            2
+        Priority:          Should 
+        Estimated Cost:    10  Points
+        Actual Cost:       11  Points
 
 * **Back Side** :
 
         1. Card image should have individual storage database wich linked to the card array list.
         2. Each unique card image should link to the according card (card name).
+
+## #9
+
+* **Front Side** :
+
+        Story Name: Web game quit and restart
+        
+        “As a player, I wish to quit the game and restart at anytime."
+
+        
+        Sprint:            2
+        Priority:          Must 
+        Estimated Cost:    8  Points
+        Actual Cost:       8  Points
+* **Back Side** :
+
+        1. Online version game should have a 'Quit' bottom which linked a 'break' function can quit the game at anytime.
