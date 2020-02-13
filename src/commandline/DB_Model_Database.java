@@ -202,11 +202,7 @@ public class DB_Model_Database {
 	        insert = pstmt.executeUpdate();
 	        pstmt.close();
 	        conn.close();
-<<<<<<< HEAD
-=======
-//	        System.out.println("insert successfully");
-	        
->>>>>>> origin/Ken
+
 	    } catch (SQLException e) {
 	        e.printStackTrace();
 	    }

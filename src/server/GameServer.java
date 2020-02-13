@@ -67,6 +67,7 @@ public class GameServer {
 		//userCardPileSize
 		String userCardPaileSizeKey = "userCardPileSize";
 		String userCardPaileValue = ""+ gm.getPm().getPlayers()[0].getCardPile().size();
+//		System.out.println(userCardPaileValue);
 		map.put(userCardPaileSizeKey, userCardPaileValue);
 		
 		// round count
@@ -185,7 +186,7 @@ public class GameServer {
 			String userCardPaileSizeKey = "playerCardPileSize";
 			String userCardPaileValue = ""+ players[i].getCardPile().size();
 			playerMap.put(userCardPaileSizeKey, userCardPaileValue);
-			
+//			System.out.println(userCardPaileValue);
 			//playerdetailsMap
 			String playerdetailsValue = JSON.toJSONString(playerMap);
 			
@@ -245,9 +246,18 @@ public class GameServer {
 			//false means game will continue, can't know game winner
 			finalWinnerValue = "none";
 		}else {
+			//write data to database
+			gm.writeDBAfterGame();
 			finalWinnerValue = gm.getWinner().getName();
 		}
 		resultMap.put(finalWinnerKey, finalWinnerValue);
+		
+		for (int i = 0; i< gm.getPm().getPlayers().length;i++) {
+			String playerNameKey = "Player"+i+"Score";
+			String scoreValue = ""+gm.getPm().getPlayers()[i].getScore();
+			resultMap.put(playerNameKey, scoreValue);
+			
+		}
 		
 		return JSON.toJSONString(resultMap);
 		
@@ -322,7 +332,35 @@ public class GameServer {
 		
 		return JSON.toJSONString(dbMap);
 		
+	}
+	public String autoGame() {
+		String finalWinner = "GameWinner"; 
+		String finalvalue = "none";
+		Map<String, String> winner = new LinkedHashMap<String, String>();
+		while(gm.getWinner() == null) {
+			gm.getPm().playersSelectCategory(gm.getRm());
+			gm.getRm().resetMaxValuePlayerList(gm.getPm());
+			gm.getRm().selectWinner(gm);
+			gm.getPm().distributeCardToWinner(gm.getRm());
+			if(gm.getRm().winOrOut(gm.getPm(), gm) == true) {
+				gm.writeDBAfterGame();
+				break;
+			}
+			gm.getRm().activePlayerSelector(gm.getPm());
+			gm.getPm().playersDrawCard();
+		finalvalue = gm.getWinner().getName();
+			
+		winner.put(finalWinner, finalvalue);	
+			
+		}
+		for (int i = 0; i< gm.getPm().getPlayers().length;i++) {
+			String playerNameKey = "Player"+i+"Score";
+			String scoreValue = ""+gm.getPm().getPlayers()[i].getScore();
+			winner.put(playerNameKey, scoreValue);
+			
+		}
 		
+		return JSON.toJSONString(winner);	
 	}
 
 }

@@ -153,5 +153,13 @@ public class TopTrumpsRESTAPI {
 			
 			return gameServer.getStatistics();
 	}
-
+	
+	
+	@GET
+	@Path("/gamestart/autogame")
+	
+	public String autoGame() throws IOException{
+			
+			return gameServer.autoGame();
+	}
 }

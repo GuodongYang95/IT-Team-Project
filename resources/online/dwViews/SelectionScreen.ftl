@@ -58,6 +58,7 @@
 	      box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.3);
 	      cursor: pointer; 
 	      }
+	
       </style>
 	</head>
 
@@ -66,7 +67,7 @@
     	
 			 <h1 class="header" style="text-align:center";> Top Trumps Game </h1>
 	        <a class="button" href="/toptrumps/game">New Game</a>
-	        <a class="button" href="#0">Get Statistics</a>
+	        <a class="button" href="/toptrumps/stats">Get Statistics</a>
 	        <p>Click the button above to start a new game or getting statistics.</p>
 		
 		<script type="text/javascript">
@@ -79,8 +80,8 @@
 				// --------------------------------------------------------------------------
 				
 				// For example, lets call our sample methods
-				helloJSONList();
-				helloWord("Student");
+				<#--  helloJSONList();
+				helloWord("Student");  -->
 				
 			}
 			
