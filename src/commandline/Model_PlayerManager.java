@@ -156,6 +156,7 @@ public class Model_PlayerManager {
 		
 	}
 	
+	
 	public int playerInput() {
 		Scanner scanner = new Scanner(System.in);
 		int playerinput = scanner.nextInt();
