@@ -1,55 +1,66 @@
 <html>
 
+	<head>
+		<!-- Web page title -->
+    	<title>Top Trumps</title>
+    	
+    	<!-- Import JQuery, as it provides functions you will probably find useful (see https://jquery.com/) -->
+    	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/flick/jquery-ui.css">
 
-<head>
-  <!-- Web page title -->
-  <title>Top Trumps</title>
-
-  <!-- Import JQuery, as it provides functions you will probably find useful (see https://jquery.com/) -->
-  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/flick/jquery-ui.css">
-
-  <!-- Optional Styling of the Website, for the demo I used Bootstrap (see https://getbootstrap.com/docs/4.0/getting-started/introduction/) -->
-  <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/bootstrap.min.css">
-  <script src="http://dcs.gla.ac.uk/~richardm/vex.combined.min.js"></script>
-  <script>vex.defaultOptions.className = 'vex-theme-os';</script>
-  <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex.css" />
-  <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex-theme-os.css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-</head>
+		<!-- Optional Styling of the Website, for the demo I used Bootstrap (see https://getbootstrap.com/docs/4.0/getting-started/introduction/) -->
+		<link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/bootstrap.min.css">
+    	<script src="http://dcs.gla.ac.uk/~richardm/vex.combined.min.js"></script>
+    	<script>vex.defaultOptions.className = 'vex-theme-os';</script>
+    	<link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex.css"/>
+    	<link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex-theme-os.css"/>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		 <style>
+                 body {
+                display: flex;
+                flex-direction: column;
+                justify-content: baseline;
+                align-items: center;
+                color: #666;
+                font-size: 1.5em;
+                font-family: sans-serif;
+                background:url(./images/slide04.jpg)  no-repeat center center;
+                background-size:cover;
+                background-attachment:fixed;
+                }
+                .button  {
+                padding: 1em 2.5em;
+                position:absolute;
+                 right: 420;
+                 bottom: 100;
+                 left: 420;
+                color: #666;
+                font-weight: bold;
+                text-align: center;
+                text-decoration: none;
+                white-space: nowrap;
+                background-color: #fff;
+                background-image: linear-gradient(180deg, #fbfbfb, #c7c7c7);
+                border: 0.0625em solid #d7d7d7;
+                border-radius: 0.5em;
+                box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.3);
+                cursor: pointer; 
+                }
+                .table { 
+                font-size:20;
+                text-align:center;
+                margin-right: 20px;
+                margin-top:50px;
+                cursor: pointer; 
+                }
+                    </style>
+	</head>
 
 <body onload="initalize()">
   <!-- Call the initalize method when the page loads -->
-  <!--CSS for statistics screen-->
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: baseline;
-      align-items: center;
-      color: #666;
-      font-size: 1.5em;
-      font-family: sans-serif;
-      background-color: #d6dadf;
-    }
-
-    .row.bottom {
-
-      position: absolute;
-      right: 0;
-      bottom: 100;
-      left: 150;
-    }
-
-    table,
-    th,
-    td {
-      text-align: center;
-    }
-  </style>
+  
   <div class="container">
     <table class="table" id="table1">
       <thead>
@@ -111,6 +122,53 @@
             xhr.onload = function(e) {
                 var responseText = JSON.parse(xhr.response);
                 $('#totalGames').text(responseText);
+            };
+            xhr.send();
+        }
+         function totalHumanWins() {
+            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/totalHumanWins");
+            if (!xhr) {
+                alert("CORS is not supported");
+            }
+            xhr.onload = function(e) {
+                var responseText = JSON.parse(xhr.response);
+                $('#totalHumanWins').text(responseText);
+            };
+            xhr.send();
+        }
+
+        function totalAIWins() {
+            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/totalAIWins");
+            if (!xhr) {
+                alert("CORS is not supported");
+            }
+            xhr.onload = function(e) {
+                var responseText = JSON.parse(xhr.response);
+                $('#totalAIWins').text(responseText);
+            };
+            xhr.send();
+        }
+
+        function averageDraws() {
+            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/averageDraws");
+            if (!xhr) {
+                alert("CORS is not supported");
+            }
+            xhr.onload = function(e) {
+                var responseText = JSON.parse(xhr.response);
+                $('#averageDraws').text(responseText);
+            };
+            xhr.send();
+        }
+
+        function maxRound() {
+            var xhr = createCORSRequest('GET', "http://localhost:7777/toptrumps/maxRound");
+            if (!xhr) {
+                alert("CORS is not supported");
+            }
+            xhr.onload = function(e) {
+                var responseText = JSON.parse(xhr.response);
+                $('#maxRound').text(responseText);
             };
             xhr.send();
         }

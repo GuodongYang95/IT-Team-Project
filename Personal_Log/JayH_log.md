@@ -7,3 +7,5 @@
     Finish the final function of database connection and operation
 ## 09/02/2020 LOG Junjia Huang  
     Finish the statistic page of online view
+## 11/02/2020 LOG Junjia Huang  
+    Gamescrren.ftl frist test
