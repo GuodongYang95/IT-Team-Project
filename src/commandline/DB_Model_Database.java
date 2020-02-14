@@ -24,7 +24,7 @@ public class DB_Model_Database {
 		String url = "jdbc:postgresql://localhost:5432/ITproject";
 		String username = "postgres";
 
-		String password = "postgres123";
+		String password = "aa199595";
 
 		
 //		final String username = "m_19_2431374h";

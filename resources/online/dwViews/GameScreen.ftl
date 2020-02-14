@@ -39,6 +39,8 @@
                 background-attachment:fixed;
                 }
 
+              
+
                 .header{ 
                  width:100%;
                  text-align:center;
@@ -47,13 +49,19 @@
 
                  .button {
                  
-                 height: 35px;
+                 height: 50px;
                  display: block;
                  color: #000;
                  border-radius: 25px; 
-                 position: relative;
+                 <#--  position: relative;  -->
                  padding:5px;
-                 line-height:35px;
+                 line-height:40px;
+                 transition: 1s;
+                 cursor: pointer; 
+                 }
+
+                 .button:hover{
+                   background:#DCDCDC;
                  }
 
 
@@ -79,20 +87,20 @@
                 width: 240px;
                 height: 320px;
                 background-color:aliceblue;
-                overflow: hidden;
+                <#--  overflow: hidden;  -->
                 border-radius: 10px;
                 display:inline-block;
                 margin: 8px;
                 margin-top:30px;      
                 }  
-                <#--  .card-body{
-                  position:relative;
-                }  -->
+                .card:hover{
+                  top:-10px
+                }
                 .card-info {
                 padding: 20px;
-                position: fixed;
-                bottom: 10px;
-                
+                position: absolute;
+                bottom: -80px;
+                left: 20px;
                 color: #666;
                 font-size: 1em;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -130,12 +138,13 @@
                 position: relative;
                 float:left;
                 height: 350px;
-                overflow: hidden;
+                <#--  overflow: hidden;  -->
                 border-radius: 10px;
                 margin-top:30px;
                 justify-content: center;
                 }
                 .cardBox{
+                  margin-left:10px;
                   position:relative;
                   float:left;
 
@@ -148,7 +157,16 @@
                   display:none;
                 }
                 #userSelCategory{
-                  display:none;
+                   display:none;
+                  
+                }
+                .selectionButtonBox{ 
+                   justify-content: center;
+                }
+                .selection{
+                    display:block;
+                    min-width:100%;
+                    margin: 5px;
                 }
                 .playerAI1{
                   display:none;
@@ -162,13 +180,39 @@
                 .playerAI4{
                   display:none;
                 }
-                .winnerCard{
+                #winnerCard{
                   display:none;
+                }
+                #menu{
+                  display:none;
+                }
+                #exit{
+                  position:fixed;
+                  bottom: 20px
+               
+                }
+                .exitButton {
+                padding: 1em 2.5em;
+                margin: 4em;
+                color: #000;
+                font-weight: bold;
+                text-align: center;
+                text-decoration: none;
+                white-space: nowrap;
+                background-color: #fff;
+                color: #454545;
+                background-image: linear-gradient(180deg, #fbfbfb, #c7c7c7);
+                border: 0.0625em solid #d7d7d7;
+                border-radius: 0.5em;
+                box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.3);
+                cursor: pointer; 
                 }
 
                </style>
 
   <script type="text/javascript">
+
+          var activePlayerName = 0;
             function startGame(){
 
 
@@ -182,12 +226,13 @@
                 //the attribute in userDataObject: Rountcount, userIsOut, activePlayer, ownedCardDescription
                 //									userCardPileSize
                 var userDataObject = JSON.parse(jsonStr);
-
+      
                 //the attribute in userCardObject: Size, Speed, Range, Firepower, Cargo
                 var CardObject = JSON.parse(userDataObject.ownedCardCategory);
                 //add the function that how content changed in html below
-
-                document.getElementById('activePlayer').innerHTML="The active player of this round is " + userDataObject.activePlayer;
+                activePlayerName = userDataObject.activePlayer;
+                document.getElementById(userDataObject.activePlayer).style.background = "#FFD700";
+                document.getElementById('activePlayer').innerHTML="The active player of this round is " + "<span style='color: red'>"+userDataObject.activePlayer+"</span>";
                 document.getElementById('numCard1').innerHTML= userDataObject.ownedCardDescription;
                 document.getElementById('cardPileNumber1').innerHTML = (userDataObject.userCardPileSize);
                 document.getElementById('you1').innerHTML ="Size: "+ (CardObject.Size);
@@ -195,7 +240,7 @@
                 document.getElementById('you3').innerHTML ="Range: "+ (CardObject.Range);
                 document.getElementById('you4').innerHTML ="Firepower: "+ (CardObject.Firepower);
                 document.getElementById('you5').innerHTML ="Cargo: "+ (CardObject.Cargo);
-
+                document.getElementById('youimg').src = "/assets/"+userDataObject.ownedCardDescription +".png"
                 //Round Number
                 var roundNumber = userDataObject.Rountcount
                 document.getElementById('roundNumber').innerHTML="Round Number: " +roundNumber + " Players have Drawn their cards";
@@ -314,6 +359,7 @@
                   document.getElementById('you3').innerHTML ="Range: "+ (userCard.Range);
                   document.getElementById('you4').innerHTML ="Firepower: "+ (userCard.Firepower);
                   document.getElementById('you5').innerHTML ="Cargo: "+ (userCard.Cargo);
+                  document.getElementById('youimg').src = "/assets/"+userObject.ownedCardDescription +".png"
         if(ai1Object.playerIsOut == "false"){
         document.getElementsByClassName('playerAI1')[0].style.display = "inline-block";
         document.getElementById('numCard2').innerHTML= (ai1Object.ownedCardDescription);
@@ -323,6 +369,7 @@
                   document.getElementById('ai1_3').innerHTML ="Range: "+ (ai1Card.Range);
                   document.getElementById('ai1_4').innerHTML ="Firepower: "+ (ai1Card.Firepower);
                   document.getElementById('ai1_5').innerHTML ="Cargo: "+ (ai1Card.Cargo);
+                  document.getElementById('ai1img').src = "/assets/"+ai1Object.ownedCardDescription +".png"
         }
         if(ai2Object.playerIsOut == "false"){
         document.getElementsByClassName('playerAI2')[0].style.display = "inline-block";
@@ -333,6 +380,7 @@
                   document.getElementById('ai2_3').innerHTML ="Range: "+ (ai2Card.Range);
                   document.getElementById('ai2_4').innerHTML ="Firepower: "+ (ai2Card.Firepower);
                   document.getElementById('ai2_5').innerHTML ="Cargo: "+ (ai2Card.Cargo);
+                  document.getElementById('ai2img').src = "/assets/"+ai2Object.ownedCardDescription +".png"
         }
 
         if(ai3Object.playerIsOut == "false"){
@@ -344,6 +392,7 @@
                   document.getElementById('ai3_3').innerHTML ="Range: "+ (ai3Card.Range);
                   document.getElementById('ai3_4').innerHTML ="Firepower: "+ (ai3Card.Firepower);
                   document.getElementById('ai3_5').innerHTML ="Cargo: "+ (ai3Card.Cargo);
+                  document.getElementById('ai3img').src = "/assets/"+ai3Object.ownedCardDescription +".png"
         }
         if(ai4Object.playerIsOut == "false"){
           document.getElementsByClassName('playerAI4')[0].style.display = "inline-block";
@@ -354,6 +403,7 @@
                   document.getElementById('ai4_3').innerHTML ="Range: "+ (ai4Card.Range);
                   document.getElementById('ai4_4').innerHTML ="Firepower: "+ (ai4Card.Firepower);
                   document.getElementById('ai4_5').innerHTML ="Cargo: "+ (ai4Card.Cargo);
+                  document.getElementById('ai4img').src = "/assets/"+ai4Object.ownedCardDescription +".png"
         }
           
               }
@@ -391,7 +441,7 @@
                 //means this round has winner
                 document.getElementById('nextRound').style.display = "block";
                 document.getElementById('announce2').innerHTML=
-                "the winner of this round is "+resultObject.winPlayer;
+                "the winner of this round is "+"<span style='color: yellow'>"+resultObject.winPlayer +";"+"</span>";
                 }
               }else{
                 //one of player win this Game
@@ -437,11 +487,11 @@
 					if(xhr.readyState==4){
 					jsonStr = xhr.responseText;
 					//the attribute in userDataObject: Rountcount, userIsOut, activePlayer, ownedCardDescription
-					//								   userCardPileSize, playerCardPileSize
+					//								   userCardPileSize
           
 						userDataObject = JSON.parse(jsonStr);
 						CardObject = JSON.parse(userDataObject.ownedCardCategory);
-                        if(userDataObject.userIsout == "true"){
+                        if(userDataObject.userIsOut == "true"){
                           var xhr2 = new XMLHttpRequest();
                               xhr2.open("get","/toptrumps/gamestart/autogame");
                               xhr2.send(null);
@@ -453,7 +503,6 @@
                                 //								   userCardPileSize, playerCardPileSize
                                 
                                 winnerObject = JSON.parse(jsonStr2);
-                                if(winnerObject.GameWinner)
                                 showResultDetail(winnerObject);
                                 }
                               }
@@ -463,8 +512,14 @@
                                 //add the update function
                                       document.getElementById('nextRound').style.display = "none";
                                       document.getElementById('nextSelectCategory').style.display = "block";
+                                      document.getElementById(activePlayerName).style.background = "aliceblue";
 
-                                      document.getElementById('activePlayer').innerHTML="The active player of this round is " + userDataObject.activePlayer;
+                                      activePlayerName = userDataObject.activePlayer;
+
+                                      document.getElementById(activePlayerName).style.background = "#FFD700";
+
+                                      document.getElementById('cardPileNumber1').innerHTML = (userDataObject.userCardPileSize);
+                                      document.getElementById('activePlayer').innerHTML="The active player of this round is " + "<span style='color: red'>"+userDataObject.activePlayer+"</span>";
                                       document.getElementById('numCard1').innerHTML= userDataObject.ownedCardDescription;
                                       //document.getElementById('cardName1').innerHTML = (userObject.cardName);
                                       document.getElementById('you1').innerHTML ="Size: "+ (CardObject.Size);
@@ -472,7 +527,7 @@
                                       document.getElementById('you3').innerHTML ="Range: "+ (CardObject.Range);
                                       document.getElementById('you4').innerHTML ="Firepower: "+ (CardObject.Firepower);
                                       document.getElementById('you5').innerHTML ="Cargo: "+ (CardObject.Cargo);
-
+                                      document.getElementById('youimg').src = "/assets/"+userDataObject.ownedCardDescription +".png"
                                       //Round Number
                                       var roundNumber = userDataObject.Rountcount
                                       document.getElementById('roundNumber').innerHTML="Round Number: " +roundNumber + " Players have Drawn their cards";
@@ -502,6 +557,7 @@
     <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
     	
     	<div class="container">
+                    <a class="exitButton" id = "exit" href= "http://localhost:7777/toptrumps">Exit</a>
                     <div class="header"> 
                     <div> 
                     <h1 style="text-align:center"> Top Trumps Game</h1>
@@ -510,20 +566,23 @@
                     <h4 id="announce"> </h4>
                     <h4 id = "announce2"></h4>
                   <div class="box">
-                    <div class="button" id="nextSelectCategory" > 
+                    <div id="nextSelectCategory" > 
                     <button class="button"  id="nextButton" onclick = "selectCategory()" class="btn btn-primary btn-lg">Next: Select Category</button>
                     </div>
-                      <div class="button" id = "userSelCategory"> 
-                         <button class="button" style="margin-top:30px"> Choose Category</button>
-                      
-                          <div class="button" style="margin-top:30px" > 
-                            <button class="button" style="margin-top:10px" onclick = "userSelectedCategory(this)">Size</button>
-                            <button class="button" style="margin-top:10px" onclick = "userSelectedCategory(this)";>Speed</button>
-                            <button class="button" style="margin-top:10px" onclick = "userSelectedCategory(this)";>Range </button>
-                            <button class="button" style="margin-top:10px" onclick = "userSelectedCategory(this)";>Firepower</button>
-                            <button class="button" style="margin-top:10px" onclick = "userSelectedCategory(this)";>Cargo</button>
+                    <button class="button" id = "menu"> <a  href= "http://localhost:7777/toptrumps">Menu</a></button>
+                      <div id = "userSelCategory"> 
+                         <button class="button"> Choose Category</button>
+                        
+                          <div class="selectionButtonBox" > 
+                            <button class="button selection" onclick = "userSelectedCategory(this)">Size</button>
+                            <button class="button selection" onclick = "userSelectedCategory(this)";>Speed</button>
+                            <button class="button selection" onclick = "userSelectedCategory(this)";>Range </button>
+                            <button class="button selection" onclick = "userSelectedCategory(this)";>Firepower</button>
+                            <button class="button selection" onclick = "userSelectedCategory(this)";>Cargo</button>
                           </div>
                       </div>
+                      
+                      
                       <div>
                         <button class="button" id = "resultButton" onclick = "showResult()"> Show Winner</button>
                       </div>
@@ -532,7 +591,7 @@
                       </div>
                   </div>
                      <div class = "cardBox">
-                    <div class="card playerYou" style="width: 11rem;"style="margin-top:30px">
+                    <div class="card playerYou" id = "You" style="width: 11rem;"style="margin-top:30px">
                     <h4 class="card-info">You(User)</h4>
                     <p class="card-text" id = "numCard1">Atrributes  <div class="cardpile" id="cardPileNumber1">CardPile </div></p>
                              <ul>
@@ -542,10 +601,10 @@
                                <li id="you4"></li>
                                <li id="you5"></li>
                             </ul>
-                            <img class="pic" src="assets/orange.png">
+                            <img class="pic" id = "youimg" src="">
                        </div>
                   
-                <div class="card playerAI1" style="width: 10rem;">
+                <div class="card playerAI1" id = "Player_AI_1" style="width: 10rem;">
               
                 <h4 class="card-info" >AI Player 1</h4>
                     <p class="card-text" id = "numCard2">Atrributes <div class="cardpile" id="cardPileNumber2">CardPile </div></p>
@@ -556,11 +615,11 @@
                                <li id="ai1_4"></li>
                                <li id="ai1_5"></li>
                             </ul>
-                            <img class="pic" src="./images/cyan.png">
+                            <img class="pic" id = "ai1img" src="">
       
                     </div>
 
-                <div class="card playerAI2" style="width: 10rem;">
+                <div class="card playerAI2" id = "Player_AI_2" style="width: 10rem;">
      
                   <h4 class="card-info" >AI Player 2</h4>
                     <p class="card-text" id = "numCard3">Atrributes <div class="cardpile" id="cardPileNumber3">CardPile </div></p>
@@ -571,10 +630,10 @@
                                <li id="ai2_4"></li>
                                <li id="ai2_5"></li>
                             </ul>
-                            <img class="pic" src="./images/smokygray.png">
+                            <img class="pic" id = "ai2img" src="">
                
                     </div>
-                 <div class="card playerAI3" style="width: 10rem;">
+                 <div class="card playerAI3" id = "Player_AI_3" style="width: 10rem;">
 
                   <h4 class="card-info" >AI Player 3</h4>
                     <p class="card-text" id = "numCard4">Atrributes <div class="cardpile" id="cardPileNumber4">CardPile </div></p>
@@ -585,10 +644,10 @@
                                <li id="ai3_4"></li>
                                <li id="ai3_5"></li>
                             </ul>
-                            <img class="pic" src="./images/yellow.png">
+                            <img class="pic" id = "ai3img" src="">
           
                     </div>
-                <div class="card playerAI4" style="width: 10rem;">
+                <div class="card playerAI4 " id = "Player_AI_4" style="width: 10rem;">
           
                   <h4 class="card-info" >AI Player 4</h4>
                     <p class="card-text" id = "numCard5">Atrributes 
@@ -600,10 +659,10 @@
                                <li id="ai4_4"></li>
                                <li id="ai4_5"></li>
                             </ul>
-                            <img class="pic" src="./images/yellow2.png">
+                            <img class="pic" id = "ai4img" src="">
 		
 		              </div>
-                <div class="card winnerCard" style="width: 10rem;">
+                <div class="card" id = "winnerCard" style="width: 10rem;">
           
                   <h4 class="card-info" >Winner</h4>
                              <ul>
@@ -614,7 +673,6 @@
                                <li id="score3"></li>
                                <li id="score4"></li>
                             </ul>
-		
 		              </div>
                 </div>
 
@@ -655,12 +713,15 @@
 			}
       function showResultDetail(winnerObject){ 
           document.getElementById('winnerCard').style.display = "block";
-          document.getElementById('winner').innerHTML = "The Winner of this game is "+ winnerObject.GameWinner;
-          document.getElementById('score0').innerHTML = "You score is "+ winnerObject.Player0Score;
-          document.getElementById('score1').innerHTML = "AI 1 score is "+ winnerObject.Player1Score;
-          document.getElementById('score2').innerHTML = "AI 2 score is "+ winnerObject.Player2Score;
-          document.getElementById('score3').innerHTML = "AI 3 score is "+ winnerObject.Player3Score;
-          document.getElementById('score4').innerHTML = "AI 4 score is "+ winnerObject.Player4Score;
+          document.getElementById('menu').style.display = "block";
+          document.getElementById('nextRound').style.display = "none";
+          document.getElementById('winner').innerHTML = "The Winner of this game is "+ "<span style='color: yellow'>"+winnerObject.GameWinner+"</span>" +";";
+          document.getElementById('score0').innerHTML = "You score is "+ winnerObject.Player0Score+";";
+          document.getElementById('score1').innerHTML = "AI 1 score is "+ winnerObject.Player1Score+";";
+          document.getElementById('score2').innerHTML = "AI 2 score is "+ winnerObject.Player2Score+";";
+          document.getElementById('score3').innerHTML = "AI 3 score is "+ winnerObject.Player3Score+";";
+          document.getElementById('score4').innerHTML = "AI 4 score is "+ winnerObject.Player4Score+";";
+          
       }
 		
 		</script>

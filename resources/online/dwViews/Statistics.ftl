@@ -18,7 +18,7 @@
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		 <style>
-                 body {
+                body {
                 display: flex;
                 flex-direction: column;
                 justify-content: baseline;
@@ -26,8 +26,7 @@
                 color: #666;
                 font-size: 1.5em;
                 font-family: sans-serif;
-
-                background:url(assets/slide04.jpg)  no-repeat center center;
+                background:url(/assets/slide04.jpg) no-repeat center center;
                 background-size:cover;
                 background-attachment:fixed;
                 }

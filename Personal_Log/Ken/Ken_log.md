@@ -134,4 +134,11 @@
             (3) the function might need to be simplified
             (4) the overall structure of html or css might need to be modified.
             (5) the statistical page haven't done yet.
-            
+# 02/14/2020 03:54 A.M -- Junhao Huang
+      1.	Finished the Statistics pages design and JS function.
+      2.	The players’ card pile, which have rest numbers of cards, can display on the owner card box.
+      3.	Add the auto-game function when the user is out in the GameScreen.ftl
+      4.	Rename the assets image
+      5.	Add button that user can return to menu
+      6.	Add function that show image of each card
+      7.	The active player will display obviously. 

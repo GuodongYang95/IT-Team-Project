@@ -337,8 +337,12 @@ public class GameServer {
 		String finalWinner = "GameWinner"; 
 		String finalvalue = "none";
 		Map<String, String> winner = new LinkedHashMap<String, String>();
-		while(gm.getWinner() == null) {
-			gm.getPm().playersSelectCategory(gm.getRm());
+		while(true) {
+			Model_Player activePlayer = gm.getRm().getActivePlayer();
+			if( activePlayer instanceof Model_AI ) {
+				
+			otherPlayerSelect(((Model_AI) activePlayer).selectCategory());
+			}
 			gm.getRm().resetMaxValuePlayerList(gm.getPm());
 			gm.getRm().selectWinner(gm);
 			gm.getPm().distributeCardToWinner(gm.getRm());
@@ -348,11 +352,12 @@ public class GameServer {
 			}
 			gm.getRm().activePlayerSelector(gm.getPm());
 			gm.getPm().playersDrawCard();
-		finalvalue = gm.getWinner().getName();
-			
-		winner.put(finalWinner, finalvalue);	
 			
 		}
+		finalvalue = gm.getWinner().getName();
+		
+		winner.put(finalWinner, finalvalue);
+		
 		for (int i = 0; i< gm.getPm().getPlayers().length;i++) {
 			String playerNameKey = "Player"+i+"Score";
 			String scoreValue = ""+gm.getPm().getPlayers()[i].getScore();
