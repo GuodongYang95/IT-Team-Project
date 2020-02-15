@@ -91,6 +91,7 @@ public class Model_CardPile {
 	// this method is called when a card is piked from the whole cardPail
 
 	public Model_Card extractCard() {
+		
 		int randomNumCard = new Random().nextInt(cards.size());
 		Model_Card pickCard = cards.get(randomNumCard);
 		cards.remove(randomNumCard);

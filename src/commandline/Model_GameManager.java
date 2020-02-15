@@ -30,7 +30,7 @@ public class Model_GameManager {
 		rm = new Model_RoundManager();
 		db= new DB_Model_Database();
 
-		pm.cardDistribute(rm);
+//		pm.cardDistribute(rm);
 
 
 	}
@@ -137,14 +137,6 @@ public class Model_GameManager {
 	}
 
 
-	public boolean isFlag() {
-		return flag;
-	}
-
-
-	public void setFlag(boolean flag) {
-		this.flag = flag;
-	}
 	
 	public boolean isStart() {
 		return gameStarting;
