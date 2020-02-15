@@ -220,7 +220,7 @@ public class GameServer {
 			 */
 	public String showResult() {
 		gm.getRm().resetMaxValuePlayerList(gm.getPm());//find the maxvalue player again
-		gm.getRm().selectWinner(gm);
+		gm.getRm().selectWinner();
 		gm.getPm().distributeCardToWinner(gm.getRm());
 		
 		Map<String, String> resultMap = new LinkedHashMap<String, String>();
@@ -340,7 +340,7 @@ public class GameServer {
 		while(gm.getWinner() == null) {
 			gm.getPm().playersSelectCategory(gm.getRm());
 			gm.getRm().resetMaxValuePlayerList(gm.getPm());
-			gm.getRm().selectWinner(gm);
+			gm.getRm().selectWinner();
 			gm.getPm().distributeCardToWinner(gm.getRm());
 			if(gm.getRm().winOrOut(gm.getPm(), gm) == true) {
 				gm.writeDBAfterGame();
