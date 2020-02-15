@@ -49,141 +49,139 @@ Avenger,2,5,4,3,2
 ----------
 Common Card Pile : 
 
-Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
 
 ----------
 The card in play----------
-You : Merchantman,7,3,5,6,8
-Player AI 1 : Hawk,1,3,2,4,0
-Player AI 2 : Hornet,2,5,3,4,1
+You : Hornet,2,5,3,4,1
+Player_AI_1 : Merchantman,7,3,5,6,8
+Player_AI_2 : Avenger,2,5,4,3,2
 ----------
 The category of each player selected----------
-You : Speed : 3
-Player AI 1 : Speed : 3
-Player AI 2 : Speed : 5
+You : Speed : 5
+Player_AI_1 : Speed : 3
+Player_AI_2 : Speed : 5
 ----------
-The winner of this round----------
-Player AI 2
-----------
+this round is draw
 The Player cardPile: 
 You
 ---------------------
-Merchantman,7,3,5,6,8
-350r,1,9,2,3,0
-Idris,8,2,7,10,6
-Avenger,2,5,4,3,2
-Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
 Vanguard,3,4,5,5,2
-350r,1,9,2,3,0
+Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
 Hurricane,2,5,3,5,0
 Avenger,2,5,4,3,2
-350r,1,9,2,3,0
-Orion,10,1,6,2,9
-m50,1,10,2,2,0
+Constellation,4,5,7,3,4
 
-Player AI 1
+Player_AI_1
 ---------------------
-Avenger,2,5,4,3,2
-Constellation,4,5,7,3,4
-Sabre,2,7,2,5,0
-Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+350r,1,9,2,3,0
+Orion,10,1,6,2,9
 Idris,8,2,7,10,6
-Sabre,2,7,2,5,0
-Vanguard,3,4,5,5,2
-Hornet,2,5,3,4,1
 Hawk,1,3,2,4,0
-Constellation,4,5,7,3,4
-Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Merchantman,7,3,5,6,8
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
 Carrack,6,2,10,4,6
 
-Player AI 2
+Player_AI_2
 ---------------------
-Orion,10,1,6,2,9
-Merchantman,7,3,5,6,8
-Hurricane,2,5,3,5,0
-Sabre,2,7,2,5,0
-Carrack,6,2,10,4,6
-m50,1,10,2,2,0
-Hurricane,2,5,3,5,0
-Hornet,2,5,3,4,1
-Constellation,4,5,7,3,4
-Idris,8,2,7,10,6
-m50,1,10,2,2,0
 Vanguard,3,4,5,5,2
-Orion,10,1,6,2,9
-Merchantman,7,3,5,6,8
 Hawk,1,3,2,4,0
 Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
 
 ----------
 ==========================Round 2==================== 
 ----------
 Common Card Pile : 
 
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
 
 ----------
 The card in play----------
-You : Merchantman,7,3,5,6,8
-Player AI 1 : Avenger,2,5,4,3,2
-Player AI 2 : Orion,10,1,6,2,9
+You : Sabre,2,7,2,5,0
+Player_AI_1 : 350r,1,9,2,3,0
+Player_AI_2 : Vanguard,3,4,5,5,2
 ----------
 The category of each player selected----------
-You : Size : 7
-Player AI 1 : Size : 2
-Player AI 2 : Size : 10
+You : Cargo : 0
+Player_AI_1 : Cargo : 0
+Player_AI_2 : Cargo : 2
 ----------
 The winner of this round----------
-Player AI 2
+Player_AI_2
 ----------
 The Player cardPile: 
 You
 ---------------------
-350r,1,9,2,3,0
-Idris,8,2,7,10,6
-Avenger,2,5,4,3,2
-Avenger,2,5,4,3,2
 Vanguard,3,4,5,5,2
-350r,1,9,2,3,0
+Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
 Hurricane,2,5,3,5,0
 Avenger,2,5,4,3,2
-350r,1,9,2,3,0
-Orion,10,1,6,2,9
-m50,1,10,2,2,0
+Constellation,4,5,7,3,4
 
-Player AI 1
+Player_AI_1
 ---------------------
-Constellation,4,5,7,3,4
-Sabre,2,7,2,5,0
-Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Orion,10,1,6,2,9
 Idris,8,2,7,10,6
-Sabre,2,7,2,5,0
-Vanguard,3,4,5,5,2
-Hornet,2,5,3,4,1
 Hawk,1,3,2,4,0
-Constellation,4,5,7,3,4
-Hawk,1,3,2,4,0
-Carrack,6,2,10,4,6
-
-Player AI 2
----------------------
-Merchantman,7,3,5,6,8
-Hurricane,2,5,3,5,0
-Sabre,2,7,2,5,0
-Carrack,6,2,10,4,6
-m50,1,10,2,2,0
-Hurricane,2,5,3,5,0
-Hornet,2,5,3,4,1
-Constellation,4,5,7,3,4
-Idris,8,2,7,10,6
-m50,1,10,2,2,0
-Vanguard,3,4,5,5,2
 Orion,10,1,6,2,9
 Merchantman,7,3,5,6,8
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+
+Player_AI_2
+---------------------
 Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
 Hornet,2,5,3,4,1
 Merchantman,7,3,5,6,8
 Avenger,2,5,4,3,2
-Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
 
 ----------
 ==========================Round 3==================== 
@@ -193,67 +191,67 @@ Common Card Pile :
 
 ----------
 The card in play----------
-You : 350r,1,9,2,3,0
-Player AI 1 : Constellation,4,5,7,3,4
-Player AI 2 : Merchantman,7,3,5,6,8
+You : Vanguard,3,4,5,5,2
+Player_AI_1 : 350r,1,9,2,3,0
+Player_AI_2 : Hawk,1,3,2,4,0
 ----------
 The category of each player selected----------
-You : Cargo : 0
-Player AI 1 : Cargo : 4
-Player AI 2 : Cargo : 8
+You : Firepower : 5
+Player_AI_1 : Firepower : 3
+Player_AI_2 : Firepower : 4
 ----------
 The winner of this round----------
-Player AI 2
+You
 ----------
 The Player cardPile: 
 You
 ---------------------
 Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
 Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
 Avenger,2,5,4,3,2
-Vanguard,3,4,5,5,2
-350r,1,9,2,3,0
+Carrack,6,2,10,4,6
 Hurricane,2,5,3,5,0
 Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
 350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+
+Player_AI_1
+---------------------
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Merchantman,7,3,5,6,8
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
 Orion,10,1,6,2,9
 m50,1,10,2,2,0
-
-Player AI 1
----------------------
-Sabre,2,7,2,5,0
 Carrack,6,2,10,4,6
+
+Player_AI_2
+---------------------
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
 Idris,8,2,7,10,6
 Sabre,2,7,2,5,0
-Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
 Hornet,2,5,3,4,1
-Hawk,1,3,2,4,0
-Constellation,4,5,7,3,4
-Hawk,1,3,2,4,0
-Carrack,6,2,10,4,6
-
-Player AI 2
----------------------
 Hurricane,2,5,3,5,0
 Sabre,2,7,2,5,0
-Carrack,6,2,10,4,6
-m50,1,10,2,2,0
-Hurricane,2,5,3,5,0
-Hornet,2,5,3,4,1
-Constellation,4,5,7,3,4
-Idris,8,2,7,10,6
-m50,1,10,2,2,0
-Vanguard,3,4,5,5,2
-Orion,10,1,6,2,9
-Merchantman,7,3,5,6,8
-Hawk,1,3,2,4,0
 Hornet,2,5,3,4,1
 Merchantman,7,3,5,6,8
 Avenger,2,5,4,3,2
-Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
 350r,1,9,2,3,0
-Constellation,4,5,7,3,4
-Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
 
 ----------
 ==========================Round 4==================== 
@@ -264,66 +262,66 @@ Common Card Pile :
 ----------
 The card in play----------
 You : Idris,8,2,7,10,6
-Player AI 1 : Sabre,2,7,2,5,0
-Player AI 2 : Hurricane,2,5,3,5,0
+Player_AI_1 : Orion,10,1,6,2,9
+Player_AI_2 : Hornet,2,5,3,4,1
 ----------
 The category of each player selected----------
-You : Firepower : 10
-Player AI 1 : Firepower : 5
-Player AI 2 : Firepower : 5
+You : Speed : 2
+Player_AI_1 : Speed : 1
+Player_AI_2 : Speed : 5
 ----------
 The winner of this round----------
-You
+Player_AI_2
 ----------
 The Player cardPile: 
 You
 ---------------------
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
 Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
 Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
 Vanguard,3,4,5,5,2
 350r,1,9,2,3,0
-Hurricane,2,5,3,5,0
-Avenger,2,5,4,3,2
-350r,1,9,2,3,0
-Orion,10,1,6,2,9
-m50,1,10,2,2,0
-Idris,8,2,7,10,6
-Sabre,2,7,2,5,0
-Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
 
-Player AI 1
+Player_AI_1
 ---------------------
-Carrack,6,2,10,4,6
 Idris,8,2,7,10,6
-Sabre,2,7,2,5,0
-Vanguard,3,4,5,5,2
-Hornet,2,5,3,4,1
 Hawk,1,3,2,4,0
-Constellation,4,5,7,3,4
-Hawk,1,3,2,4,0
-Carrack,6,2,10,4,6
-
-Player AI 2
----------------------
-Sabre,2,7,2,5,0
-Carrack,6,2,10,4,6
-m50,1,10,2,2,0
-Hurricane,2,5,3,5,0
-Hornet,2,5,3,4,1
-Constellation,4,5,7,3,4
-Idris,8,2,7,10,6
-m50,1,10,2,2,0
-Vanguard,3,4,5,5,2
 Orion,10,1,6,2,9
 Merchantman,7,3,5,6,8
-Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+
+Player_AI_2
+---------------------
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
 Hornet,2,5,3,4,1
 Merchantman,7,3,5,6,8
 Avenger,2,5,4,3,2
-Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
 350r,1,9,2,3,0
-Constellation,4,5,7,3,4
-Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
 
 ----------
 ==========================Round 5==================== 
@@ -333,70 +331,138 @@ Common Card Pile :
 
 ----------
 The card in play----------
-You : Avenger,2,5,4,3,2
-Player AI 1 : Carrack,6,2,10,4,6
-Player AI 2 : Sabre,2,7,2,5,0
+You : m50,1,10,2,2,0
+Player_AI_1 : Idris,8,2,7,10,6
+Player_AI_2 : Constellation,4,5,7,3,4
 ----------
 The category of each player selected----------
-You : Speed : 5
-Player AI 1 : Speed : 2
-Player AI 2 : Speed : 7
+You : Range : 2
+Player_AI_1 : Range : 7
+Player_AI_2 : Range : 7
+----------
+this round is draw
+The Player cardPile: 
+You
+---------------------
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Merchantman,7,3,5,6,8
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 6==================== 
+----------
+Common Card Pile : 
+
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+
+----------
+The card in play----------
+You : Constellation,4,5,7,3,4
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+You : Firepower : 3
+Player_AI_1 : Firepower : 4
+Player_AI_2 : Firepower : 3
 ----------
 The winner of this round----------
-Player AI 2
+Player_AI_1
 ----------
 The Player cardPile: 
 You
 ---------------------
 Avenger,2,5,4,3,2
-Vanguard,3,4,5,5,2
-350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
 Hurricane,2,5,3,5,0
 Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
 350r,1,9,2,3,0
-Orion,10,1,6,2,9
-m50,1,10,2,2,0
-Idris,8,2,7,10,6
-Sabre,2,7,2,5,0
-Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
 
-Player AI 1
+Player_AI_1
 ---------------------
-Idris,8,2,7,10,6
-Sabre,2,7,2,5,0
-Vanguard,3,4,5,5,2
-Hornet,2,5,3,4,1
-Hawk,1,3,2,4,0
-Constellation,4,5,7,3,4
-Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Merchantman,7,3,5,6,8
 Carrack,6,2,10,4,6
-
-Player AI 2
----------------------
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
 Carrack,6,2,10,4,6
 m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+
+Player_AI_2
+---------------------
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
 Hurricane,2,5,3,5,0
 Hornet,2,5,3,4,1
-Constellation,4,5,7,3,4
-Idris,8,2,7,10,6
-m50,1,10,2,2,0
-Vanguard,3,4,5,5,2
-Orion,10,1,6,2,9
-Merchantman,7,3,5,6,8
-Hawk,1,3,2,4,0
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
 Hornet,2,5,3,4,1
 Merchantman,7,3,5,6,8
 Avenger,2,5,4,3,2
-Orion,10,1,6,2,9
-350r,1,9,2,3,0
-Constellation,4,5,7,3,4
-Merchantman,7,3,5,6,8
-Avenger,2,5,4,3,2
-Carrack,6,2,10,4,6
 Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
 
 ----------
-==========================Round 6==================== 
+==========================Round 7==================== 
 ----------
 Common Card Pile : 
 
@@ -404,65 +470,7991 @@ Common Card Pile :
 ----------
 The card in play----------
 You : Avenger,2,5,4,3,2
-Player AI 1 : Idris,8,2,7,10,6
-Player AI 2 : Carrack,6,2,10,4,6
+Player_AI_1 : Orion,10,1,6,2,9
+Player_AI_2 : m50,1,10,2,2,0
+----------
+The category of each player selected----------
+You : Size : 2
+Player_AI_1 : Size : 10
+Player_AI_2 : Size : 1
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+You
+---------------------
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+
+Player_AI_1
+---------------------
+Merchantman,7,3,5,6,8
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+
+Player_AI_2
+---------------------
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 8==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+You : Hawk,1,3,2,4,0
+Player_AI_1 : Merchantman,7,3,5,6,8
+Player_AI_2 : Vanguard,3,4,5,5,2
+----------
+The category of each player selected----------
+You : Cargo : 0
+Player_AI_1 : Cargo : 8
+Player_AI_2 : Cargo : 2
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+You
+---------------------
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+
+Player_AI_2
+---------------------
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 9==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+You : Avenger,2,5,4,3,2
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : Idris,8,2,7,10,6
 ----------
 The category of each player selected----------
 You : Range : 4
-Player AI 1 : Range : 7
-Player AI 2 : Range : 10
+Player_AI_1 : Range : 10
+Player_AI_2 : Range : 7
 ----------
 The winner of this round----------
-Player AI 2
+Player_AI_1
+----------
+The Player cardPile: 
+You
+---------------------
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+
+Player_AI_1
+---------------------
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 10==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+You : Carrack,6,2,10,4,6
+Player_AI_1 : Merchantman,7,3,5,6,8
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+You : Cargo : 6
+Player_AI_1 : Cargo : 8
+Player_AI_2 : Cargo : 0
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+You
+---------------------
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+
+Player_AI_1
+---------------------
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 11==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+You : Hurricane,2,5,3,5,0
+Player_AI_1 : Orion,10,1,6,2,9
+Player_AI_2 : Hurricane,2,5,3,5,0
+----------
+The category of each player selected----------
+You : Size : 2
+Player_AI_1 : Size : 10
+Player_AI_2 : Size : 2
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+You
+---------------------
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+
+Player_AI_1
+---------------------
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 12==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+You : Avenger,2,5,4,3,2
+Player_AI_1 : m50,1,10,2,2,0
+Player_AI_2 : Hornet,2,5,3,4,1
+----------
+The category of each player selected----------
+You : Speed : 5
+Player_AI_1 : Speed : 10
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+You
+---------------------
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 13==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+You : Constellation,4,5,7,3,4
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : Hurricane,2,5,3,5,0
+----------
+The category of each player selected----------
+You : Range : 7
+Player_AI_1 : Range : 10
+Player_AI_2 : Range : 3
+----------
+The winner of this round----------
+Player_AI_1
 ----------
 The Player cardPile: 
 You
 ---------------------
 Vanguard,3,4,5,5,2
 350r,1,9,2,3,0
-Hurricane,2,5,3,5,0
-Avenger,2,5,4,3,2
-350r,1,9,2,3,0
-Orion,10,1,6,2,9
-m50,1,10,2,2,0
-Idris,8,2,7,10,6
-Sabre,2,7,2,5,0
-Hurricane,2,5,3,5,0
-
-Player AI 1
----------------------
-Sabre,2,7,2,5,0
-Vanguard,3,4,5,5,2
-Hornet,2,5,3,4,1
 Hawk,1,3,2,4,0
-Constellation,4,5,7,3,4
-Hawk,1,3,2,4,0
-Carrack,6,2,10,4,6
 
-Player AI 2
+Player_AI_1
 ---------------------
 m50,1,10,2,2,0
-Hurricane,2,5,3,5,0
-Hornet,2,5,3,4,1
-Constellation,4,5,7,3,4
 Idris,8,2,7,10,6
-m50,1,10,2,2,0
-Vanguard,3,4,5,5,2
-Orion,10,1,6,2,9
-Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
 Hawk,1,3,2,4,0
-Hornet,2,5,3,4,1
-Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
 Avenger,2,5,4,3,2
 Orion,10,1,6,2,9
-350r,1,9,2,3,0
-Constellation,4,5,7,3,4
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
 Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
 Avenger,2,5,4,3,2
 Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 14==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+You : Vanguard,3,4,5,5,2
+Player_AI_1 : m50,1,10,2,2,0
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+You : Speed : 4
+Player_AI_1 : Speed : 10
+Player_AI_2 : Speed : 7
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+You
+---------------------
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+
+Player_AI_1
+---------------------
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 15==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+You : 350r,1,9,2,3,0
+Player_AI_1 : Idris,8,2,7,10,6
+Player_AI_2 : Hornet,2,5,3,4,1
+----------
+The category of each player selected----------
+You : Firepower : 3
+Player_AI_1 : Firepower : 10
+Player_AI_2 : Firepower : 4
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+You
+---------------------
+Hawk,1,3,2,4,0
+
+Player_AI_1
+---------------------
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 16==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+You : Hawk,1,3,2,4,0
+Player_AI_1 : Constellation,4,5,7,3,4
+Player_AI_2 : Merchantman,7,3,5,6,8
+----------
+The category of each player selected----------
+You : Range : 2
+Player_AI_1 : Range : 7
+Player_AI_2 : Range : 5
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+You
+---------------------
+
+Player_AI_1
+---------------------
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 17==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Constellation,4,5,7,3,4
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 7
+Player_AI_2 : Range : 4
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 18==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 4
+Player_AI_2 : Firepower : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+
+----------
+==========================Round 19==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : 350r,1,9,2,3,0
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 9
+Player_AI_2 : Speed : 9
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Avenger,2,5,4,3,2
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+
+----------
+==========================Round 20==================== 
+----------
+Common Card Pile : 
+
+350r,1,9,2,3,0
+350r,1,9,2,3,0
+
+----------
+The card in play----------
+Player_AI_1 : Avenger,2,5,4,3,2
+Player_AI_2 : Vanguard,3,4,5,5,2
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 3
+Player_AI_2 : Firepower : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Vanguard,3,4,5,5,2
+
+----------
+==========================Round 21==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Orion,10,1,6,2,9
+Player_AI_2 : Idris,8,2,7,10,6
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 2
+Player_AI_2 : Firepower : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+m50,1,10,2,2,0
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Orion,10,1,6,2,9
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+
+----------
+==========================Round 22==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : m50,1,10,2,2,0
+Player_AI_2 : Orion,10,1,6,2,9
+----------
+The category of each player selected----------
+Player_AI_1 : Size : 1
+Player_AI_2 : Size : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+
+----------
+==========================Round 23==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : Hornet,2,5,3,4,1
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 3
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 24==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Merchantman,7,3,5,6,8
+Player_AI_2 : Hawk,1,3,2,4,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 6
+Player_AI_2 : Firepower : 4
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 25==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Vanguard,3,4,5,5,2
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 5
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 26==================== 
+----------
+Common Card Pile : 
+
+Vanguard,3,4,5,5,2
+Sabre,2,7,2,5,0
+
+----------
+The card in play----------
+Player_AI_1 : Avenger,2,5,4,3,2
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 9
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
 Sabre,2,7,2,5,0
 Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+
+----------
+==========================Round 27==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 2
+Player_AI_2 : Speed : 9
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
 Idris,8,2,7,10,6
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+
+----------
+==========================Round 28==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Idris,8,2,7,10,6
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 2
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 29==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : Vanguard,3,4,5,5,2
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 4
+Player_AI_2 : Firepower : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Merchantman,7,3,5,6,8
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+
+----------
+==========================Round 30==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Merchantman,7,3,5,6,8
+Player_AI_2 : Orion,10,1,6,2,9
+----------
+The category of each player selected----------
+Player_AI_1 : Size : 7
+Player_AI_2 : Size : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Idris,8,2,7,10,6
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+
+----------
+==========================Round 31==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Sabre,2,7,2,5,0
+Player_AI_2 : Idris,8,2,7,10,6
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hurricane,2,5,3,5,0
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 32==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hurricane,2,5,3,5,0
+Player_AI_2 : m50,1,10,2,2,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+
+----------
+==========================Round 33==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Orion,10,1,6,2,9
+Player_AI_2 : Orion,10,1,6,2,9
+----------
+The category of each player selected----------
+Player_AI_1 : Size : 10
+Player_AI_2 : Size : 10
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+
+----------
+==========================Round 34==================== 
+----------
+Common Card Pile : 
+
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+
+----------
+The card in play----------
+Player_AI_1 : Hurricane,2,5,3,5,0
+Player_AI_2 : Hawk,1,3,2,4,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 4
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+
+----------
+==========================Round 35==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Avenger,2,5,4,3,2
+Player_AI_2 : Hornet,2,5,3,4,1
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 5
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Vanguard,3,4,5,5,2
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+
+----------
+==========================Round 36==================== 
+----------
+Common Card Pile : 
+
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+
+----------
+The card in play----------
+Player_AI_1 : m50,1,10,2,2,0
+Player_AI_2 : Vanguard,3,4,5,5,2
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 2
+Player_AI_2 : Firepower : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+
+----------
+==========================Round 37==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hornet,2,5,3,4,1
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 7
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Constellation,4,5,7,3,4
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+
+----------
+==========================Round 38==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Constellation,4,5,7,3,4
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 5
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+
+----------
+==========================Round 39==================== 
+----------
+Common Card Pile : 
+
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+----------
+The card in play----------
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 2
+Player_AI_2 : Speed : 9
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+
+----------
+==========================Round 40==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hurricane,2,5,3,5,0
+Player_AI_2 : Carrack,6,2,10,4,6
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 3
+Player_AI_2 : Range : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
 Carrack,6,2,10,4,6
 
 ----------
+==========================Round 41==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Vanguard,3,4,5,5,2
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 4
+Player_AI_2 : Speed : 9
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+m50,1,10,2,2,0
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+
+----------
+==========================Round 42==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : m50,1,10,2,2,0
+Player_AI_2 : Idris,8,2,7,10,6
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 2
+Player_AI_2 : Firepower : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Sabre,2,7,2,5,0
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 43==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Sabre,2,7,2,5,0
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 7
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 44==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : 350r,1,9,2,3,0
+Player_AI_2 : Carrack,6,2,10,4,6
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 9
+Player_AI_2 : Speed : 2
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Idris,8,2,7,10,6
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+
+Player_AI_2
+---------------------
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 45==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Idris,8,2,7,10,6
+Player_AI_2 : Vanguard,3,4,5,5,2
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 10
+Player_AI_2 : Firepower : 5
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+
+Player_AI_2
+---------------------
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 46==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hornet,2,5,3,4,1
+Player_AI_2 : Merchantman,7,3,5,6,8
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 3
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+
+Player_AI_2
+---------------------
+Orion,10,1,6,2,9
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 47==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : Orion,10,1,6,2,9
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 4
+Player_AI_2 : Firepower : 2
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 48==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Constellation,4,5,7,3,4
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 7
+Player_AI_2 : Range : 2
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Merchantman,7,3,5,6,8
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 49==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Merchantman,7,3,5,6,8
+Player_AI_2 : Idris,8,2,7,10,6
+----------
+The category of each player selected----------
+Player_AI_1 : Cargo : 8
+Player_AI_2 : Cargo : 6
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+
+Player_AI_2
+---------------------
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 50==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Constellation,4,5,7,3,4
+Player_AI_2 : Hurricane,2,5,3,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 7
+Player_AI_2 : Range : 3
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+m50,1,10,2,2,0
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 51==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Avenger,2,5,4,3,2
+Player_AI_2 : m50,1,10,2,2,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+
+----------
+==========================Round 52==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Merchantman,7,3,5,6,8
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 3
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Hornet,2,5,3,4,1
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 53==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : Hornet,2,5,3,4,1
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 3
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Orion,10,1,6,2,9
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+
+----------
+==========================Round 54==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Orion,10,1,6,2,9
+Player_AI_2 : m50,1,10,2,2,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 1
+Player_AI_2 : Speed : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+
+----------
+==========================Round 55==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Orion,10,1,6,2,9
+Player_AI_2 : Vanguard,3,4,5,5,2
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 2
+Player_AI_2 : Firepower : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+
+----------
+==========================Round 56==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hurricane,2,5,3,5,0
+Player_AI_2 : Hornet,2,5,3,4,1
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 5
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+
+----------
+==========================Round 57==================== 
+----------
+Common Card Pile : 
+
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 4
+Player_AI_2 : Firepower : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+
+----------
+==========================Round 58==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Sabre,2,7,2,5,0
+Player_AI_2 : Constellation,4,5,7,3,4
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 2
+Player_AI_2 : Range : 7
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+
+----------
+==========================Round 59==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Avenger,2,5,4,3,2
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 5
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+
+----------
+==========================Round 60==================== 
+----------
+Common Card Pile : 
+
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+
+----------
+The card in play----------
+Player_AI_1 : 350r,1,9,2,3,0
+Player_AI_2 : Carrack,6,2,10,4,6
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 2
+Player_AI_2 : Range : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+
+----------
+==========================Round 61==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 2
+Player_AI_2 : Speed : 9
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Idris,8,2,7,10,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+
+----------
+==========================Round 62==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Idris,8,2,7,10,6
+Player_AI_2 : Hurricane,2,5,3,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 10
+Player_AI_2 : Firepower : 5
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+
+Player_AI_2
+---------------------
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+
+----------
+==========================Round 63==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Vanguard,3,4,5,5,2
+Player_AI_2 : Carrack,6,2,10,4,6
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 4
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+
+Player_AI_2
+---------------------
+Vanguard,3,4,5,5,2
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+
+----------
+==========================Round 64==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hornet,2,5,3,4,1
+Player_AI_2 : Vanguard,3,4,5,5,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 4
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+
+----------
+==========================Round 65==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Merchantman,7,3,5,6,8
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+Player_AI_1 : Cargo : 8
+Player_AI_2 : Cargo : 0
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+
+Player_AI_2
+---------------------
+m50,1,10,2,2,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+
+----------
+==========================Round 66==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : m50,1,10,2,2,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 4
+Player_AI_2 : Firepower : 2
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Orion,10,1,6,2,9
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+
+Player_AI_2
+---------------------
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+
+----------
+==========================Round 67==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Orion,10,1,6,2,9
+Player_AI_2 : Idris,8,2,7,10,6
+----------
+The category of each player selected----------
+Player_AI_1 : Size : 10
+Player_AI_2 : Size : 8
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+
+----------
+==========================Round 68==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Constellation,4,5,7,3,4
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 7
+Player_AI_2 : Range : 4
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Sabre,2,7,2,5,0
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+
+----------
+==========================Round 69==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Sabre,2,7,2,5,0
+Player_AI_2 : m50,1,10,2,2,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 7
+Player_AI_2 : Speed : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Merchantman,7,3,5,6,8
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+
+----------
+==========================Round 70==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Merchantman,7,3,5,6,8
+Player_AI_2 : Merchantman,7,3,5,6,8
+----------
+The category of each player selected----------
+Player_AI_1 : Cargo : 8
+Player_AI_2 : Cargo : 8
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+
+----------
+==========================Round 71==================== 
+----------
+Common Card Pile : 
+
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+
+----------
+The card in play----------
+Player_AI_1 : Idris,8,2,7,10,6
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 2
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Constellation,4,5,7,3,4
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 72==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Constellation,4,5,7,3,4
+Player_AI_2 : Hawk,1,3,2,4,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 3
+Player_AI_2 : Firepower : 4
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Hornet,2,5,3,4,1
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+
+----------
+==========================Round 73==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hurricane,2,5,3,5,0
+Player_AI_2 : Hornet,2,5,3,4,1
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 5
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Idris,8,2,7,10,6
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+
+----------
+==========================Round 74==================== 
+----------
+Common Card Pile : 
+
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+
+----------
+The card in play----------
+Player_AI_1 : Idris,8,2,7,10,6
+Player_AI_2 : Orion,10,1,6,2,9
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 10
+Player_AI_2 : Firepower : 2
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+
+Player_AI_2
+---------------------
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+
+----------
+==========================Round 75==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hurricane,2,5,3,5,0
+Player_AI_2 : m50,1,10,2,2,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 2
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Vanguard,3,4,5,5,2
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+
+Player_AI_2
+---------------------
+Orion,10,1,6,2,9
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+
+----------
+==========================Round 76==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Vanguard,3,4,5,5,2
+Player_AI_2 : Orion,10,1,6,2,9
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 2
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+
+Player_AI_2
+---------------------
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+
+----------
+==========================Round 77==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : Vanguard,3,4,5,5,2
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 10
+Player_AI_2 : Range : 5
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+
+Player_AI_2
+---------------------
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+
+----------
+==========================Round 78==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hornet,2,5,3,4,1
+Player_AI_2 : Hurricane,2,5,3,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 5
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Vanguard,3,4,5,5,2
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+
+Player_AI_2
+---------------------
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+
+----------
+==========================Round 79==================== 
+----------
+Common Card Pile : 
+
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+
+----------
+The card in play----------
+Player_AI_1 : Vanguard,3,4,5,5,2
+Player_AI_2 : Hornet,2,5,3,4,1
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 4
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Merchantman,7,3,5,6,8
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+
+----------
+==========================Round 80==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Merchantman,7,3,5,6,8
+Player_AI_2 : Hawk,1,3,2,4,0
+----------
+The category of each player selected----------
+Player_AI_1 : Cargo : 8
+Player_AI_2 : Cargo : 0
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+350r,1,9,2,3,0
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+
+----------
+==========================Round 81==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : 350r,1,9,2,3,0
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 9
+Player_AI_2 : Speed : 7
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+
+----------
+==========================Round 82==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 4
+Player_AI_2 : Firepower : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+m50,1,10,2,2,0
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+
+----------
+==========================Round 83==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : m50,1,10,2,2,0
+Player_AI_2 : Constellation,4,5,7,3,4
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 2
+Player_AI_2 : Range : 7
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Orion,10,1,6,2,9
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+
+----------
+==========================Round 84==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Orion,10,1,6,2,9
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 1
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 85==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Idris,8,2,7,10,6
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 2
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Constellation,4,5,7,3,4
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 86==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Constellation,4,5,7,3,4
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 9
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Carrack,6,2,10,4,6
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+
+----------
+==========================Round 87==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Avenger,2,5,4,3,2
+Player_AI_2 : Carrack,6,2,10,4,6
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 4
+Player_AI_2 : Range : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Carrack,6,2,10,4,6
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+
+----------
+==========================Round 88==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hurricane,2,5,3,5,0
+Player_AI_2 : Carrack,6,2,10,4,6
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 3
+Player_AI_2 : Range : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hornet,2,5,3,4,1
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+
+----------
+==========================Round 89==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hornet,2,5,3,4,1
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 9
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+
+----------
+==========================Round 90==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Idris,8,2,7,10,6
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 2
+Player_AI_2 : Speed : 7
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Orion,10,1,6,2,9
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+
+----------
+==========================Round 91==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Orion,10,1,6,2,9
+Player_AI_2 : m50,1,10,2,2,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 1
+Player_AI_2 : Speed : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hurricane,2,5,3,5,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Merchantman,7,3,5,6,8
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+
+----------
+==========================Round 92==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hurricane,2,5,3,5,0
+Player_AI_2 : Merchantman,7,3,5,6,8
+----------
+The category of each player selected----------
+Player_AI_1 : Cargo : 0
+Player_AI_2 : Cargo : 8
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Merchantman,7,3,5,6,8
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+
+----------
+==========================Round 93==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : m50,1,10,2,2,0
+Player_AI_2 : Merchantman,7,3,5,6,8
+----------
+The category of each player selected----------
+Player_AI_1 : Cargo : 0
+Player_AI_2 : Cargo : 8
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Vanguard,3,4,5,5,2
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+
+----------
+==========================Round 94==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Vanguard,3,4,5,5,2
+Player_AI_2 : Idris,8,2,7,10,6
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+
+----------
+==========================Round 95==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Orion,10,1,6,2,9
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 1
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+
+Player_AI_2
+---------------------
+Constellation,4,5,7,3,4
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 96==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : Constellation,4,5,7,3,4
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 10
+Player_AI_2 : Range : 7
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+
+Player_AI_2
+---------------------
+Hawk,1,3,2,4,0
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 97==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Vanguard,3,4,5,5,2
+Player_AI_2 : Hawk,1,3,2,4,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 4
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 98==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hornet,2,5,3,4,1
+Player_AI_2 : Hawk,1,3,2,4,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 3
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hurricane,2,5,3,5,0
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 99==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hurricane,2,5,3,5,0
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 5
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Vanguard,3,4,5,5,2
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+m50,1,10,2,2,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 100==================== 
+----------
+Common Card Pile : 
+
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+
+----------
+The card in play----------
+Player_AI_1 : Vanguard,3,4,5,5,2
+Player_AI_2 : m50,1,10,2,2,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 4
+Player_AI_2 : Speed : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hornet,2,5,3,4,1
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+
+----------
+==========================Round 101==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hornet,2,5,3,4,1
+Player_AI_2 : Constellation,4,5,7,3,4
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 3
+Player_AI_2 : Range : 7
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+
+----------
+==========================Round 102==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Merchantman,7,3,5,6,8
+Player_AI_2 : Orion,10,1,6,2,9
+----------
+The category of each player selected----------
+Player_AI_1 : Size : 7
+Player_AI_2 : Size : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+
+----------
+==========================Round 103==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 3
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+350r,1,9,2,3,0
+Sabre,2,7,2,5,0
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 104==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : 350r,1,9,2,3,0
+Player_AI_2 : Idris,8,2,7,10,6
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 3
+Player_AI_2 : Firepower : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Sabre,2,7,2,5,0
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 105==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Sabre,2,7,2,5,0
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 7
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 106==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : Constellation,4,5,7,3,4
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 10
+Player_AI_2 : Range : 7
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Constellation,4,5,7,3,4
+Vanguard,3,4,5,5,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 107==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Constellation,4,5,7,3,4
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+Player_AI_1 : Range : 7
+Player_AI_2 : Range : 2
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Vanguard,3,4,5,5,2
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 108==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Vanguard,3,4,5,5,2
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 3
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Carrack,6,2,10,4,6
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 109==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : Carrack,6,2,10,4,6
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 4
+Player_AI_2 : Firepower : 4
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hornet,2,5,3,4,1
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Hurricane,2,5,3,5,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 110==================== 
+----------
+Common Card Pile : 
+
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+
+----------
+The card in play----------
+Player_AI_1 : Hornet,2,5,3,4,1
+Player_AI_2 : Hurricane,2,5,3,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 5
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 111==================== 
+----------
+Common Card Pile : 
+
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : Carrack,6,2,10,4,6
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 4
+Player_AI_2 : Firepower : 4
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Sabre,2,7,2,5,0
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+
+Player_AI_2
+---------------------
+Hornet,2,5,3,4,1
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 112==================== 
+----------
+Common Card Pile : 
+
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+
+----------
+The card in play----------
+Player_AI_1 : Sabre,2,7,2,5,0
+Player_AI_2 : Hornet,2,5,3,4,1
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 7
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_1
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Avenger,2,5,4,3,2
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 113==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Avenger,2,5,4,3,2
+Player_AI_2 : 350r,1,9,2,3,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 9
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Idris,8,2,7,10,6
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+
+----------
+==========================Round 114==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : Idris,8,2,7,10,6
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 4
+Player_AI_2 : Firepower : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Constellation,4,5,7,3,4
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+
+----------
+==========================Round 115==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Constellation,4,5,7,3,4
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 7
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Constellation,4,5,7,3,4
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Orion,10,1,6,2,9
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+
+----------
+==========================Round 116==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Constellation,4,5,7,3,4
+Player_AI_2 : Orion,10,1,6,2,9
+----------
+The category of each player selected----------
+Player_AI_1 : Size : 4
+Player_AI_2 : Size : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+350r,1,9,2,3,0
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+m50,1,10,2,2,0
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+
+----------
+==========================Round 117==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : 350r,1,9,2,3,0
+Player_AI_2 : m50,1,10,2,2,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 9
+Player_AI_2 : Speed : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Vanguard,3,4,5,5,2
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Hurricane,2,5,3,5,0
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+
+----------
+==========================Round 118==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Vanguard,3,4,5,5,2
+Player_AI_2 : Hurricane,2,5,3,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 5
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Avenger,2,5,4,3,2
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Merchantman,7,3,5,6,8
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+
+----------
+==========================Round 119==================== 
+----------
+Common Card Pile : 
+
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+
+----------
+The card in play----------
+Player_AI_1 : Avenger,2,5,4,3,2
+Player_AI_2 : Merchantman,7,3,5,6,8
+----------
+The category of each player selected----------
+Player_AI_1 : Cargo : 2
+Player_AI_2 : Cargo : 8
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+m50,1,10,2,2,0
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+
+----------
+==========================Round 120==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : m50,1,10,2,2,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 3
+Player_AI_2 : Speed : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Merchantman,7,3,5,6,8
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+
+----------
+==========================Round 121==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : Merchantman,7,3,5,6,8
+----------
+The category of each player selected----------
+Player_AI_1 : Cargo : 6
+Player_AI_2 : Cargo : 8
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hornet,2,5,3,4,1
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Vanguard,3,4,5,5,2
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+
+----------
+==========================Round 122==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hornet,2,5,3,4,1
+Player_AI_2 : Vanguard,3,4,5,5,2
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 4
+Player_AI_2 : Firepower : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hurricane,2,5,3,5,0
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Idris,8,2,7,10,6
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+
+----------
+==========================Round 123==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hurricane,2,5,3,5,0
+Player_AI_2 : Idris,8,2,7,10,6
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hawk,1,3,2,4,0
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Orion,10,1,6,2,9
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+
+----------
+==========================Round 124==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Hawk,1,3,2,4,0
+Player_AI_2 : Orion,10,1,6,2,9
+----------
+The category of each player selected----------
+Player_AI_1 : Size : 1
+Player_AI_2 : Size : 10
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Carrack,6,2,10,4,6
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Avenger,2,5,4,3,2
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+
+----------
+==========================Round 125==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Carrack,6,2,10,4,6
+Player_AI_2 : Avenger,2,5,4,3,2
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 2
+Player_AI_2 : Speed : 5
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Sabre,2,7,2,5,0
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Hurricane,2,5,3,5,0
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 126==================== 
+----------
+Common Card Pile : 
+
+
+----------
+The card in play----------
+Player_AI_1 : Sabre,2,7,2,5,0
+Player_AI_2 : Hurricane,2,5,3,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Firepower : 5
+Player_AI_2 : Firepower : 5
+----------
+this round is draw
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+Hornet,2,5,3,4,1
+
+Player_AI_2
+---------------------
+Sabre,2,7,2,5,0
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Avenger,2,5,4,3,2
+
+----------
+==========================Round 127==================== 
+----------
+Common Card Pile : 
+
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+
+----------
+The card in play----------
+Player_AI_1 : Hornet,2,5,3,4,1
+Player_AI_2 : Sabre,2,7,2,5,0
+----------
+The category of each player selected----------
+Player_AI_1 : Speed : 5
+Player_AI_2 : Speed : 7
+----------
+The winner of this round----------
+Player_AI_2
+----------
+The Player cardPile: 
+
+Player_AI_1
+---------------------
+
+Player_AI_2
+---------------------
+Vanguard,3,4,5,5,2
+m50,1,10,2,2,0
+Hornet,2,5,3,4,1
+Constellation,4,5,7,3,4
+Merchantman,7,3,5,6,8
+Orion,10,1,6,2,9
+Hawk,1,3,2,4,0
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Idris,8,2,7,10,6
+Avenger,2,5,4,3,2
+350r,1,9,2,3,0
+Carrack,6,2,10,4,6
+Idris,8,2,7,10,6
+Constellation,4,5,7,3,4
+Sabre,2,7,2,5,0
+Constellation,4,5,7,3,4
+Orion,10,1,6,2,9
+350r,1,9,2,3,0
+m50,1,10,2,2,0
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Avenger,2,5,4,3,2
+Merchantman,7,3,5,6,8
+Hawk,1,3,2,4,0
+m50,1,10,2,2,0
+Carrack,6,2,10,4,6
+Merchantman,7,3,5,6,8
+Hornet,2,5,3,4,1
+Vanguard,3,4,5,5,2
+Hurricane,2,5,3,5,0
+Idris,8,2,7,10,6
+Hawk,1,3,2,4,0
+Orion,10,1,6,2,9
+Carrack,6,2,10,4,6
+Avenger,2,5,4,3,2
+Sabre,2,7,2,5,0
+Hurricane,2,5,3,5,0
+Hornet,2,5,3,4,1
+Sabre,2,7,2,5,0
+
+----------
+The winner: ----------
+Player_AI_2

@@ -8,7 +8,7 @@ public class View_CommandLine {
 	
 	private View_UserCategoryChoice categoryChoice;
 	private View_UserMenuChoice menuInput;
-	
+//	private DB_Model_Database db;
 	
 //	private CMLController cmlController;
 	
@@ -44,14 +44,18 @@ public class View_CommandLine {
 	}
 	
 	//The view of past game statistics
-	public void statistics(DB_Model_DbResponce db) {
+
+
+	public void statistics(DB_Model_DbResponce response) {
+//		db.getConn();
 		System.out.println("\n" + "\n");
 		System.out.println("Game Statistics:");
-		System.out.println("Number of Games: " + db.getGameCount());
-		System.out.println("Number of Human Wins: " + db.getNumberOfHumanWin());
-		System.out.println("Number of AI Wins: " + db.getNumberOfAIWin());
-		System.out.println("Average number of Draws: " +db.getAverageDraw());
-		System.out.println("Longest Game: " +db.getMaxRound());
+		System.out.println("Number of Games: " + response.getGameCount());
+		System.out.println("Number of Human Wins: " + response.getNumberOfHumanWin());
+		System.out.println("Number of AI Wins: " + response.getNumberOfAIWin());
+		System.out.println("Average number of Draws: " +response.getAverageDraw());
+		System.out.println("Longest Game: " +response.getMaxRound());
+//		db.disconnectDB();
 	}
 	
 	//The view of the round started

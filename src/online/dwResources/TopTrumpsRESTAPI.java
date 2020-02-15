@@ -12,6 +12,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import online.configuration.TopTrumpsJSONConfiguration;
+import server.GameServer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -35,6 +36,7 @@ public class TopTrumpsRESTAPI {
 	 * into JSON strings easily. */
 	ObjectWriter oWriter = new ObjectMapper().writerWithDefaultPrettyPrinter();
 	
+	GameServer gameServer = new GameServer();
 	/**
 	 * Contructor method for the REST API. This is called first. It provides
 	 * a TopTrumpsJSONConfiguration from which you can get the location of
@@ -45,6 +47,7 @@ public class TopTrumpsRESTAPI {
 		// ----------------------------------------------------
 		// Add relevant initalization here
 		// ----------------------------------------------------
+		//		gameServer = new GameServer();
 		
 	}
 	
@@ -86,4 +89,77 @@ public class TopTrumpsRESTAPI {
 		return "Hello "+Word;
 	}
 	
+	@GET
+	@Path("/gamestart")
+	/**
+	 * This method will be called when selectionScreen is loaded
+	 */
+	public String gameStart() throws IOException{
+		
+		String gamedataJSONStr = gameServer.gameStart();
+		
+		return gamedataJSONStr;
+	}
+	
+	@GET
+	@Path("/gamestart/categoryselect")
+	/**
+	 * 
+	 */
+	public String selectCegory() throws IOException{
+		
+		String gamedataJSONStr = gameServer.categorySelection();
+		
+		return gamedataJSONStr;
+	}
+	
+	@GET
+	@Path("/gamestart/userCategoryselect")
+	// use "/gamestart/userCategoryselect?gategory=speed  
+	/**
+	 * 
+	 */
+	public String selectCegory(@QueryParam("gategory") String gategory) throws IOException{
+		
+		String gamedataJSONStr = gameServer.otherPlayerSelect(gategory);
+		
+		return gamedataJSONStr;
+	}
+	
+	@GET
+	@Path("/gamestart/showresult")
+	/**
+	 * 
+	 */
+	public String showResult() throws IOException{
+		
+		return gameServer.showResult();
+	}
+	
+	@GET
+	@Path("/gamestart/newround")
+	/**
+	 * 
+	 */
+	public String nextRound() throws IOException{
+		
+		return gameServer.newRound();
+	}
+	
+	@GET
+	@Path("/stat")
+	
+	public String getStat() throws IOException{
+			
+			return gameServer.getStatistics();
+	}
+	
+	
+	@GET
+	@Path("/gamestart/autogame")
+	
+	public String autoGame() throws IOException{
+			
+			return gameServer.autoGame();
+	}
 }
