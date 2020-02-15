@@ -106,3 +106,39 @@
                add write.flush()
       2.Game improvement. The game will not end until user input 3 from the Game menu;
             the number: 3 in GameMenu is Exit Game.
+
+# 02/09/2020 3.03 A.M. -- Junhao Huang
+      1. our website can get information from backend right now;
+            the type between client and server is json String type.
+            Js will have method to convert it into Json object.
+      2. the game bankend part connection is nearly finished,
+            need Js to show details to the User.
+            here is the response url:
+            /toptrumps/gamestart
+            /toptrumps/gamestart/categoryselect
+            /toptrumps/gamestart/userCategoryselect
+            /toptrumps/gamestart/showresult
+            /toptrumps/gamestart/newround
+
+# 02/09/2020 2:18 P.M  --Junhao Huang
+      1.in SelectionScreen.ftl   line: 22~172
+            Add the Js function which can get data from backend
+      2.each will be called when load the page or click the button
+            see comment
+
+# 02/11/2020 11:50 P.M --Junhao Huang
+      1. the oneline version can simply run.
+      2. there are many problems need to be solved:
+            (1) Need to show the card pile of each player
+            (2) the png cannot be loaded..
+            (3) the function might need to be simplified
+            (4) the overall structure of html or css might need to be modified.
+            (5) the statistical page haven't done yet.
+# 02/14/2020 03:54 A.M -- Junhao Huang
+      1.	Finished the Statistics pages design and JS function.
+      2.	The players’ card pile, which have rest numbers of cards, can display on the owner card box.
+      3.	Add the auto-game function when the user is out in the GameScreen.ftl
+      4.	Rename the assets image
+      5.	Add button that user can return to menu
+      6.	Add function that show image of each card
+      7.	The active player will display obviously. 

@@ -19,7 +19,7 @@ public class Model_PlayerManager {
 		players = new Model_Player[numberOfAI+1];
 		players[0] = new Model_User("You");
 		for (int i = 1; i < players.length; i++) {
-			String aiName = "Player AI "+i;
+			String aiName = "Player_AI_"+i;
 			players[i] = new Model_AI(aiName);
 			
 		}
@@ -155,6 +155,7 @@ public class Model_PlayerManager {
 		}
 		
 	}
+	
 	
 	public int playerInput() {
 		Scanner scanner = new Scanner(System.in);

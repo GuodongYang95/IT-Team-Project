@@ -17,16 +17,58 @@
     	<link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex-theme-os.css"/>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+	 	 <style>
+ 		.header {
+	 	 	width:100%;
+			text-align:center;
+			margin-top:30px;
+			font-size:2em;
+         		}
+ 		 body {
+	      display: flex;
+	      flex-direction: column;
+	      justify-content: baseline;
+	      align-items: center;
+	      color: #666;
+	      font-size: 1.5em;
+	      font-family: sans-serif;
+	      background:url(assets/slide04.jpg)  no-repeat center center;
+	      background-size:cover;
+	      background-attachment:fixed;
+	      }
+	
+	      p {
+	      font-size: 0.5em;
+	      text-align: center;
+	      }
+	      
+	      .button {
+	      padding: 1em 2.5em;
+	      margin: 4em;
+	      color: #000;
+	      font-weight: bold;
+	      text-align: center;
+	      text-decoration: none;
+	      white-space: nowrap;
+	      background-color: #fff;
+	      color: #454545;
+	      background-image: linear-gradient(180deg, #fbfbfb, #c7c7c7);
+	      border: 0.0625em solid #d7d7d7;
+	      border-radius: 0.5em;
+	      box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.3);
+	      cursor: pointer; 
+	      }
+	
+      </style>
 	</head>
 
-    <body onload="initalize()"> <!-- Call the initalize method when the page loads -->
+    <body onload="initalize()"> 
+    <!-- Call the initalize method when the page loads -->
     	
-    	<div class="container">
-
-			<!-- Add your HTML Here -->
-		
-		</div>
+			 <h1 class="header" style="text-align:center";> Top Trumps Game </h1>
+	        <a class="button" href="/toptrumps/game">New Game</a>
+	        <a class="button" href="/toptrumps/stats">Get Statistics</a>
+	        <p>Click the button above to start a new game or getting statistics.</p>
 		
 		<script type="text/javascript">
 		
@@ -38,8 +80,8 @@
 				// --------------------------------------------------------------------------
 				
 				// For example, lets call our sample methods
-				helloJSONList();
-				helloWord("Student");
+				<#--  helloJSONList();
+				helloWord("Student");  -->
 				
 			}
 			
