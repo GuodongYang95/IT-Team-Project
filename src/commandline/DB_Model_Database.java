@@ -21,15 +21,13 @@ public class DB_Model_Database {
 	 */
 	public Connection getConn() {
 		String driver = "org.postgresql.Driver";
-		String url = "jdbc:postgresql://localhost:5432/ITproject";
-		String username = "postgres";
+//		String url = "jdbc:postgresql://localhost:5432/ITproject";
+//		String username = "postgres";
+//		String password = "aa199595";
 
-		String password = "aa199595";
-
-		
-//		final String username = "m_19_2431374h";
-//		final String password = "2431374h";
-//		final String dbName = "jdbc:postgresql://yacata.dcs.gla.ac.uk:5432/";
+		final String username = "m_19_2431374h";
+		final String password = "2431374h";
+		final String url = "jdbc:postgresql://yacata.dcs.gla.ac.uk:5432/";
 
 
 		try {
