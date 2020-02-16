@@ -37,19 +37,6 @@ public class CMLController {
 			
 				if(menuChoice == 1) {
 					gm.viewStatistics();
-					//gm.viewStatistics();
-//				db.getConn();
-//				DB_Model_DbResponce response = db.getDatabaseInfo();				
-//				System.out.println("Game Stats!:");
-//				System.out.println("Total games played: " + response.getGameCount());
-//				System.out.println("Total games users won: " + response.getNumberOfHumanWin());
-//				System.out.println("Total games computers won: " + response.getNumberOfAIWin());
-//				System.out.println("Average draws per game: " + response.getAverageDraw());
-//				System.out.println("Largest Number of rounds in a game: " + response.getMaxRound());
-//				System.out.println("\n\n");
-//				db.disconnectDB();
-				//connect to database
-					gm.viewStatistics();
 				
 					return getMenuChoice();
 				
